@@ -30,7 +30,7 @@ const Steps = () => {
 		},
 	];
 
-	const [selectedStep, setSelectedStep] = useState<Step>(steps[1]);
+	const [selectedStep, setSelectedStep] = useState<Step>(steps[2]);
 
 	return (
 		<div className="h-screen relative flex flex-col overflow-scroll">

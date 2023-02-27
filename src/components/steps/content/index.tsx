@@ -24,7 +24,7 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 				variants={container}
 				initial="hidden"
 				animate="show"
-				className="px-8 py-8 h-full flex flex-col overflow-scroll md:max-w-screen-lg md:mx-auto justify-between items-center"
+				className="px-8 py-8 h-full flex flex-col overflow-scroll md:max-w-screen-xl md:mx-auto justify-between items-center"
 			>
 				{children}
 

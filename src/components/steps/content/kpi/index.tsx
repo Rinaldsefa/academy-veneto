@@ -17,56 +17,101 @@ const Kpi = () => {
 
 	return (
 		<>
-			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 md:gap-12 my-16">
-				<Ball color="green">
-					<Text classes="text-xl text-purple-700 font-semibold uppercase">
-						Il veneto è la terra dell'alta educazione!
-					</Text>
+			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-8 md:gap-12">
+				<motion.div variants={balloonAnimation}>
+					<Ball color="green">
+						<Text classes="text-xs md:text-lg text-purple-700 font-semibold uppercase">
+							Il veneto è la terra dell'alta educazione!
+						</Text>
 
-					<div className="absolute -left-10 top-36">
-						<Image
-							alt="phone"
-							src="/assets/kpi/10.png"
-							width={120}
-							height={120}
-						/>
-					</div>
-				</Ball>
+						<motion.div
+							animate={{ y: [20, 0, 20], x: [20, 10, 20] }}
+							transition={{
+								repeat: Infinity,
+								duration: 2,
+								type: "spring",
+								delay: 0.2,
+							}}
+							className="absolute md:-left-10 top-32 md:top-36"
+						>
+							<Image
+								alt="phone"
+								src="/assets/kpi/10.png"
+								className="w-20 h-20 md:w-40 md:h-40"
+								width={120}
+								height={120}
+							/>
+						</motion.div>
+					</Ball>
+				</motion.div>
 
-				<Ball color="green">
-					<Text classes="text-xl text-purple-700 font-semibold uppercase">
-						Il veneto è la terra dell'alta educazione!
-					</Text>
+				<motion.div variants={balloonAnimation}>
+					<Ball color="purple" classes="md:w-96 md:h-96">
+						<Text classes="text-xs md:text-xl text-black md:mt-4 font-semibold uppercase">
+							meno parole e più fatti
+						</Text>
 
-					<div className="absolute -left-10 top-36">
-						<Image
-							alt="phone"
-							src="/assets/kpi/10.png"
-							width={120}
-							height={120}
-						/>
-					</div>
-				</Ball>
+						<Text classes="text-3xl md:text-[100px] md:mt-12 text-black font-bold uppercase">
+							l'86%
+						</Text>
 
-				<Ball color="green">
-					<Text classes="text-xl text-purple-700 font-semibold uppercase">
-						Il veneto è la terra dell'alta educazione!
-					</Text>
+						<Text classes=" font-semibold text-xs md:hidden block">
+							dei nostri studenti trova lavoro entro 1 anno dal diploma!
+						</Text>
 
-					<div className="absolute -left-10 top-36">
-						<Image
-							alt="phone"
-							src="/assets/kpi/10.png"
-							width={120}
-							height={120}
-						/>
-					</div>
-				</Ball>
+						<motion.div
+							animate={{ x: [-20, -10, -20] }}
+							transition={{
+								repeat: Infinity,
+								duration: 2,
+								type: "spring",
+								delay: 0.4,
+							}}
+							className="absolute top-28 md:top-32"
+						>
+							<Image
+								alt="phone"
+								src="/assets/kpi/11.png"
+								className="w-36 h-36 md:w-[280px] md:h-[280px]"
+								width={280}
+								height={280}
+							/>
+						</motion.div>
+					</Ball>
+				</motion.div>
+
+				<motion.div variants={balloonAnimation}>
+					<Ball color="red" classes="justify-between">
+						<Text classes="text-3xl font-semibold uppercase md:mt-4">4%</Text>
+
+						<motion.div
+							animate={{ x: [-20, -10, -20] }}
+							transition={{
+								repeat: Infinity,
+								duration: 2,
+								type: "spring",
+								delay: 0.8,
+							}}
+							className="absolute md:top-20"
+						>
+							<Image
+								alt="phone"
+								src="/assets/kpi/12.png"
+								width={120}
+								height={120}
+							/>
+						</motion.div>
+
+						<Text classes="text-xs md:text-lg font-semibold uppercase md:mt-16 ">
+							Lo stesso dato nelle altre realtà
+						</Text>
+					</Ball>
+				</motion.div>
 			</div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="text-indigo-500 font-semibold text-2xl">
-					opportunità lavorative reali?
+				<Text classes=" font-semibold text-2xl hidden md:block">
+					dei nostri studenti trova lavoro entro 1 anno dal diploma!
 				</Text>
 			</motion.div>
 		</>
