@@ -1,10 +1,12 @@
 import Balloon, { BalloonProps } from "@/components/ui/balloon";
 import Cta from "@/components/ui/cta";
 import Text from "@/components/ui/text";
-import { LayoutGroup, motion } from "framer-motion";
+import { LayoutGroup, motion, useScroll } from "framer-motion";
 import { FC, PropsWithChildren } from "react";
 
 const Content: FC<PropsWithChildren> = ({ children }) => {
+	const { scrollXProgress } = useScroll();
+
 	const container = {
 		hidden: { opacity: 0 },
 		show: {
@@ -20,6 +22,15 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 
 	return (
 		<LayoutGroup>
+			<motion.circle
+				cx="50"
+				cy="50"
+				r="30"
+				pathLength="1"
+				className="indicator"
+				style={{ pathLength: scrollXProgress }}
+			/>
+
 			<motion.div
 				variants={container}
 				initial="hidden"

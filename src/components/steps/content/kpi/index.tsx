@@ -1,5 +1,4 @@
 import Ball from "@/components/ui/ball";
-import Circle from "@/components/ui/ball";
 import Text from "@/components/ui/text";
 import { motion } from "framer-motion";
 import Image from "next/image";
