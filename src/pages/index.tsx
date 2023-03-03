@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import Steps from "@/components/steps";
 import Image from "next/image";
 
