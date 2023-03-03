@@ -30,7 +30,7 @@ const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
 						<Image alt={icon} src={icon} width={120} height={120} />
 					</motion.div>
 				</div>
-				<Text classes="font-normal tracking-wide mt-8 text-xs font-black uppercase">
+				<Text classes="tracking-wide mt-6 text-xs font-black uppercase">
 					{title}
 				</Text>
 			</div>
