@@ -10,7 +10,7 @@ interface StepperProps {
 const Stepper = ({ value, classes = "" }: StepperProps) => {
 	const [active, setActive] = useState(0);
 	return (
-		<div className={`relative overflow-hidden ${classes}`}>
+		<div className={`relative overflow-hidden ${classes} `}>
 			<div className="absolute inset-0 flex items-center" aria-hidden="true">
 				<div className="w-full border-t border-gray-300" />
 			</div>

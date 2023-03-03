@@ -8,6 +8,7 @@ import Welcome from "./content/welcome";
 import Navigation from "./navigation";
 import Test from "./test";
 import { motion } from "framer-motion";
+import Courses from "./content/courses";
 
 type Step = {
 	id: string;
@@ -37,9 +38,14 @@ const Steps = () => {
 			number: 4,
 			content: <Progress />,
 		},
+		{
+			id: "courses",
+			number: 5,
+			content: <Courses />,
+		},
 	];
 
-	const [selectedStep, setSelectedStep] = useState<Step>(steps[3]);
+	const [selectedStep, setSelectedStep] = useState<Step>(steps[4]);
 
 	return (
 		<div className="h-screen relative flex flex-col overflow-scroll">

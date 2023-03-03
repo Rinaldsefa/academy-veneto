@@ -29,7 +29,7 @@ const Circle = ({ index, current, onClick, icon }: CircleProps) => {
 			animate={{ x, scale }}
 			onClick={onClick}
 			type="button"
-			className={`shadow-xl p-2 absolute bottom-1/4 h-12 w-12 items-center justify-center rounded-full ${color()}  text-white`}
+			className={`shadow-xl p-2 absolute bottom-1/3 h-12 w-12 items-center justify-center rounded-full ${color()}  text-white`}
 		>
 			{isComplete ? <CheckIcon className="h-6 w-8" /> : icon}
 		</motion.button>

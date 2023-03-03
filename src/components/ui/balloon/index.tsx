@@ -32,7 +32,7 @@ const Balloon = ({ type, text, icon, delay }: BalloonProps) => {
 		);
 	}
 	return (
-		<div className="y bg-purple-100 shadow-xl h-48 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8 p-6">
+		<div className=" bg-purple-100 shadow-xl h-48 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8 p-6">
 			<Text classes="font-normal tracking-wide	">{text}</Text>
 			<motion.div
 				animate={{ y: [20, 10, 20] }}

@@ -4,7 +4,7 @@ import { Inter } from "@next/font/google";
 import Steps from "@/components/steps";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--inter-font" });
 
 export default function Home() {
 	return (
@@ -16,7 +16,9 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-white flex flex-col h-screen justify-end">
+			<main
+				className={`bg-white flex flex-col h-screen justify-end ${inter.variable}`}
+			>
 				<nav className=" bg-slate-500">
 					<Image
 						alt="logo"
