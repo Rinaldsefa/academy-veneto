@@ -1,8 +1,7 @@
-import Ball from "@/components/ui/ball";
 import Text from "@/components/ui/text";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 const Progress = () => {
 	const constraintsRef = useRef(null);
@@ -86,7 +85,7 @@ const Progress = () => {
 			<motion.div variants={textAnimation}>
 				<Text classes="text-lg md:text-3xl">
 					in modo da immergerti fin da subito nel mondo del lavoro...anche
-					all'estero!
+					all&apos;estero!
 				</Text>
 			</motion.div>
 		</>

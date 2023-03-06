@@ -88,8 +88,8 @@ const Courses = () => {
 
 			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center my-8 gap-12 md:gap-8 ">
 				{courses.map((course, index) => (
-					<motion.div variants={balloonAnimation}>
-						<Course key={course.title} {...course} delay={index * 0.4} />
+					<motion.div variants={balloonAnimation} key={course.title}>
+						<Course {...course} delay={index * 0.4} />
 					</motion.div>
 				))}
 			</div>
@@ -102,7 +102,7 @@ const Courses = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text classes="md:text-xl  font-black mt-4">
-					Non sai quale scegliere? Fai il nostro quiz! L'intelligenza
+					Non sai quale scegliere? Fai il nostro quiz! L&apos;intelligenza
 					Artificiale ti aiuterà in questa importante decisione.
 				</Text>
 			</motion.div>

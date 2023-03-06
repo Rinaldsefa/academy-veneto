@@ -1,13 +1,11 @@
-import { useScroll } from "framer-motion";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Content from "./content";
 import Kpi from "./content/kpi";
 import Progress from "./content/progress";
 import School from "./content/school";
 import Welcome from "./content/welcome";
 import Navigation from "./navigation";
-import Test from "./test";
-import { motion } from "framer-motion";
+
 import Courses from "./content/courses";
 
 type Step = {

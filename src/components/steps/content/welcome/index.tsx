@@ -65,8 +65,8 @@ const Welcome = () => {
 
 			<div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 md:gap-8">
 				{balloons.map((balloon, index) => (
-					<motion.div variants={balloonAnimation}>
-						<Balloon key={`bal-${index}`} {...balloon} delay={index * 0.3} />
+					<motion.div variants={balloonAnimation} key={`bal-${index}`}>
+						<Balloon {...balloon} delay={index * 0.3} />
 					</motion.div>
 				))}
 			</div>

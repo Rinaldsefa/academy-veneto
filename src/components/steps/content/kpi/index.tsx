@@ -20,7 +20,7 @@ const Kpi = () => {
 				<motion.div variants={balloonAnimation}>
 					<Ball color="green">
 						<Text classes="text-xs md:text-lg text-purple-700 font-semibold uppercase">
-							Il veneto è la terra dell'alta educazione!
+							Il veneto è la terra dell&apos;alta educazione!
 						</Text>
 
 						<motion.div
@@ -51,7 +51,7 @@ const Kpi = () => {
 						</Text>
 
 						<Text classes="text-3xl md:text-[100px] md:mt-12 text-black font-bold uppercase">
-							l'86%
+							l&apos;86%
 						</Text>
 
 						<Text classes=" font-semibold text-xs md:hidden block">
