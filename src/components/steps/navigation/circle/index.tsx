@@ -5,13 +5,12 @@ type CircleProps = {
 	index: number;
 	current: number;
 	onClick: () => void;
-	icon: React.ReactNode;
 };
 
-const Circle = ({ index, current, onClick, icon }: CircleProps) => {
+const Circle = ({ index, current, onClick }: CircleProps) => {
 	const distance = index - current;
 	const x = distance * 120;
-	const scale = 1.3 - Math.abs(distance) * 0.2;
+	const scale = 1.3 - Math.abs(distance) * 0.15;
 	const isComplete = index < current;
 	const color = () => {
 		if (index < current) {
@@ -31,7 +30,7 @@ const Circle = ({ index, current, onClick, icon }: CircleProps) => {
 			type="button"
 			className={`shadow-xl p-2 absolute bottom-1/3 h-12 w-12 items-center justify-center rounded-full ${color()}  text-white`}
 		>
-			{isComplete ? <CheckIcon className="h-6 w-8" /> : icon}
+			{isComplete ? <CheckIcon className="h-6 w-8" /> : ""}
 		</motion.button>
 	);
 };

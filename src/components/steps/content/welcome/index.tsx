@@ -44,23 +44,25 @@ const Welcome = () => {
 	return (
 		<>
 			<motion.div variants={textAnimation}>
-				<Text classes="text-lg md:text-3xl font-semibold">Benvenuto/a!</Text>
+				<Text classes="text-lg md:text-3xl font-semibold" text="Benvenuto/a!" />
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-xl">
-					Ti parlerò brevemente degli ITS, ovvero i percorsi di
-				</Text>
+				<Text
+					classes="md:text-xl"
+					text="Ti parlerò brevemente degli ITS, ovvero i percorsi di"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="text-indigo-500 text-xl md:text-4xl font-bold">
-					Specializzazione Tecnica Post Diploma!
-				</Text>
+				<Text
+					classes="text-indigo-500 text-xl md:text-4xl font-bold"
+					text="Specializzazione Tecnica Post Diploma!"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-xl">Se:</Text>
+				<Text classes="md:text-xl" text="Se:" />
 			</motion.div>
 
 			<div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 md:gap-8">
@@ -72,9 +74,10 @@ const Welcome = () => {
 			</div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="mt-8 text:xl md:text-4xl font-semibold">
-					Siamo quello che fa per te!
-				</Text>
+				<Text
+					classes="mt-8 text:xl md:text-4xl font-semibold"
+					text="Siamo quello che fa per te!"
+				/>
 			</motion.div>
 		</>
 	);

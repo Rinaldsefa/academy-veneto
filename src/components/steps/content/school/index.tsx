@@ -39,28 +39,32 @@ const School = () => {
 	return (
 		<>
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-2xl">
-					Cerchi un percoso di alta formazione che ti dia delle cometenze
-					pratiche e
-				</Text>
+				<Text
+					classes="md:text-2xl"
+					text="Cerchi un percoso di alta formazione che ti dia delle cometenze
+					pratiche e"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="text-indigo-500 font-semibold text-lg md:text-2xl">
-					opportunità lavorative reali?
-				</Text>
+				<Text
+					classes="text-indigo-500 font-semibold text-lg md:text-2xl"
+					text="	opportunità lavorative reali?"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-3xl text-xl font-semibold">
-					Siamo in tutte le province del Veneto
-				</Text>
+				<Text
+					classes="md:text-3xl text-xl font-semibold"
+					text="Siamo in tutte le province del Veneto"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="bg-indigo-400 text-xl mdtext-4xl font-bold p-2 md:p-4 rounded-lg text-white shadow-lg">
-					Alcune nostre caratteristiche
-				</Text>
+				<Text
+					classes="bg-indigo-400 text-xl mdtext-4xl font-bold p-2 md:p-4 rounded-lg text-white shadow-lg"
+					text="	Alcune nostre caratteristiche"
+				/>
 			</motion.div>
 
 			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center mt-8 gap-12 md:gap-8">

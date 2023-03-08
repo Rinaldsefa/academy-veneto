@@ -24,7 +24,7 @@ const Courses = () => {
 			title: "turismo",
 			icon: "/assets/courses/15.png",
 			href: "/corsi/turismo",
-			classes: "bg-cyan-200",
+			classes: "bg-cyan-300",
 		},
 		{
 			title: "agroalimentare",
@@ -42,7 +42,7 @@ const Courses = () => {
 			title: "efficienza energetica",
 			icon: "/assets/courses/18.png",
 			href: "/corsi/efficienza-energetica",
-			classes: "bg-green-500",
+			classes: "bg-teal-400",
 		},
 		{
 			title: "design e arredo",
@@ -60,7 +60,7 @@ const Courses = () => {
 			title: "servizi alle imprese",
 			icon: "/assets/courses/21.png",
 			href: "/corsi/servizi-alle-imprese",
-			classes: "bg-amber-500",
+			classes: "bg-orange-300",
 		},
 		{
 			title: "information technologies",
@@ -73,17 +73,21 @@ const Courses = () => {
 	return (
 		<>
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-2xl mt-4">Ma veniamo al succo</Text>
+				<Text classes="md:text-xl mt-4" text="Ma veniamo al succo" />
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-2xl mt-4">Ecco le nostre specializzazioni!</Text>
+				<Text
+					classes="md:text-xl mt-4"
+					text="Ecco le nostre specializzazioni!"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="text-indigo-500 font-black text-lg md:text-2xl uppercase mt-4">
-					Seleziona la tua preferita
-				</Text>
+				<Text
+					classes="text-indigo-500 font-black text-lg md:text-xl uppercase mt-4"
+					text="Seleziona la tua preferita"
+				/>
 			</motion.div>
 
 			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center my-8 gap-12 md:gap-8 ">
@@ -95,16 +99,18 @@ const Courses = () => {
 			</div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="text-indigo-500 font-black text-lg md:text-xl uppercase mt-8">
-					novità
-				</Text>
+				<Text
+					classes="text-indigo-500 font-black text-lg md:text-xl uppercase"
+					text="novità"
+				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-xl  font-black mt-4">
-					Non sai quale scegliere? Fai il nostro quiz! L&apos;intelligenza
-					Artificiale ti aiuterà in questa importante decisione.
-				</Text>
+				<Text
+					classes="md:text-xl font-black "
+					text="Non sai quale scegliere? Fai il nostro quiz! L'intelligenza
+					Artificiale ti aiuterà in questa importante decisione."
+				/>
 			</motion.div>
 		</>
 	);

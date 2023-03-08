@@ -1,13 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 type TextProps = {
-	children: React.ReactNode;
+	text: string;
 	classes?: string;
 };
 
-const Text = ({ children, classes }: TextProps) => {
-	return <p className={`text-center ${classes || ""}`}>{children}</p>;
+const Text = ({ text, classes }: TextProps) => {
+	return <p className={`text-center ${classes || ""}`}>{text}</p>;
 };
 
 export default Text;
