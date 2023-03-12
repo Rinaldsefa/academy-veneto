@@ -32,7 +32,7 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 
 				<Cta
 					text="Avanti"
-					classes="mt-8 bg-indigo-700"
+					classes="mt-8 bg-primary"
 					onClick={() => {
 						setCurrent(
 							steps.find((step) => step.number === current.number + 1)?.id ||

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 type CircleProps = {
 	index: number;
@@ -14,9 +15,9 @@ const Circle = ({ index, current, onClick }: CircleProps) => {
 	const isComplete = index < current;
 	const color = () => {
 		if (index < current) {
-			return "bg-indigo-500";
+			return "bg-violet-500";
 		} else if (index === current) {
-			return "bg-indigo-600";
+			return "bg-primary";
 		} else {
 			return "bg-gray-200";
 		}
@@ -30,7 +31,19 @@ const Circle = ({ index, current, onClick }: CircleProps) => {
 			type="button"
 			className={`shadow-xl p-2 absolute bottom-1/3 h-12 w-12 items-center justify-center rounded-full ${color()}  text-white`}
 		>
-			{isComplete ? <CheckIcon className="h-6 w-8" /> : ""}
+			{isComplete ? (
+				<CheckIcon className="h-6 w-8" />
+			) : current === index ? (
+				<Image
+					alt="nav"
+					src="/assets/common/4.png"
+					width={24}
+					height={24}
+					className="w-full"
+				/>
+			) : (
+				""
+			)}
 		</motion.button>
 	);
 };

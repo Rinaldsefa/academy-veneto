@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion, useAnimationControls } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import useOnClickOutside from "@/components/hooks/use-click-outside";
 
 type NotificationProps = {
 	children: React.ReactNode;
@@ -8,14 +9,32 @@ type NotificationProps = {
 };
 
 const Notification = ({ children, onClick }: NotificationProps) => {
+	const ref = useRef(null);
 	const messageAnimationControls = useAnimationControls();
+	const notificationAnimationControls = useAnimationControls();
+
+	useOnClickOutside(ref, () => {
+		messageAnimationControls.start("hidden");
+		notificationAnimationControls.start("show");
+	});
+
+	const mobileMessageVariants = {
+		hidden: { opacity: 0, y: 10 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: { duration: 0.8, ease: "easeOut" },
+		},
+	};
 
 	return (
 		<>
 			<motion.button
-				initial={{ opacity: 0, y: 10 }}
+				ref={ref}
+				variants={mobileMessageVariants}
+				initial="hidden"
 				animate={messageAnimationControls}
-				className=" bg-purple-200 absolute z-50 w-72 top-10 right-10 rounded-3xl shadow-2xl px-6 text-left py-4"
+				className=" bg-purple-200 absolute z-50 left-10 top-10 right-10 rounded-3xl shadow-2xl px-6 text-left py-4"
 				onClick={onClick}
 			>
 				<div className="relative">
@@ -30,23 +49,16 @@ const Notification = ({ children, onClick }: NotificationProps) => {
 				</div>
 			</motion.button>
 			<motion.button
-				layout
-				initial={{ borderRadius: 50 }}
-				className="block md:hidden bg-purple-300 absolute z-50 w-16 h-16 bottom-24  origin-bottom-right right-4 shadow-xl text-left"
+				className="block md:hidden rounded-full bg-purple-300 absolute z-50 w-16 h-16 bottom-24  origin-bottom-right right-4 shadow-xl text-left"
 				onClick={() => {
-					messageAnimationControls.start({
-						opacity: 1,
-						y: 0,
-						transition: { duration: 0.3 },
-					});
+					messageAnimationControls.start("show");
+					notificationAnimationControls.start("hidden");
 				}}
+				initial="show"
+				animate={notificationAnimationControls}
+				variants={mobileMessageVariants}
 			>
-				<motion.div
-					transition={{ duration: 0.03 }}
-					whileTap={{ opacity: 0 }}
-					className="relative flex flex-col justify-center items-center"
-					layout
-				>
+				<motion.div className="relative flex flex-col justify-center items-center">
 					<span
 						className={`
             shadow-3xl text-xs font-semibold
