@@ -27,13 +27,16 @@ const Balloon = ({ type, text, icon, delay }: BalloonProps) => {
 					<Image alt={icon} src={icon} width={60} height={60} />
 				</motion.div>
 
-				<Text text={text} />
+				<Text text={text} classes="mb-0" />
 			</div>
 		);
 	}
 	return (
-		<div className=" bg-purple-100 shadow-xl h-48 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8 p-6">
-			<Text classes="font-normal tracking-wide" text={text} />
+		<motion.div
+			whileHover={{ scale: 1.2 }}
+			className=" bg-purple-200 shadow-2xl h-48 w-40 rounded-xl relative flex flex-col items-center justify-between min-h-8 p-6"
+		>
+			<Text classes="font-semibold tracking-wide mb-0" text={text} />
 			<motion.div
 				animate={{ y: [20, 10, 20] }}
 				transition={{
@@ -46,7 +49,7 @@ const Balloon = ({ type, text, icon, delay }: BalloonProps) => {
 			>
 				<Image alt={icon} src={icon} width={140} height={140} />
 			</motion.div>
-		</div>
+		</motion.div>
 	);
 };
 

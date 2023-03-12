@@ -24,7 +24,6 @@ const Kpi = () => {
 							classes="text-xs md:text-lg text-purple-700 font-semibold uppercase"
 							text="Il veneto è la terra dell'alta educazione!"
 						/>
-
 						<motion.div
 							animate={{ y: [20, 0, 20], x: [20, 10, 20] }}
 							transition={{
@@ -49,18 +48,18 @@ const Kpi = () => {
 				<motion.div variants={balloonAnimation}>
 					<Ball color="purple" classes="md:w-96 md:h-96">
 						<Text
-							classes="text-xs md:text-xl text-black md:mt-4 font-semibold uppercase"
+							classes="text-xs md:text-xl text-black md:mt-4 font-semibold uppercase mb-0"
 							text="meno parole e più fatti"
 						/>
 
 						<Text
-							classes="text-3xl md:text-[100px] md:mt-12 text-black font-bold uppercase"
+							classes="text-3xl md:text-[100px] md:mt-12 text-black font-bold uppercase mb-0"
 							text="l'86%"
 						/>
 
 						<Text
-							classes=" font-semibold text-xs md:hidden block"
-							text="	dei nostri studenti trova lavoro entro 1 anno dal diploma!"
+							classes=" font-semibold text-xs md:hidden block mb-0"
+							text="dei nostri studenti trova lavoro entro 1 anno dal diploma!"
 						/>
 
 						<motion.div
@@ -87,7 +86,7 @@ const Kpi = () => {
 				<motion.div variants={balloonAnimation}>
 					<Ball color="red" classes="justify-between">
 						<Text
-							classes="text-3xl font-semibold uppercase md:mt-4"
+							classes="text-3xl font-semibold uppercase md:mt-4 mb-0"
 							text="4%"
 						/>
 
@@ -110,7 +109,7 @@ const Kpi = () => {
 						</motion.div>
 
 						<Text
-							classes="text-xs md:text-lg font-semibold uppercase md:mt-16"
+							classes="text-xs md:text-lg font-semibold uppercase md:mt-16 mb-0"
 							text="Lo stesso dato nelle altre realtà"
 						/>
 					</Ball>
@@ -120,13 +119,13 @@ const Kpi = () => {
 			<motion.div variants={textAnimation}>
 				<Text
 					classes="font-semibold text-2xl hidden md:block"
-					text="dei nostri studenti trova lavoro entro 1 anno dal diploma!"
+					text="dei nostri studenti trova lavoro entro 1 anno dal diploma! mb-0"
 				/>
 			</motion.div>
 
 			<Notification>
 				<Text
-					classes="text-sm"
+					classes="text-sm mb-0"
 					text="Sei curioso di conoscere le espereienze degli studenti che hanno già provato? Clicca qui"
 				/>
 			</Notification>

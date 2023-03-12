@@ -6,7 +6,7 @@ type TextProps = {
 };
 
 const Text = ({ text, classes }: TextProps) => {
-	return <p className={`text-center ${classes || ""}`}>{text}</p>;
+	return <p className={`text-center mb-4 ${classes || ""}`}>{text}</p>;
 };
 
 export default Text;

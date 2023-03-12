@@ -14,7 +14,10 @@ export type CourseProps = {
 const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
 	return (
 		<Link href={href}>
-			<div className="flex flex-col items-center justify-center cursor-pointer">
+			<motion.div
+				whileHover={{ scale: 1.1 }}
+				className="flex flex-col items-center justify-center cursor-pointer"
+			>
 				<div
 					className={` bg-purple-100 shadow-xl h-32 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8  ${classes}`}
 				>
@@ -34,7 +37,7 @@ const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
 					classes="tracking-wide mt-6 text-xs font-black uppercase"
 					text={title}
 				/>
-			</div>
+			</motion.div>
 		</Link>
 	);
 };

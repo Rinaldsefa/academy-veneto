@@ -1,10 +1,11 @@
 import Head from "next/head";
-
 import Steps from "@/components/steps";
-import Image from "next/image";
 import Header from "@/components/ui/header";
+import { Inter } from "next/font/google";
 
-export default function Home() {
+const inter = Inter({ subsets: ["latin"] });
+
+export default function Courses() {
 	return (
 		<>
 			<Head>
@@ -14,7 +15,9 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className={`bg-white flex flex-col h-screen justify-end`}>
+			<main
+				className={`bg-white flex flex-col h-screen justify-end ${inter.className}`}
+			>
 				<Header />
 				<Steps />
 			</main>

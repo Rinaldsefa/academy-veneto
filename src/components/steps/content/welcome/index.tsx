@@ -56,7 +56,7 @@ const Welcome = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-indigo-500 text-xl md:text-4xl font-bold"
+					classes="text-indigo-500 text-xl md:text-4xl font-semibold"
 					text="Specializzazione Tecnica Post Diploma!"
 				/>
 			</motion.div>
@@ -65,7 +65,7 @@ const Welcome = () => {
 				<Text classes="md:text-xl" text="Se:" />
 			</motion.div>
 
-			<div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 md:gap-8">
+			<div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 md:gap-8">
 				{balloons.map((balloon, index) => (
 					<motion.div variants={balloonAnimation} key={`bal-${index}`}>
 						<Balloon {...balloon} delay={index * 0.3} />
@@ -75,7 +75,7 @@ const Welcome = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="mt-8 text:xl md:text-4xl font-semibold"
+					classes="mt-8 text-xl md:text-4xl font-semibold"
 					text="Siamo quello che fa per te!"
 				/>
 			</motion.div>

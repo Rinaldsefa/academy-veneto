@@ -48,8 +48,8 @@ const School = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-indigo-500 font-semibold text-lg md:text-2xl"
-					text="	opportunità lavorative reali?"
+					classes="text-primary text-lg md:text-2xl"
+					text="opportunità lavorative reali?"
 				/>
 			</motion.div>
 
@@ -60,20 +60,23 @@ const School = () => {
 				/>
 			</motion.div>
 
-			<motion.div variants={textAnimation}>
+			<motion.div
+				variants={textAnimation}
+				className="bg-purple-50 rounded-lg shadow-3xl pt-8 px-8 pb-16"
+			>
 				<Text
-					classes="bg-indigo-400 text-xl mdtext-4xl font-bold p-2 md:p-4 rounded-lg text-white shadow-lg"
-					text="	Alcune nostre caratteristiche"
+					classes="text-primary text-xl font-bold"
+					text="Eccoti Alcune nostre caratteristiche"
 				/>
-			</motion.div>
 
-			<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center mt-8 gap-12 md:gap-8">
-				{balloons.map((balloon, index) => (
-					<motion.div variants={balloonAnimation} key={`bal-${index}`}>
-						<Balloon {...balloon} delay={index * 0.3} />
-					</motion.div>
-				))}
-			</div>
+				<div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center mt-8 gap-12 md:gap-8">
+					{balloons.map((balloon, index) => (
+						<motion.div variants={balloonAnimation} key={`bal-${index}`}>
+							<Balloon {...balloon} delay={index * 0.3} />
+						</motion.div>
+					))}
+				</div>
+			</motion.div>
 		</>
 	);
 };

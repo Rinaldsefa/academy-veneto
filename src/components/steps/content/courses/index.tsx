@@ -73,19 +73,16 @@ const Courses = () => {
 	return (
 		<>
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-xl mt-4" text="Ma veniamo al succo" />
+				<Text classes="md:text-2xl" text="Ma veniamo al succo" />
+			</motion.div>
+
+			<motion.div variants={textAnimation}>
+				<Text classes="md:text-2xl" text="Ecco le nostre specializzazioni!" />
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="md:text-xl mt-4"
-					text="Ecco le nostre specializzazioni!"
-				/>
-			</motion.div>
-
-			<motion.div variants={textAnimation}>
-				<Text
-					classes="text-indigo-500 font-black text-lg md:text-xl uppercase mt-4"
+					classes="text-primary font-black text-lg md:text-3xl"
 					text="Seleziona la tua preferita"
 				/>
 			</motion.div>

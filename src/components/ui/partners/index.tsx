@@ -31,9 +31,15 @@ const Partners = () => {
 	];
 
 	return (
-		<div className="flex justify-center items-center gap-4 py-8 my-8">
+		<div className="flex justify-center items-center gap-4 my-8">
 			{partners.map((partner) => (
-				<Image alt={partner.id} width={50} height={50} src={partner.icon} />
+				<Image
+					alt={partner.id}
+					width={50}
+					height={50}
+					src={partner.icon}
+					className="w-8 md:w-16"
+				/>
 			))}
 		</div>
 	);
