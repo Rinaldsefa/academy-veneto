@@ -7,11 +7,10 @@ export default function useOnClickOutside(
 	ref: React.RefObject<HTMLElement>,
 	handler: Handler
 ) {
-	if (typeof document === "undefined") {
-		return;
-	}
-
 	useEffect(() => {
+		if (typeof document === "undefined") {
+			return;
+		}
 		const listener = (event: Event) => {
 			// Do nothing if clicking ref's element or descendent elements
 			if (!ref.current || ref.current.contains(event?.target as Node)) {

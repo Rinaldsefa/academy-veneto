@@ -34,6 +34,7 @@ const Partners = () => {
 		<div className="flex justify-center items-center gap-4 my-8">
 			{partners.map((partner) => (
 				<Image
+					key={partner.id}
 					alt={partner.id}
 					width={50}
 					height={50}
