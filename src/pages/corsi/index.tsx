@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Steps from "@/components/steps";
 import Header from "@/components/ui/header";
+import StepNavigation from "@/components/steps/navigation";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,6 +24,8 @@ export default function Courses() {
 				<main className="flex flex-col flex-1 overflow-y-scroll">
 					<Steps />
 				</main>
+
+				<StepNavigation />
 			</div>
 		</>
 	);

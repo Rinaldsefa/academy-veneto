@@ -5,7 +5,6 @@ const Steps = () => {
 	return (
 		<div className="h-screen relative flex flex-col overflow-scroll">
 			<Content />
-			<Navigation />
 		</div>
 	);
 };
