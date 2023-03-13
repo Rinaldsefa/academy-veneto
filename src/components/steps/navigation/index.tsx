@@ -19,7 +19,7 @@ const Stepper = () => {
 							current={current.number}
 							onClick={() => {
 								setCurrent(step.id);
-								window.scrollTo(0, 0);
+								document.getElementById("content")?.scrollTo(0, 0);
 							}}
 						/>
 					))}

@@ -15,12 +15,15 @@ export default function Courses() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main
-				className={`bg-white flex flex-col h-screen justify-end ${inter.className}`}
+			<div
+				className={`bg-white overflow-hidden flex flex-col h-screen justify-end ${inter.className}`}
 			>
 				<Header />
-				<Steps />
-			</main>
+
+				<main className="flex flex-col flex-1 overflow-y-scroll">
+					<Steps />
+				</main>
+			</div>
 		</>
 	);
 }

@@ -40,7 +40,7 @@ const School = () => {
 		<>
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="md:text-2xl"
+					classes="md:text-2xl mb-4"
 					text="Cerchi un percoso di alta formazione che ti dia delle cometenze
 					pratiche e"
 				/>
@@ -48,14 +48,14 @@ const School = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-primary text-lg md:text-2xl"
+					classes="text-primary text-lg md:text-2xl mb-4"
 					text="opportunità lavorative reali?"
 				/>
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="md:text-3xl text-xl font-semibold"
+					classes="md:text-3xl text-xl font-semibold mb-4"
 					text="Siamo in tutte le province del Veneto"
 				/>
 			</motion.div>

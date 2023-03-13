@@ -1,16 +1,16 @@
-import Balloon, { BalloonProps } from "@/components/ui/balloon";
 import Cta from "@/components/ui/cta";
-import Text from "@/components/ui/text";
 import { useStepsStore } from "@/state/steps";
-import { LayoutGroup, motion, useScroll } from "framer-motion";
-import { FC, PropsWithChildren } from "react";
+import { LayoutGroup, motion } from "framer-motion";
+import { FC, PropsWithChildren, useEffect, useRef } from "react";
 
 const Content: FC<PropsWithChildren> = ({ children }) => {
+	const contentRef = useRef<HTMLDivElement>(null);
 	const { steps, current, setCurrent } = useStepsStore();
 	const container = {
 		hidden: { opacity: 0 },
 		show: {
 			opacity: 1,
+			scrollY: 0,
 			y: 0,
 			transition: {
 				delayChildren: 0.6,
@@ -23,6 +23,8 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<LayoutGroup>
 			<motion.div
+				id="content"
+				ref={contentRef}
 				variants={container}
 				initial="hidden"
 				animate="show"
@@ -34,11 +36,11 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 					text="Avanti"
 					classes="mt-8 bg-primary"
 					onClick={() => {
+						contentRef.current?.scrollTo(0, 0);
 						setCurrent(
 							steps.find((step) => step.number === current.number + 1)?.id ||
 								current.id
 						);
-						window.scrollTo(0, 0);
 					}}
 				/>
 			</motion.div>
