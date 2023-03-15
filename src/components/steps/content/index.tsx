@@ -6,6 +6,8 @@ import { FC, PropsWithChildren, useEffect, useRef } from "react";
 const Content: FC<PropsWithChildren> = ({ children }) => {
 	const contentRef = useRef<HTMLDivElement>(null);
 	const { steps, current, setCurrent } = useStepsStore();
+
+	const isLastStep = current.number === steps.length;
 	const container = {
 		hidden: { opacity: 0 },
 		show: {
@@ -13,12 +15,12 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 			scrollY: 0,
 			y: 0,
 			transition: {
-				delayChildren: 0.6,
-				staggerChildren: 0.8,
 				duration: 1,
 			},
 		},
 	};
+
+	console.log(isLastStep);
 
 	return (
 		<LayoutGroup>
@@ -32,17 +34,21 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 			>
 				{current.content}
 
-				<Cta
-					text="Avanti"
-					classes="mt-8 bg-primary"
-					onClick={() => {
-						contentRef.current?.scrollTo(0, 0);
-						setCurrent(
-							steps.find((step) => step.number === current.number + 1)?.id ||
-								current.id
-						);
-					}}
-				/>
+				{isLastStep ? (
+					<Cta text={"Fai il quiz"} classes="mt-8 bg-sky-500" href="/test" />
+				) : (
+					<Cta
+						text={"Avanti"}
+						classes="mt-8 bg-primary"
+						onClick={() => {
+							contentRef.current?.scrollTo(0, 0);
+							setCurrent(
+								steps.find((step) => step.number === current.number + 1)?.id ||
+									current.id
+							);
+						}}
+					/>
+				)}
 			</motion.div>
 		</LayoutGroup>
 	);
