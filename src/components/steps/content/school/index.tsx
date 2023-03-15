@@ -62,7 +62,7 @@ const School = () => {
 
 			<motion.div
 				variants={textAnimation}
-				className="bg-purple-50 rounded-lg shadow-3xl pt-8 px-8 pb-16"
+				className="bg-blue-50 rounded-lg shadow-3xl pt-8 px-8 pb-16"
 			>
 				<Text
 					classes="text-primary text-xl font-bold"

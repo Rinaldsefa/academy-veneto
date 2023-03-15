@@ -59,7 +59,7 @@ const Welcome = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-indigo-500 text-xl md:text-4xl font-semibold mb-4"
+					classes="text-primary text-xl md:text-4xl font-semibold mb-4"
 					text="Specializzazione Tecnica Post Diploma!"
 				/>
 			</motion.div>

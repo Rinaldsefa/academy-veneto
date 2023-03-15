@@ -97,7 +97,7 @@ const Courses = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-indigo-500 font-black text-lg md:text-xl uppercase"
+					classes="text-blue-500 font-black text-lg md:text-xl uppercase"
 					text="novità"
 				/>
 			</motion.div>

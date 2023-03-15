@@ -19,7 +19,7 @@ const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
 				className="flex flex-col items-center justify-center cursor-pointer"
 			>
 				<div
-					className={` bg-purple-100 shadow-xl h-32 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8  ${classes}`}
+					className={` bg-blue-100 shadow-xl h-32 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8  ${classes}`}
 				>
 					<motion.div
 						animate={{ y: [20, 10, 20] }}

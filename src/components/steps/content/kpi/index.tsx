@@ -119,7 +119,13 @@ const Kpi = () => {
 			<motion.div variants={textAnimation}>
 				<Text
 					classes="font-semibold text-2xl hidden md:block"
-					text="dei nostri studenti trova lavoro entro 1 anno dal diploma! mb-0"
+					text="dei nostri studenti trova lavoro"
+				/>
+			</motion.div>
+			<motion.div variants={textAnimation}>
+				<Text
+					classes="font-semibold text-2xl hidden md:block"
+					text="entro 1 anno dal diploma!"
 				/>
 			</motion.div>
 

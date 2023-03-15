@@ -15,7 +15,7 @@ const Circle = ({ index, current, onClick }: CircleProps) => {
 	const isComplete = index < current;
 	const color = () => {
 		if (index < current) {
-			return "bg-violet-500";
+			return "bg-blue-300";
 		} else if (index === current) {
 			return "bg-primary";
 		} else {
