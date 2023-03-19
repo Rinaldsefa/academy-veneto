@@ -74,8 +74,11 @@ export const CoursePage = (props: CoursePageProps) => {
 					<CourseLabel classes="mt-16" text={course.label} />
 
 					<div className="flex flex-col items-center py-8 px-4 w-full">
-						{course.degrees.map((degree) => (
-							<div className="flex w-full flex-col items-center gap-4 md:gap-8">
+						{course.degrees.map((degree, index) => (
+							<div
+								className="flex w-full flex-col items-center gap-4 md:gap-8"
+								key={`${course.id}-degree-${index}`}
+							>
 								<Image
 									alt=""
 									src={degree.img}
@@ -83,14 +86,20 @@ export const CoursePage = (props: CoursePageProps) => {
 									height={200}
 									className="w-36 h-36 md:w-44 md:h-44"
 								/>
-								{degree.bulletPoints.map((bulletPoint) => (
-									<div className="flex flex-col justify-center w-full max-w-screen-xl">
+								{degree.bulletPoints.map((bulletPoint, i) => (
+									<div
+										className="flex flex-col justify-center w-full max-w-screen-xl"
+										key={`${course.id}-degree-${index}-bullet-point-${i}`}
+									>
 										<h6 className="font-semibold md:text-2xl md:text-center mb-4">
 											{bulletPoint.label}
 										</h6>
 										<ul className="flex flex-col md:flex-row md:flex-wrap gap-2 md:gap-4 justify-center md:items-center">
 											{bulletPoint.list.map((listItem) => (
-												<li className="font-extralight flex items-center ">
+												<li
+													className="font-extralight flex items-center "
+													key={listItem}
+												>
 													<Image
 														className="mr-2 h-4 w-4"
 														alt=""
