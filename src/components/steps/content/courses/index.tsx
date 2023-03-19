@@ -26,7 +26,7 @@ const Courses = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-primary font-black text-lg md:text-3xl"
+					classes="text-primary font-semibold text-lg md:text-3xl"
 					text="Seleziona la tua preferita"
 				/>
 			</motion.div>
@@ -48,7 +48,7 @@ const Courses = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="md:text-xl font-black "
+					classes="md:text-xl"
 					text="Non sai quale scegliere? Fai il nostro quiz! L'intelligenza
 					Artificiale ti aiuterà in questa importante decisione."
 				/>

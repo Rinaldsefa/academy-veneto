@@ -2,7 +2,7 @@ import Header from "@/components/ui/header";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { ParsedUrlQuery } from "querystring";
-import { Inter } from "next/font/google";
+
 import CourseLabel from "@/components/ui/course-label";
 import Image from "next/image";
 import { courses } from "@/constants";
@@ -10,7 +10,43 @@ import { Course } from "@/types/course";
 import Cta from "@/components/ui/cta";
 import Partners from "@/components/ui/partners";
 
-const inter = Inter({ subsets: ["latin"] });
+import localFont from "next/font/local";
+import CourseSelector from "@/components/ui/course-selector";
+
+export const aileron = localFont({
+	src: [
+		{
+			path: "../../../styles/fonts/Aileron-UltraLight.otf",
+			weight: "300",
+			style: "normal",
+		},
+		{
+			path: "../../../styles/fonts/Aileron-Light.otf",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "../../../styles/fonts/Aileron-Regular.otf",
+			weight: "500",
+			style: "normal",
+		},
+		{
+			path: "../../../styles/fonts/Aileron-SemiBold.otf",
+			weight: "600",
+			style: "normal",
+		},
+		{
+			path: "../../../styles/fonts/Aileron-Bold.otf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../../../styles/fonts/Aileron-Black.otf",
+			weight: "800",
+			style: "normal",
+		},
+	],
+});
 
 export async function getStaticPaths() {
 	const coursesId = courses.map((course) => {
@@ -50,17 +86,18 @@ export const CoursePage = (props: CoursePageProps) => {
 			</Head>
 
 			<div
-				className={`bg-white flex flex-col overflow-hidden justify-end ${inter.className}`}
+				className={`bg-white flex flex-col overflow-hidden justify-end ${aileron.className}`}
 			>
 				<Header />
 				<main className="flex flex-col flex-1 overflow-y-scroll items-center">
 					<div
-						className={`relative w-full ${course.classes} h-32 md:h-48 flex flex-col items-center p-4 `}
+						className={`relative w-full ${course.classes} h-48 md:h-64 flex flex-col items-center p-4`}
 					>
-						<h5 className="uppercase tracking-widest font-black text-black opacity-40 mt-4 md:mt-8">
+						<CourseSelector selected={course} />
+						<h5 className="uppercase tracking-widest font-black text-black opacity-40 mt-8 md:mt-16">
 							{course.title}
 						</h5>
-						<div className="absolute top-3 md:top-8 left-1/2 translate-y-1/2 shadow-xl bg-white -translate-x-1/2 w-28 h-28 md:w-36 md:h-36 rounded-full">
+						<div className="absolute top-20 md:top-24 left-1/2 translate-y-1/2 shadow-xl bg-white -translate-x-1/2 w-28 h-28 md:w-36 md:h-36 rounded-full">
 							<Image
 								blurDataURL={course.icon}
 								alt={course.title}
