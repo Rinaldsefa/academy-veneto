@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface CommonCtapProps {
 	text: string;
+	targetBlank?: boolean;
 	classes?: string;
 }
 interface LinkProps extends CommonCtapProps {
@@ -17,12 +18,19 @@ interface AnchorProps extends CommonCtapProps {
 
 type CtaProps = LinkProps | AnchorProps;
 
-const Cta = ({ onClick, href, classes, text }: CtaProps) => {
+const Cta = ({
+	onClick,
+	href,
+	classes,
+	text,
+	targetBlank = false,
+}: CtaProps) => {
 	if (href) {
 		return (
 			<Link
 				className={`shadow-xl py-3 px-10  rounded-full text-white text-normal flex items-center justify-center text-lg uppercase ${classes}`}
 				href={href}
+				target={targetBlank ? "_blank" : "_self"}
 			>
 				{text}
 				<ArrowRightIcon className="w-6 h-6 ml-2" />

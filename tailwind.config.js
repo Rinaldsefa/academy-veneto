@@ -7,7 +7,7 @@ module.exports = {
 				"3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
 			},
 			colors: {
-				primary: "#0852e1",
+				primary: "#6319e9",
 			},
 		},
 	},

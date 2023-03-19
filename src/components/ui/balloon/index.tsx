@@ -13,7 +13,7 @@ export type BalloonProps = {
 const Balloon = ({ type, text, icon, delay }: BalloonProps) => {
 	if (type === "horizontal") {
 		return (
-			<div className="bg-blue-200 shadow-xl rounded-full relative  flex items-center justify-center p-4 px-8">
+			<div className="bg-purple-200 shadow-xl rounded-full relative  flex items-center justify-center p-4 px-8">
 				<motion.div
 					animate={{ x: [-20, -10, -20] }}
 					transition={{
@@ -34,7 +34,7 @@ const Balloon = ({ type, text, icon, delay }: BalloonProps) => {
 	return (
 		<motion.div
 			whileHover={{ scale: 1.2 }}
-			className=" bg-blue-200 shadow-2xl h-48 w-40 rounded-xl relative flex flex-col items-center justify-between min-h-8 p-6"
+			className=" bg-purple-200 shadow-2xl h-48 w-40 rounded-xl relative flex flex-col items-center justify-between min-h-8 p-6"
 		>
 			<Text classes="font-semibold tracking-wide mb-0" text={text} />
 			<motion.div

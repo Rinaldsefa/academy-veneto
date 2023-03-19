@@ -19,7 +19,7 @@ const Progress = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-xl md:text-4xl font-semibold uppercase text-blue-700"
+					classes="text-xl md:text-4xl font-semibold uppercase text-purple-700"
 					text="tanta pratica"
 				/>
 			</motion.div>
@@ -80,7 +80,7 @@ const Progress = () => {
 
 			<motion.div variants={textAnimation}>
 				<Text
-					classes="text-xl md:text-4xl text-blue-700 font-semibold"
+					classes="text-xl md:text-4xl text-purple-700 font-semibold"
 					text="Più di un 1/3 del percorso è svolto in azienda"
 				/>
 			</motion.div>

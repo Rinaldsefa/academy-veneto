@@ -1,8 +1,10 @@
+import { useStepsStore } from "@/state/steps";
 import Image from "next/image";
 import Link from "next/link";
 import Socials from "../socials";
 
-const Header = ({ hideLogo = false }) => {
+const Header = () => {
+	const { steps, setCurrent, current } = useStepsStore();
 	return (
 		<div className="flex flex-col justify-center item px-4 py-4 md:py-8 md:px-16 shadow-sm">
 			<nav className="flex w-full flex-row-reverse justify-between items-center">
@@ -13,26 +15,38 @@ const Header = ({ hideLogo = false }) => {
 						</li>
 
 						<li className="px-2">
-							<Link href="/">I corsi</Link>
+							<Link
+								href="/corsi"
+								onClick={() =>
+									setCurrent(
+										steps.find((step) => step.id === "courses")?.id ||
+											current.id
+									)
+								}
+							>
+								I corsi
+							</Link>
 						</li>
 					</ul>
 
 					<Socials />
 				</div>
-				<Image
-					alt="logo"
-					width={140}
-					height={40}
-					className="hidden md:block"
-					src="/assets/common/logo.png"
-				/>
-				<Image
-					alt="logo"
-					width={120}
-					height={40}
-					className="block md:hidden"
-					src="/assets/common/1-mobile.png"
-				/>
+				<Link href="/">
+					<Image
+						alt="logo"
+						width={140}
+						height={40}
+						className="hidden md:block"
+						src="/assets/common/logo.png"
+					/>
+					<Image
+						alt="logo"
+						width={120}
+						height={40}
+						className="block md:hidden"
+						src="/assets/common/1-mobile.png"
+					/>
+				</Link>
 			</nav>
 
 			<ul className="md:hidden flex justify-center gap-2 items-center text-gray-500 uppercase font-semibold text-xs mt-2 tracking-widest">
@@ -41,7 +55,16 @@ const Header = ({ hideLogo = false }) => {
 				</li>
 
 				<li className="px-2">
-					<Link href="/">I corsi</Link>
+					<Link
+						href="/corsi"
+						onClick={() =>
+							setCurrent(
+								steps.find((step) => step.id === "courses")?.id || current.id
+							)
+						}
+					>
+						I corsi
+					</Link>
 				</li>
 			</ul>
 		</div>

@@ -1,17 +1,14 @@
+import { Course } from "@/types/course";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Text from "../text";
 
-export type CourseProps = {
-	icon: string;
-	href: string;
-	title: string;
-	classes?: string;
+export interface CourseCardProps extends Course {
 	delay?: number;
-};
+}
 
-const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
+const CourseCard = ({ icon, href, delay, title, classes }: CourseCardProps) => {
 	return (
 		<Link href={href}>
 			<motion.div
@@ -19,7 +16,7 @@ const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
 				className="flex flex-col items-center justify-center cursor-pointer"
 			>
 				<div
-					className={` bg-blue-100 shadow-xl h-32 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8  ${classes}`}
+					className={` bg-purple-100 shadow-xl h-32 w-40 rounded-lg relative flex flex-col items-center justify-between min-h-8  ${classes}`}
 				>
 					<motion.div
 						animate={{ y: [20, 10, 20] }}
@@ -42,4 +39,4 @@ const Course = ({ icon, href, delay, title, classes }: CourseProps) => {
 	);
 };
 
-export default Course;
+export default CourseCard;

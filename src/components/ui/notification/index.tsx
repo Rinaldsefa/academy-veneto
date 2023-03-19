@@ -34,7 +34,7 @@ const Notification = ({ children, onClick }: NotificationProps) => {
 				variants={mobileMessageVariants}
 				initial="hidden"
 				animate={messageAnimationControls}
-				className=" bg-blue-200 absolute z-50 left-10 top-10 right-10 rounded-3xl shadow-2xl px-6 text-left py-4"
+				className=" bg-purple-200 absolute z-50 left-10 top-10 right-10 rounded-3xl shadow-2xl px-6 text-left py-4"
 				onClick={onClick}
 			>
 				<div className="relative">
@@ -66,7 +66,7 @@ const Notification = ({ children, onClick }: NotificationProps) => {
 						flex  flex-col items-center
             top-0 right-2  h-4 w-4 -translate-y-1/2
             translate-x-1/2 transform rounded-full
-            bg-blue-700 ring-2 ring-white `}
+            bg-purple-700 ring-2 ring-white `}
 					>
 						1
 					</span>
