@@ -147,7 +147,7 @@ export const CoursePage = (props: CoursePageProps) => {
 														height={18}
 														src={course.bulletIcon}
 													/>
-													<span className="text-center md:text-sm md:font-medium">
+													<span className="text-center md:text-sm md:font-semibold">
 														{listItem}
 													</span>
 												</li>
