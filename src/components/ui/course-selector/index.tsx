@@ -12,7 +12,7 @@ const CourseSelector = ({ selected }: CourseSelectorProps) => {
 		<div className="flex  overflow-x-scroll hide-scroll-bar w-full md:w-[1024px]">
 			<div className="flex flex-nowrap gap-2">
 				{courses.map((course) => (
-					<Link href={course.href}>
+					<Link href={course.href} key={`selector-${course.id}`}>
 						<div
 							className={` h-12 w-24 rounded-lg flex flex-col items-center justify-center ${
 								course.id !== selected.id
