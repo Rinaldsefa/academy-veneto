@@ -62,6 +62,7 @@ export const CoursePage = (props: CoursePageProps) => {
 						</h5>
 						<div className="absolute top-3 md:top-8 left-1/2 translate-y-1/2 shadow-xl bg-white -translate-x-1/2 w-28 h-28 md:w-36 md:h-36 rounded-full">
 							<Image
+								blurDataURL={course.icon}
 								alt={course.title}
 								src={course.icon}
 								className="p-4 w-full h-full object-cover"
@@ -84,6 +85,7 @@ export const CoursePage = (props: CoursePageProps) => {
 									src={degree.img}
 									width={200}
 									height={200}
+									blurDataURL={degree.img}
 									className="w-36 h-36 md:w-44 md:h-44"
 								/>
 								{degree.bulletPoints.map((bulletPoint, i) => (
@@ -104,6 +106,7 @@ export const CoursePage = (props: CoursePageProps) => {
 														className="mr-2 h-4 w-4"
 														alt=""
 														width={24}
+														blurDataURL={course.bulletIcon}
 														height={18}
 														src={course.bulletIcon}
 													/>

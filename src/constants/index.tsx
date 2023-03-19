@@ -45,7 +45,7 @@ export const courses: Course[] = [
 		bulletIcon: "/assets/courses/bullet/turismo.png",
 		degrees: [
 			{
-				img: "/assets/courses/degrees/its-turismo.png",
+				img: "/assets/courses/degrees/turismo.png",
 				href: "https://www.itsturismo.it/",
 				bulletPoints: [
 					{
