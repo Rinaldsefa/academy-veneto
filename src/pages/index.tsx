@@ -50,7 +50,7 @@ export default function Home() {
 				<title>ITS Academy veneto - Alta formazione Post Diploma</title>
 				<meta
 					name="description"
-					content="Scegli il tuo percorso, scegli le aziende con cui fare esperienza, Coltiva le tue abilità"
+					content="Scegli il tuo percorso, scegli le aziende con cui fare esperienza, sviluppa i tuoi talenti"
 				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/assets/common/4.png" />

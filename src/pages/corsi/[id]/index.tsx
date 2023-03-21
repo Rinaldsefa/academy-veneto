@@ -72,7 +72,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export const CoursePage = (props: CoursePageProps) => {
 	const { course } = props;
-	console.log(course.id);
+
 	return (
 		<>
 			<Head>

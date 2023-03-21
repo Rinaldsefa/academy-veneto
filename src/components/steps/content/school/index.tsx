@@ -41,7 +41,7 @@ const School = () => {
 			<motion.div variants={textAnimation}>
 				<Text
 					classes="md:text-2xl mb-4"
-					text="Cerchi un percoso di alta formazione che ti dia delle cometenze
+					text="Cerchi un percoso di alta formazione che ti dia delle competenze
 					pratiche e"
 				/>
 			</motion.div>

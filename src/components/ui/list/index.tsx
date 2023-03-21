@@ -45,8 +45,8 @@ const List = () => {
 				<motion.li variants={balloonAnimation} className="flex items-center">
 					<CheckBadgeIcon className="text-primary w-8 h-8 mr-4" />
 					<p>
-						<span className="text-primary font-semibold">Coltiva</span> le tue
-						abilità
+						<span className="text-primary font-semibold">Sviluppa</span> i tuoi
+						talenti
 					</p>
 				</motion.li>
 			</motion.ul>
