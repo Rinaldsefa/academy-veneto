@@ -55,7 +55,7 @@ export default function Courses() {
 			</Head>
 
 			<div
-				className={`bg-white overflow-hidden flex flex-col h-screen justify-end ${aileron.className}`}
+				className={`bg-white  flex flex-col h-screen justify-end ${aileron.className}`}
 			>
 				<Header />
 
@@ -77,7 +77,6 @@ export default function Courses() {
 
 					<div className="px-8 py-8  flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
 						<CoursesComponent />
-
 						<Cta text={"Fai il quiz"} classes="mt-8 bg-sky-500" href="/test" />
 					</div>
 				</main>
