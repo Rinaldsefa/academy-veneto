@@ -20,8 +20,6 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
 		},
 	};
 
-	console.log(isLastStep);
-
 	return (
 		<LayoutGroup>
 			<motion.div
