@@ -4,8 +4,6 @@ import Image from "next/image";
 import { useRef } from "react";
 
 const Progress = () => {
-	const constraintsRef = useRef(null);
-
 	const textAnimation = {
 		hidden: { opacity: 0, y: 10 },
 		show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -53,10 +51,7 @@ const Progress = () => {
 				</motion.div>
 			</div>
 
-			<div
-				ref={constraintsRef}
-				className="md:hidden relative min-h-[280px] w-16 bg-red-300 my-12 rounded-full"
-			>
+			<div className="md:hidden relative min-h-[280px] w-16 bg-red-300 my-12 rounded-full">
 				<motion.div
 					className="absolute w-16 bg-pink-600  top-0 left-0 right-0 origin-center rounded-full"
 					animate={{ height: [0, 280] }}

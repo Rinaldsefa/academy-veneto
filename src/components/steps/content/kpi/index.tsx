@@ -129,12 +129,12 @@ const Kpi = () => {
 				/>
 			</motion.div>
 
-			<Notification>
+			{/* <Notification>
 				<Text
 					classes="text-sm mb-0"
 					text="Sei curioso di conoscere le espereienze degli studenti che hanno già provato? Clicca qui"
 				/>
-			</Notification>
+			</Notification> */}
 		</>
 	);
 };
