@@ -54,11 +54,11 @@ export default function Courses() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div
-				className={`bg-white  flex flex-col h-screen justify-end ${aileron.className}`}
-			>
-				<Header />
+			<Header />
 
+			<div
+				className={`bg-white  flex flex-col  justify-end ${aileron.className}`}
+			>
 				<main className="flex flex-col flex-1 overflow-y-scroll">
 					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
 						<Welcome />
@@ -71,11 +71,11 @@ export default function Courses() {
 						<Kpi />
 					</div>
 
-					<div className="px-8 py-8  flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
 						<Progress />
 					</div>
 
-					<div className="px-8 py-8  flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
 						<CoursesComponent />
 						<Cta text={"Fai il quiz"} classes="mt-8 bg-sky-500" href="/test" />
 					</div>
