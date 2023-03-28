@@ -65,7 +65,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-cyan-300",
+		classes: "bg-cyan-500",
 	},
 	{
 		id: "agroalimentare",
@@ -272,5 +272,26 @@ export const courses: Course[] = [
 			},
 		],
 		classes: "bg-red-600",
+	},
+	{
+		id: "biotech",
+		title: "It's Tech",
+		icon: "/assets/courses/bullet/biotech.png",
+		href: "/corsi/biotech",
+		label: "Nuove tecnologie della vita",
+		bulletIcon: "/assets/courses/bullet/biotech.png",
+		degrees: [
+			{
+				img: "/assets/courses/degrees/its-tech.png",
+				href: "https://www.itsmeccatronico.it/",
+				bulletPoints: [
+					{
+						label: "Sistemi di produzione nel settore delle materie plastiche",
+						list: ["Tecnico superiore di produzione nell'industria plastica"],
+					},
+				],
+			},
+		],
+		classes: "bg-indigo-400",
 	},
 ];

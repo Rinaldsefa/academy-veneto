@@ -83,7 +83,7 @@ const Kpi = () => {
 					</Ball>
 				</motion.div>
 
-				<motion.div variants={balloonAnimation}>
+				{/* <motion.div variants={balloonAnimation}>
 					<Ball color="red" classes="justify-between">
 						<Text
 							classes="text-3xl font-semibold uppercase md:mt-4 mb-0"
@@ -113,7 +113,7 @@ const Kpi = () => {
 							text="Lo stesso dato nelle altre realtà"
 						/>
 					</Ball>
-				</motion.div>
+				</motion.div> */}
 			</div>
 
 			<motion.div variants={textAnimation}>
