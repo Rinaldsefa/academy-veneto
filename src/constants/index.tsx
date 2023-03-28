@@ -275,8 +275,8 @@ export const courses: Course[] = [
 	},
 	{
 		id: "biotech",
-		title: "It's Tech",
-		icon: "/assets/courses/bullet/biotech.png",
+		title: "Nuove tecnologie",
+		icon: "/assets/courses/11.png",
 		href: "/corsi/biotech",
 		label: "Nuove tecnologie della vita",
 		bulletIcon: "/assets/courses/bullet/biotech.png",
