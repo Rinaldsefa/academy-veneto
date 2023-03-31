@@ -4,8 +4,6 @@ import Image from "next/image";
 import { useRef } from "react";
 
 const Progress = () => {
-	const constraintsRef = useRef(null);
-
 	const textAnimation = {
 		hidden: { opacity: 0, y: 10 },
 		show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -34,13 +32,13 @@ const Progress = () => {
 			<div className="hidden md:block relative h-16 w-[480px] bg-red-300 my-12 rounded-full">
 				<motion.div
 					className="absolute h-16 bg-pink-600 top-0 left-0 right-0 origin-left rounded-full"
-					animate={{ scaleX: [0, 1] }}
+					whileInView={{ scaleX: [0, 1] }}
 					transition={{ duration: 3, type: "ease" }}
 				/>
 
 				<motion.div
 					className="absolute w-[145px] -top-8 -left-12"
-					animate={{ x: [0, 460] }}
+					whileInView={{ x: [0, 460] }}
 					transition={{ duration: 3, type: "ease", delay: 0.5 }}
 				>
 					<Image
@@ -53,19 +51,16 @@ const Progress = () => {
 				</motion.div>
 			</div>
 
-			<div
-				ref={constraintsRef}
-				className="md:hidden relative min-h-[280px] w-16 bg-red-300 my-12 rounded-full"
-			>
+			<div className="md:hidden relative min-h-[280px] w-16 bg-red-300 my-12 rounded-full">
 				<motion.div
+					whileInView={{ height: [0, 280] }}
 					className="absolute w-16 bg-pink-600  top-0 left-0 right-0 origin-center rounded-full"
-					animate={{ height: [0, 280] }}
 					transition={{ duration: 4, type: "ease" }}
 				/>
 
 				<motion.div
 					className="absolute w-[145px] -top-8 -left-12"
-					animate={{ y: [0, 230] }}
+					whileInView={{ y: [0, 230] }}
 					transition={{ duration: 4, type: "ease", delay: 1 }}
 				>
 					<Image

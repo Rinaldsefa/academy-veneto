@@ -6,7 +6,7 @@ const School = () => {
 	const balloons: BalloonProps[] = [
 		{
 			type: "vertical",
-			text: "Lezioni Moderne",
+			text: "Lezioni dinamiche",
 			icon: "/assets/school/6.png",
 		},
 		{

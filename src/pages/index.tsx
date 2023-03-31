@@ -7,6 +7,9 @@ import List from "@/components/ui/list";
 import Cta from "@/components/ui/cta";
 import Partners from "@/components/ui/partners";
 import localFont from "next/font/local";
+import Link from "next/link";
+import { useStepsStore } from "@/state/steps";
+import { useRouter } from "next/router";
 
 export const aileron = localFont({
 	src: [
@@ -44,6 +47,9 @@ export const aileron = localFont({
 });
 
 export default function Home() {
+	const { steps, current, setCurrent } = useStepsStore();
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
@@ -85,9 +91,24 @@ export default function Home() {
 				<List />
 
 				<h6 className="mt-8 mb-2 text-center md:text-xl">
-					Vuoi saperne di più?
+					Sei pronto ad iniziare il tuo percorso?
 				</h6>
-				<Cta href="/corsi" text="Inizia" classes="bg-green-500" />
+
+				<div className="flex flex-col justify-center items-center gap-4 mt-4">
+					<Cta
+						onClick={() => {
+							setCurrent(
+								steps.find((step) => step.id === "courses")?.id || current.id
+							);
+							router.push("/corsi");
+						}}
+						text="Vai ai corsi"
+						classes="bg-green-500"
+					/>
+					<Link href="/corsi" className="text-lg text-green-700 underline">
+						Scopri di più
+					</Link>
+				</div>
 
 				<Partners />
 			</main>

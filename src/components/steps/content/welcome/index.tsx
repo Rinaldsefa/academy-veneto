@@ -65,7 +65,7 @@ const Welcome = () => {
 			</motion.div>
 
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-xl mb-4" text="Se:" />
+				<Text classes="md:text-xl mb-4" text="Sono ideali se:" />
 			</motion.div>
 
 			<div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-6 md:gap-8">

@@ -72,11 +72,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export const CoursePage = (props: CoursePageProps) => {
 	const { course } = props;
+	const headTitle = `Academy Veneto - ${course.title}`;
 
 	return (
 		<>
 			<Head>
-				<title>Academy Veneto - {course.title}</title>
+				<title>{headTitle}</title>
 				<meta
 					name="description"
 					content={`Academy Veneto offre una vasta collezione di corsi professionali. Scopri di più sul corso di ${course.title}`}

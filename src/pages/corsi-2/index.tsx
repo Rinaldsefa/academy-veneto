@@ -2,6 +2,12 @@ import Head from "next/head";
 import Steps from "@/components/steps";
 import Header from "@/components/ui/header";
 import localFont from "next/font/local";
+import Welcome from "@/components/steps/content/welcome";
+import School from "@/components/steps/content/school";
+import Kpi from "@/components/steps/content/kpi";
+import Progress from "@/components/steps/content/progress";
+import CoursesComponent from "@/components/steps/content/courses";
+import Cta from "@/components/ui/cta";
 
 export const aileron = localFont({
 	src: [
@@ -48,13 +54,31 @@ export default function Courses() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div
-				className={`bg-white overflow-hidden flex flex-col h-screen justify-end ${aileron.className}`}
-			>
-				<Header />
+			<Header />
 
+			<div
+				className={`bg-white  flex flex-col  justify-end ${aileron.className}`}
+			>
 				<main className="flex flex-col flex-1 overflow-y-scroll">
-					<Steps />
+					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+						<Welcome />
+					</div>
+					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+						<School />
+					</div>
+
+					<div className="px-8 py-8 relative  flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+						<Kpi />
+					</div>
+
+					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+						<Progress />
+					</div>
+
+					<div className="px-8 py-8 flex flex-col md:max-w-screen-xl md:mx-auto justify-between items-center">
+						<CoursesComponent />
+						<Cta text={"Fai il quiz"} classes="mt-8 bg-sky-500" href="/test" />
+					</div>
 				</main>
 			</div>
 		</>
