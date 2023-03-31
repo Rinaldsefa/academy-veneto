@@ -34,7 +34,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-purple-200",
+		classes: "bg-itsred",
 	},
 	{
 		id: "turismo",
@@ -65,7 +65,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-cyan-500",
+		classes: "bg-itsorange",
 	},
 	{
 		id: "agroalimentare",
@@ -92,7 +92,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-teal-800",
+		classes: "bg-itsred",
 	},
 	{
 		id: "mobilita-sostenibile",
@@ -132,7 +132,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-sky-500",
+		classes: "bg-itsazure",
 	},
 	{
 		id: "efficienza-energetica",
@@ -159,7 +159,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-teal-400",
+		classes: "bg-itsgreen",
 	},
 	{
 		id: "design-e-arredo",
@@ -183,7 +183,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-violet-500",
+		classes: "bg-itsred",
 	},
 	{
 		id: "meccanica-e-meccatronica",
@@ -208,7 +208,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-yellow-400",
+		classes: "bg-itsred",
 	},
 	{
 		id: "servizi-alle-imprese",
@@ -231,7 +231,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-orange-300",
+		classes: "bg-itsred",
 	},
 	{
 		id: "information-technologies",
@@ -271,7 +271,7 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-red-600",
+		classes: "bg-itsgrey",
 	},
 	{
 		id: "biotech",
@@ -292,6 +292,6 @@ export const courses: Course[] = [
 				],
 			},
 		],
-		classes: "bg-indigo-400",
+		classes: "bg-itspurple",
 	},
 ];
