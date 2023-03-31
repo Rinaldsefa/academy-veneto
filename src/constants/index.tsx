@@ -57,7 +57,7 @@ export const courses: Course[] = [
 						list: [
 							"Hospitality Marketing & Communication",
 							"Tourism innovation digital 4.0",
-							"Toursim destionation Marketing & Communication",
+							"Tourism destination Marketing & Communication",
 							"SPA & Wellness Hospitality Marketing",
 							"Dolomiti Tourism Marketing & Communication",
 						],
@@ -177,7 +177,7 @@ export const courses: Course[] = [
 						label: "ITS Red Academy",
 						list: [
 							"Tecnico superiore marketing manager settore arredo",
-							"Tecnico superiore deisgn manager sistema casa",
+							"Tecnico superiore design manager sistema casa",
 						],
 					},
 				],
@@ -201,7 +201,7 @@ export const courses: Course[] = [
 						label: "ITS Meccatronico Veneto",
 						list: [
 							"Tecnico superiore per l'automazione ed sistemi meccatronici",
-							"Tecnico superiore per l'innovazione di processi  e prodotti mecanici",
+							"Tecnico superiore per l'innovazione di processi e prodotti meccanici",
 							"Tecnico superiore per l'informatica nell'industria 4.0",
 						],
 					},

@@ -105,7 +105,12 @@ export default function Home() {
 						text="Vai ai corsi"
 						classes="bg-green-500"
 					/>
-					<Link href="/corsi" className="text-lg text-green-700 underline">
+					<Link onClick={() => {
+							setCurrent(
+								steps.find((step) => step.id === "welcome")?.id || current.id
+							);
+							
+						}} href="/corsi" className="text-lg text-green-700 underline">
 						Scopri di più
 					</Link>
 				</div>

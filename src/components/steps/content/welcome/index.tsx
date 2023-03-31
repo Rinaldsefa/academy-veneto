@@ -6,7 +6,7 @@ const Welcome = () => {
 	const balloons: BalloonProps[] = [
 		{
 			type: "horizontal",
-			text: "Hai meno di 29 anni;",
+			text: "Hai meno di 29 anni",
 			icon: "/assets/welcome/1.png",
 		},
 		{
@@ -16,17 +16,17 @@ const Welcome = () => {
 		},
 		{
 			type: "horizontal",
-			text: "Vuoi approcciarti in fretta al mondo lavorativo;",
+			text: "Vuoi approcciarti in fretta al mondo lavorativo",
 			icon: "/assets/welcome/3.png",
 		},
 		{
 			type: "horizontal",
-			text: "Avere un'istruzione di alto livello;",
+			text: "Avere un'istruzione di alto livello",
 			icon: "/assets/welcome/4.png",
 		},
 		{
 			type: "horizontal",
-			text: "Investire sul tuo futuro in maniera intelligente;",
+			text: "Investire sul tuo futuro in maniera intelligente",
 			icon: "/assets/welcome/5.png",
 		},
 	];
