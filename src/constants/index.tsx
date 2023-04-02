@@ -201,7 +201,7 @@ export const courses: Course[] = [
 					{
 						label: "ITS Meccatronico Veneto",
 						list: [
-							"Automazione e Sistemi meccatronici- Bassano (VI), Belluno, Conegliano (TV), Mestre (VE), Castelfranco- Montebelluna (TV) Padova e Padova SUD, Portogruaro (VE), Schio (VI), Verona, Vicenza e Vicenza Ovest",
+							"Automazione e Sistemi meccatronici- Bassano (VI), Belluno, Conegliano (TV), Mestre (VE), Castelfranco- Montebelluna (TV) Padova, Portogruaro (VE), Schio (VI), Verona, Vicenza",
 							"Innovazione di processi e prodotti meccanici - Padova, Schio (VI), Treviso",
 							"Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
 							"Produzione di articoli tecnici in elastomeri e termoplastici - Bassano del Grappa (VI)"
