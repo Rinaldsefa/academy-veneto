@@ -67,6 +67,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 	const course = courses.find((course) => course.id === id);
 	return {
 		props: { course: course },
+		revalidate: 60
 	};
 };
 

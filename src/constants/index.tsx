@@ -15,20 +15,20 @@ export const courses: Course[] = [
 				bulletPoints: [
 					{
 						list: [
-							"E-commerce fashion manager",
-							"Fashion coordinator",
-							"Digital marketing e social communication",
-							"Fashion Coordinator knit Specialist",
-							"Digital, VideoMaker, Web and Metaverse",
-							"Fashion Shoes coordinator",
-							"Fashion jewelry coordinator",
-							"Digital jewelry designer",
-							"Green leather manager",
-							"Sportswear product manager",
-							"Fashion sustainability manager",
-							"Fashion Product Manager",
-							"Eyewear product manager",
-							"Sport system manager",
+							"E-COMMERCE FASHION MANAGER - Padova",
+							"GREEN LEATHER MANAGER - Arzignano (VI)",
+							"FASHION SHOES COORDINATOR - Capriccio di Vigonza (PD)",
+							"FASHION JEWELLERY COORDINATOR - Vicenza",
+							"DIGITAL MARKETING E SOCIAL COMMUNICATION - Padova",
+							"FASHION COORDINATOR KNIT SPECIALIST - Padova",
+							"SPORT SYSTEM SPECIALIST - Montebelluna (TV)",
+							"FASHION SUSTAINABILITY MANAGER - Valdagno (VI)",
+							"FASHION PRODUCT MANAGER - Verona",
+							"FASHION COORDINATOR - Padova",
+							"EYEWEAR PRODUCT MANAGER - Longarone (BL)",
+							"SPORTSWEAR PRODUCT MANAGER - Bassano del Grappa (VI)",
+							"DIGITAL VIDEOMAKER FOR TV, WEB AND METAVERSE - Padova",
+							"DIGITAL JEWELLERY DESIGN - Vicenza",
 						],
 					},
 				],
@@ -49,17 +49,18 @@ export const courses: Course[] = [
 				href: "https://www.itsturismo.it/",
 				bulletPoints: [
 					{
-						label: "Gestione di servizi ed imperese ristorative",
+						label: "Gestione di servizi ed imprese ristorative",
 						list: ["Food & Wine Tourism Marketing & Communication"],
 					},
 					{
 						label: "Gestione di strutture e servizi turistici",
 						list: [
-							"Hospitality Marketing & Communication",
-							"Tourism innovation digital 4.0",
-							"Tourism destination Marketing & Communication",
-							"SPA & Wellness Hospitality Marketing",
-							"Dolomiti Tourism Marketing & Communication",
+							"Hospitality Marketing & Communication - Jesolo (VE) e Bardolino (VR)",
+							"Tourism Innovation & Digital 4.0 - Jesolo (VE)",
+							"SPA&Wellness Hospitality Marketing - Abano Terme (PD)",
+							"Tourism Destination Marketing & Communication - Asiago (VI)",
+							"Food&Wine Marketing & Communication - Villorba (TV), Valeggio sul Mincio (VR)",
+							"Dolomiti Tourism Marketing & Communication - Belluno"
 						],
 					},
 				],
@@ -80,13 +81,13 @@ export const courses: Course[] = [
 				href: "https://itsagroalimentareveneto.it/",
 				bulletPoints: [
 					{
-						label: "ITS Academy AgroAlimentare Veneto",
+						label: "ITS Academy Agroalimentare Veneto",
 						list: [
-							"Agrifood & Marketing Manager",
-							"Agribusiness Manager per le produzioni biologiche",
-							"Agribusiness Manager per il marketing territoriale e Unesco",
-							"Agribusiness Manager per le produzioni locali",
-							"Agribusiness Manager per la sicurezza e la trasformazione degli alimenti",
+							"Agrifood & Marketing Manager Verona",
+							"Agribusiness Manager per le produzioni biologiche - Padova e Buttapietra (VR)",
+							"Agribusiness Manager per il marketing territoriale e Unesco - Conegliano (TV)",
+							"Agribusiness Manager per le produzioni locali - Bassano del Grappa (VI)",
+							"Agribusiness Manager per la sicurezza e la trasformazione degli alimenti - Vittorio Veneto (TV)",
 						],
 					},
 				],
@@ -107,14 +108,14 @@ export const courses: Course[] = [
 				href: "https://itslogistica.it/",
 				bulletPoints: [
 					{
-						label: "Gestione Infomobilità e infra-strutture logistiche",
-						list: ["Tecnico superiore in international logistics management"],
+						
+						list: [
+							"International logistics management - Verona, Vicenza e Padova",
+							"Digital transformation specialist - Web developer - Verona",
+							"Automotive Service and Sales management - Verona"
+						],
 					},
-					{
-						label:
-							"Produzione e mantuenzione dei mezzi di trasporto e/o relative infrastrutture",
-						list: ["Automotive service and Sales Management"],
-					},
+					
 				],
 			},
 			{
@@ -122,11 +123,12 @@ export const courses: Course[] = [
 				href: "https://www.itsmarcopolo.it/",
 				bulletPoints: [
 					{
-						label: "Mobilità delle persone e delle merci",
 						list: [
-							"Logistics manager",
-							"logistics manager in ambito portuale o aereoportuale",
-							"Macchinista e preparatore trent",
+							"Logistics Manager - Treviso e Rovigo",
+							"Mobility & Human resources manager - Mirano (VE)",
+							"Logistics Manager in ambito portuale e aeroportuale - Mestre (VE)",
+							"Macchinista e preparatore treni - Venezia",
+							"Art moving and set up manager - Venezia"
 						],
 					},
 				],
@@ -147,13 +149,12 @@ export const courses: Course[] = [
 				href: "https://itsred.it/",
 				bulletPoints: [
 					{
-						label:
-							"Processi o sistemi ad elevata efficienza e risparmio energetico",
+					
 						list: [
-							"Tecnico superiore Building manager, tecnologia, innovazione, sostenibilità",
-							"Tecnico superiore Energy manager 4.0 efficienza, riqualificazione, energia",
-							"Tecnico superiore Construction manager gestione del cantiere",
-							"Tecnico superiore Green manager ambiente ed energia",
+							"BUILDING MANAGER, Tecnologia, innovazione, sostenibilità - Padova e Verona",
+							"CONSTRUCTION MANAGER gestione del cantiere - Treviso",
+							"ENERGY MANAGER 4.0 efficienza, riqualificazione, energia - Padova e Verona",
+							"GREEN MANAGER Ambiente ed energia - Padova",
 						],
 					},
 				],
@@ -176,8 +177,8 @@ export const courses: Course[] = [
 					{
 						label: "ITS Red Academy",
 						list: [
-							"Tecnico superiore marketing manager settore arredo",
-							"Tecnico superiore design manager sistema casa",
+							"MARKETING MANAGER settore arredo - Vicenza",
+							"DESIGN MANAGER Sistema casa - Verona, Treviso",
 						],
 					},
 				],
@@ -194,15 +195,16 @@ export const courses: Course[] = [
 		bulletIcon: "/assets/courses/bullet/meccanica.png",
 		degrees: [
 			{
-				img: "/assets/courses/degrees/its-red.png",
-				href: "https://itsred.it/",
+				img: "/assets/courses/degrees/its-tech.png",
+				href: "https://www.itsmeccatronico.it/",
 				bulletPoints: [
 					{
 						label: "ITS Meccatronico Veneto",
 						list: [
-							"Tecnico superiore per l'automazione ed sistemi meccatronici",
-							"Tecnico superiore per l'innovazione di processi e prodotti meccanici",
-							"Tecnico superiore per l'informatica nell'industria 4.0",
+							"Automazione e Sistemi meccatronici- Bassano (VI), Belluno, Conegliano (TV), Mestre (VE), Castelfranco- Montebelluna (TV) Padova e Padova SUD, Portogruaro (VE), Schio (VI), Verona, Vicenza e Vicenza Ovest",
+							"Innovazione di processi e prodotti meccanici - Padova, Schio (VI), Treviso",
+							"Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
+							"Produzione di articoli tecnici in elastomeri e termoplastici - Bassano del Grappa (VI)"
 						],
 					},
 				],
@@ -223,9 +225,8 @@ export const courses: Course[] = [
 				href: "https://itslogistica.it/",
 				bulletPoints: [
 					{
-						label: "ITS Academy Last",
 						list: [
-							"Tecnico superiore esperto nei processi di internazionalizzazione d'impresa",
+							"Esperto nei processi di internazionalizzazione d’impresa - Verona",
 						],
 					},
 				],
@@ -246,11 +247,10 @@ export const courses: Course[] = [
 				href: "https://itslogistica.it/",
 				bulletPoints: [
 					{
-						label:
-							"Organizzazione e fruizione dell'informazione e della conoscenza",
+						
 						list: [
-							"Tecnico superiore digital transformation specialist - Web Developer",
-							"Tecnico superiore digital transformation specialist - System administration",
+							"Digital transformation specialist _ Web developer - Verona",
+							"Digital transformation specialist -System administration - Villafranca di Verona",
 						],
 					},
 				],
@@ -260,12 +260,12 @@ export const courses: Course[] = [
 				href: "https://itsdigitalacademy.com/",
 				bulletPoints: [
 					{
-						label: "ITS Digital Academy",
+						label: "ITS Digital Academy Mario Volpato",
 						list: [
-							"Cyber Security Specialist",
-							"Cross Media Communication Specialist",
-							"Digital Marketing and Innovation Specialist",
-							"Web Developer Full Stack",
+							"Cyber Security Specialist _Padova e Treviso",
+							"Digital Marketing and Innovation Specialist - Noventa Padovana (PD)",
+							"Web Developer Full Stack -  Vicenza",
+							"Crossmedia Communication Specialist - Mestre (VE)",
 						],
 					},
 				],

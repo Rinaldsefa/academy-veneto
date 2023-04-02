@@ -6,15 +6,15 @@ const Socials = () => {
 	const socials = [
 		{
 			id: "instagram",
-			href: "/",
+			href: "https://instagram.com/itsacademyveneto?igshid=YmMyMTA2M2Y=",
 			icon: "/assets/common/instagram.png",
 		},
 		{
 			id: "facebook",
-			href: "/",
+			href: "https://m.facebook.com/itsveneto",
 			icon: "/assets/common/facebook.png",
 		},
-		{
+		/* {
 			id: "tiktok",
 			href: "/",
 			icon: "/assets/common/tiktok.png",
@@ -23,7 +23,7 @@ const Socials = () => {
 			id: "telegram",
 			href: "/",
 			icon: "/assets/common/telegram.png",
-		},
+		}, */
 	];
 
 	return (

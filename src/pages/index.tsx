@@ -83,7 +83,7 @@ export default function Home() {
 				<Avatars />
 
 				<h5 className="text-center md:text-2xl mb-4 font-medium">
-					Il percorso di studi presente in{" "}
+					Il percorso di studi biennale post diploma di in{" "}
 					<span className="uppercase">Veneto </span>{" "}
 					<span className="text-primary font-semibold">che costruisci tu:</span>
 				</h5>

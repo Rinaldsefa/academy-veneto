@@ -26,7 +26,7 @@ const Welcome = () => {
 		},
 		{
 			type: "horizontal",
-			text: "Investire sul tuo futuro in maniera intelligente",
+			text: "Investire nel tuo futuro in maniera intelligente",
 			icon: "/assets/welcome/5.png",
 		},
 	];
