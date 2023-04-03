@@ -49,11 +49,6 @@ export const courses: Course[] = [
 				href: "https://www.itsturismo.it/",
 				bulletPoints: [
 					{
-						label: "Gestione di servizi ed imprese ristorative",
-						list: ["Food & Wine Tourism Marketing & Communication"],
-					},
-					{
-						label: "Gestione di strutture e servizi turistici",
 						list: [
 							"Hospitality Marketing & Communication - Jesolo (VE) e Bardolino (VR)",
 							"Tourism Innovation & Digital 4.0 - Jesolo (VE)",
@@ -199,9 +194,9 @@ export const courses: Course[] = [
 				href: "https://www.itsmeccatronico.it/",
 				bulletPoints: [
 					{
-						label: "ITS Meccatronico Veneto",
+						label: "ITS Academy Meccatronico Veneto",
 						list: [
-							"Automazione e Sistemi meccatronici- Bassano (VI), Belluno, Conegliano (TV), Mestre (VE), Castelfranco- Montebelluna (TV) Padova, Portogruaro (VE), Schio (VI), Verona, Vicenza",
+							"Automazione e Sistemi meccatronici - Bassano (VI), Belluno, Conegliano (TV), Mestre (VE), Castelfranco Montebelluna (TV) Padova, Portogruaro (VE), Schio (VI), Verona, Vicenza",
 							"Innovazione di processi e prodotti meccanici - Padova, Schio (VI), Treviso",
 							"Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
 							"Produzione di articoli tecnici in elastomeri e termoplastici - Bassano del Grappa (VI)"
@@ -249,8 +244,8 @@ export const courses: Course[] = [
 					{
 						
 						list: [
-							"Digital transformation specialist _ Web developer - Verona",
-							"Digital transformation specialist -System administration - Villafranca di Verona",
+							"Digital transformation specialist - Web developer - Verona",
+							"Digital transformation specialist - System administration - Villafranca di Verona",
 						],
 					},
 				],
@@ -262,7 +257,7 @@ export const courses: Course[] = [
 					{
 						label: "ITS Digital Academy Mario Volpato",
 						list: [
-							"Cyber Security Specialist _Padova e Treviso",
+							"Cyber Security Specialist - Padova e Treviso",
 							"Digital Marketing and Innovation Specialist - Noventa Padovana (PD)",
 							"Web Developer Full Stack -  Vicenza",
 							"Crossmedia Communication Specialist - Mestre (VE)",

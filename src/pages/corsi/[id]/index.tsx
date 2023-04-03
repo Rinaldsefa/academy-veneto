@@ -114,10 +114,12 @@ export const CoursePage = (props: CoursePageProps) => {
 
 					<div className="flex flex-col items-center py-8 px-4 w-full">
 						{course.degrees.map((degree, index) => (
+
 							<div
 								className="flex w-full flex-col items-center gap-4 md:gap-8"
 								key={`${course.id}-degree-${index}`}
 							>
+								<span className="font-semibold">Ecco i corsi proposti da</span>
 								<Image
 									alt=""
 									src={degree.img}
@@ -148,7 +150,7 @@ export const CoursePage = (props: CoursePageProps) => {
 														height={18}
 														src={course.bulletIcon}
 													/>
-													<span className="md:text-sm md:font-semibold text-left">
+													<span className="font-normal md:font-semibold text-left">
 														{listItem}
 													</span>
 												</li>
