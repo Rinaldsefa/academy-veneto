@@ -53,7 +53,7 @@ const Welcome = () => {
 			<motion.div variants={textAnimation}>
 				<Text
 					classes="md:text-xl mb-4"
-					text="Ti parlerò brevemente degli ITS, ovvero i percorsi di"
+					text="Ti parlerò brevemente degli ITS Academy, ovvero i percorsi di"
 				/>
 			</motion.div>
 

@@ -21,7 +21,7 @@ const School = () => {
 		},
 		{
 			type: "vertical",
-			text: "86% tasso di occupazione",
+			text: "2 stage in 2 anni di percorso",
 			icon: "/assets/school/9.png",
 		},
 	];

@@ -53,7 +53,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>ITS Academy veneto - Alta formazione Post Diploma</title>
+				<title>ITS Academy Veneto - Alta Formazione Post Diploma</title>
 				<meta
 					name="description"
 					content="Scegli il tuo percorso, scegli le aziende con cui fare esperienza, sviluppa i tuoi talenti"
@@ -87,8 +87,7 @@ export default function Home() {
 				<Avatars />
 
 				<h5 className="text-center md:text-2xl mb-4 font-medium">
-					Il percorso di studi biennale post diploma di in{" "}
-					<span className="uppercase">Veneto </span>{" "}
+					Il percorso di studi biennale post-diploma{" "}
 					<span className="text-primary font-semibold">che costruisci tu:</span>
 				</h5>
 
@@ -115,7 +114,7 @@ export default function Home() {
 							);
 							
 						}} href="/corsi" className="text-lg text-green-700 underline">
-						Scopri di più
+						Scopri di più sui percorsi
 					</Link>
 				</div>
 
