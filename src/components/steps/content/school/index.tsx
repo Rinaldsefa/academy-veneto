@@ -21,7 +21,7 @@ const School = () => {
 		},
 		{
 			type: "vertical",
-			text: "2 stage in 2 anni di percorso",
+			text: "Stage 600 - 800 ore in due anni",
 			icon: "/assets/school/9.png",
 		},
 	];

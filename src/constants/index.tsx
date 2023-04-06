@@ -196,10 +196,9 @@ export const courses: Course[] = [
 					{
 						label: "ITS Academy Meccatronico Veneto",
 						list: [
-							"Automazione e Sistemi meccatronici - Bassano (VI), Belluno, Conegliano (TV), Mestre (VE), Castelfranco Montebelluna (TV) Padova, Portogruaro (VE), Schio (VI), Verona, Vicenza",
+							"Automazione e Sistemi meccatronici - Bassano (VI), Belluno, Conegliano (TV), Mestre, Castelfranco Montebelluna (TV),  Padova, Portogruaro (VE), Schio (VI), Verona",
 							"Innovazione di processi e prodotti meccanici - Padova, Schio (VI), Treviso",
 							"Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
-							"Produzione di articoli tecnici in elastomeri e termoplastici - Bassano del Grappa (VI)"
 						],
 					},
 				],
