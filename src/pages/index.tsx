@@ -62,11 +62,13 @@ export default function Home() {
 				<link rel="icon" href="/assets/common/4.png" />
 			</Head>
 
+			<Header />
+
 			<div
 				className={`bg-white overflow-hidden flex flex-col h-screen justify-end ${aileron.className}`}
 			>
 
-			<Header />
+		
 
 			<main
 				className={`bg-white flex flex-col items-center justify-around h-screen p-8 ${aileron.className}`}
