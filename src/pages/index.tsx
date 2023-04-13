@@ -67,62 +67,72 @@ export default function Home() {
 			<div
 				className={`bg-white overflow-hidden flex flex-col h-screen justify-end ${aileron.className}`}
 			>
-
-		
-
-			<main
-				className={`bg-white flex flex-col items-center justify-around h-screen p-8 ${aileron.className}`}
-				style={{
-					backgroundImage: `url("/assets/home/veneto.png")`,
-					backgroundRepeat: "no-repeat",
-					backgroundPosition: "center",
-					backgroundSize: "contain",
-				}}
-			>
-				<Image
-					src="/assets/common/logo.png"
-					width={320}
-					height={80}
-					className="w-48 md:w-96"
-					alt="logo"
-				/>
-				<Avatars />
-
-				<h5 className="text-center md:text-2xl mb-4 font-medium">
-					Il percorso di studi biennale post-diploma{" "}
-					<span className="text-primary font-semibold">che costruisci tu:</span>
-				</h5>
-
-				<List />
-
-				<h6 className="mt-8 mb-2 text-center md:text-xl">
-					Sei pronto ad iniziare il tuo percorso?
-				</h6>
-
-				<div className="flex flex-col justify-center items-center gap-4 mt-4">
-					<Cta
-						onClick={() => {
-							setCurrent(
-								steps.find((step) => step.id === "courses")?.id || current.id
-							);
-							router.push("/corsi");
-						}}
-						text="Vai ai corsi"
-						classes="bg-green-500"
+				<main
+					className={`bg-white flex flex-col items-center justify-around h-screen p-8 ${aileron.className}`}
+					style={{
+						backgroundImage: `url("/assets/home/veneto.png")`,
+						backgroundRepeat: "no-repeat",
+						backgroundPosition: "center",
+						backgroundSize: "contain",
+					}}
+				>
+					<Image
+						src="/assets/common/logo.png"
+						width={320}
+						height={80}
+						className="w-48 md:w-96"
+						alt="logo"
 					/>
-					<Link onClick={() => {
-							setCurrent(
-								steps.find((step) => step.id === "welcome")?.id || current.id
-							);
-							
-						}} href="/corsi" className="text-lg text-green-700 underline">
-						Scopri di più sui percorsi
+					<Avatars />
+
+					<h5 className="text-center md:text-2xl mb-4 font-medium">
+						Il percorso di studi biennale post-diploma{" "}
+						<span className="text-primary font-semibold">
+							che costruisci tu:
+						</span>
+					</h5>
+
+					<List />
+
+					<h6 className="mt-8 mb-2 text-center md:text-xl">
+						Sei pronto ad iniziare il tuo percorso?
+					</h6>
+
+					<div className="flex flex-col justify-center items-center gap-4 mt-4">
+						<Cta
+							onClick={() => {
+								setCurrent(
+									steps.find((step) => step.id === "courses")?.id || current.id
+								);
+								router.push("/corsi");
+							}}
+							text="Vai ai corsi"
+							classes="bg-green-500"
+						/>
+						<Link
+							onClick={() => {
+								setCurrent(
+									steps.find((step) => step.id === "welcome")?.id || current.id
+								);
+							}}
+							href="/corsi"
+							className="text-lg text-green-700 underline"
+						>
+							Scopri di più sui percorsi
+						</Link>
+					</div>
+
+					<Partners />
+
+					<Link
+						href="https://www.iubenda.com/privacy-policy/25968168"
+						className=" text-gray-500 text-sm font-semibold uppercase "
+						title="Privacy Policy"
+						target="_blank"
+					>
+						Privacy Policy
 					</Link>
-				</div>
-
-				<Partners />
-			</main>
-
+				</main>
 			</div>
 		</>
 	);
