@@ -13,11 +13,10 @@ export default function Document() {
       })(window,document,'script','dataLayer','GTM-P5CPX5H');`,
 					}}
 				/>
-
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `var _iub = _iub || [];
-_iub.csConfiguration = {"floatingPreferencesButtonDisplay":"bottom-right","lang":"it","perPurposeConsent":true,"siteId":3081551,"whitelabel":false,"cookiePolicyId":34668176, "banner":{ "acceptButtonDisplay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-top-center" }};`,
+_iub.csConfiguration = {"floatingPreferencesButtonDisplay":"bottom-right","lang":"it","perPurposeConsent":true,"siteId":3081551,"whitelabel":false,"cookiePolicyId":34668176, "banner":{ "acceptButtonDisplay":true,"backgroundOverlay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"acceptButtonCaption":"Accetta","content":"Il nostro sito utilizza i cookie per personalizzare contenuti ed annunci, fornire funzionalità social e analizzare il traffico del sito. Inoltre, utilizziamo Google Analytics e Facebook Pixel per raccogliere informazioni sulle interazioni degli utenti con il nostro sito e per migliorare la loro esperienza di navigazione.\n\nI dati raccolti da questi strumenti sono anonimi e non permettono di identificare personalmente gli utenti. Tuttavia, se non desideri che le tue informazioni vengano raccolte, puoi disabilitare i cookie nelle impostazioni del tuo browser.\n\nContinuando a navigare sul nostro sito, acconsenti all'utilizzo dei cookie e alla raccolta dei dati da parte di Google Analytics e Facebook Pixel.","customizeButtonCaption":"Scopri di pià" }};`,
 					}}
 				/>
 				<script
