@@ -83,7 +83,7 @@ const Progress = () => {
 			<motion.div variants={textAnimation}>
 				<Text
 					classes="text-lg md:text-3xl"
-					text="in modo da immergerti fin da subito nel mondo del lavoro...anche
+					text="in modo da immergerti fin da subito nel mondo del lavoro... anche
 					all'estero!"
 				/>
 			</motion.div>

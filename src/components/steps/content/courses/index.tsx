@@ -17,7 +17,7 @@ const Courses = () => {
 	return (
 		<>
 			<motion.div variants={textAnimation}>
-				<Text classes="md:text-2xl" text="Ma veniamo al succo" />
+				<Text classes="md:text-2xl" text="Ma veniamo al punto" />
 			</motion.div>
 
 			<motion.div variants={textAnimation}>

@@ -21,7 +21,7 @@ const School = () => {
 		},
 		{
 			type: "vertical",
-			text: "86% tasso di occupazione",
+			text: "Stage 600 - 800 ore in due anni",
 			icon: "/assets/school/9.png",
 		},
 	];

@@ -8,6 +8,12 @@ module.exports = {
 			},
 			colors: {
 				primary: "#6319e9",
+				itsgreen: "#95C11F",
+				itsazure: "#3DAAE1",
+				itspurple: "#937AB6",
+				itsred: "#E3051B",
+				itsorange: "#F58700",
+				itsgrey: "#575756"
 			},
 		},
 	},

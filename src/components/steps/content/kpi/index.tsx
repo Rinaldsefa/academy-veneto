@@ -22,7 +22,7 @@ const Kpi = () => {
 					<Ball color="green">
 						<Text
 							classes="text-xs md:text-lg text-purple-700 font-semibold uppercase"
-							text="Il veneto è la terra dell'alta educazione!"
+							text="Il veneto è la terra dell'alta formazione!"
 						/>
 						<motion.div
 							animate={{ y: [20, 0, 20], x: [20, 10, 20] }}

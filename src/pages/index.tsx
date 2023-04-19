@@ -53,7 +53,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>ITS Academy veneto - Alta formazione Post Diploma</title>
+				<title>ITS Academy Veneto - Alta Formazione Post Diploma</title>
 				<meta
 					name="description"
 					content="Scegli il tuo percorso, scegli le aziende con cui fare esperienza, sviluppa i tuoi talenti"
@@ -64,54 +64,76 @@ export default function Home() {
 
 			<Header />
 
-			<main
-				className={`bg-white flex flex-col items-center justify-around h-screen p-8 ${aileron.className}`}
-				style={{
-					backgroundImage: `url("/assets/home/veneto.png")`,
-					backgroundRepeat: "no-repeat",
-					backgroundPosition: "center",
-					backgroundSize: "contain",
-				}}
+			<div
+				className={`bg-white overflow-hidden flex flex-col h-screen justify-end ${aileron.className}`}
 			>
-				<Image
-					src="/assets/common/logo.png"
-					width={320}
-					height={80}
-					className="w-48 md:w-96"
-					alt="logo"
-				/>
-				<Avatars />
-
-				<h5 className="text-center md:text-2xl mb-4 font-medium">
-					Il percorso di studi presente in{" "}
-					<span className="uppercase">Veneto </span>{" "}
-					<span className="text-primary font-semibold">che costruisci tu:</span>
-				</h5>
-
-				<List />
-
-				<h6 className="mt-8 mb-2 text-center md:text-xl">
-					Sei pronto ad iniziare il tuo percorso?
-				</h6>
-
-				<div className="flex flex-col justify-center items-center gap-4 mt-4">
-					<Cta
-						onClick={() => {
-							setCurrent(
-								steps.find((step) => step.id === "courses")?.id || current.id
-							);
-							router.push("/corsi");
-						}}
-						text="Vai ai corsi"
-						classes="bg-green-500"
+				<main
+					className={`bg-white flex flex-col items-center justify-around h-screen p-8 ${aileron.className}`}
+					style={{
+						backgroundImage: `url("/assets/home/veneto.png")`,
+						backgroundRepeat: "no-repeat",
+						backgroundPosition: "center",
+						backgroundSize: "contain",
+					}}
+				>
+					<Image
+						src="/assets/common/logo.png"
+						width={320}
+						height={80}
+						className="w-48 md:w-96"
+						alt="logo"
 					/>
-					<Link href="/corsi" className="text-lg text-green-700 underline">
-						Scopri di più
-					</Link>
-				</div>
+					<Avatars />
 
-				<Partners />
-			</main>
+					<h5 className="text-center md:text-2xl mb-4 font-medium">
+						Il percorso di studi biennale post-diploma{" "}
+						<span className="text-primary font-semibold">
+							che costruisci tu:
+						</span>
+					</h5>
+
+					<List />
+
+					<h6 className="mt-8 mb-2 text-center md:text-xl">
+						Sei pronto ad iniziare il tuo percorso?
+					</h6>
+
+					<div className="flex flex-col justify-center items-center gap-4 mt-4">
+						<Cta
+							onClick={() => {
+								setCurrent(
+									steps.find((step) => step.id === "courses")?.id || current.id
+								);
+								router.push("/corsi");
+							}}
+							text="Vai ai corsi"
+							classes="bg-green-500"
+						/>
+						<Link
+							onClick={() => {
+								setCurrent(
+									steps.find((step) => step.id === "welcome")?.id || current.id
+								);
+							}}
+							href="/corsi"
+							className="text-lg text-green-700 underline"
+						>
+							Scopri di più sui percorsi
+						</Link>
+					</div>
+
+					<Partners />
+
+					<Link
+						href="https://www.iubenda.com/privacy-policy/25968168"
+						className=" text-gray-500 text-sm font-semibold uppercase "
+						title="Privacy Policy"
+						target="_blank"
+					>
+						Privacy Policy
+					</Link>
+				</main>
+			</div>
 		</>
 	);
 }

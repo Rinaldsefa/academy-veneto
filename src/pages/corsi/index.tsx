@@ -43,7 +43,7 @@ export default function Courses() {
 	return (
 		<>
 			<Head>
-				<title>Accademy Veneto - Corsi professionali</title>
+				<title>ITS Academy veneto - Alta formazione Post Diploma</title>
 				<meta
 					name="description"
 					content="Scopri tutti i corsi professionali, specializzati dopo il Diplma e trova subito il lavoro dei tuoi sogni"

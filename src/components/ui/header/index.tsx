@@ -27,6 +27,15 @@ const Header = () => {
 								I corsi
 							</Link>
 						</li>
+
+						<li>
+							<Link
+								href="https://www.iubenda.com/privacy-policy/25968168"
+								target="_blank"
+							>
+								Privacy
+							</Link>
+						</li>
 					</ul>
 
 					<Socials />
@@ -64,6 +73,15 @@ const Header = () => {
 						}
 					>
 						I corsi
+					</Link>
+				</li>
+
+				<li>
+					<Link
+						href="https://www.iubenda.com/privacy-policy/25968168"
+						target="_blank"
+					>
+						Privacy
 					</Link>
 				</li>
 			</ul>
