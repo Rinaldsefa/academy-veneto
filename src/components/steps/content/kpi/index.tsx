@@ -54,7 +54,7 @@ const Kpi = () => {
 
 						<Text
 							classes="text-3xl md:text-[100px] md:mt-12 text-black font-bold uppercase mb-0"
-							text="l'86%"
+							text="l'85%"
 						/>
 
 						<Text
