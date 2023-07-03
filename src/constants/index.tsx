@@ -25,10 +25,12 @@ export const courses: Course[] = [
               "FASHION SUSTAINABILITY MANAGER - Valdagno (VI)",
               "FASHION PRODUCT MANAGER - Verona",
               "FASHION COORDINATOR - Padova",
+              "FASHION LEATHER GOOD COORDINATOR - Capriccio di Vigonza (PD)",
               "EYEWEAR PRODUCT MANAGER - Longarone (BL)",
               "SPORTSWEAR PRODUCT MANAGER - Bassano del Grappa (VI)",
               "DIGITAL VIDEOMAKER FOR TV, WEB AND METAVERSE - Padova",
               "DIGITAL JEWELLERY DESIGN - Vicenza",
+              "PATTERN MAKER AND PROTOTYPING - Padova",
             ],
           },
         ],
@@ -99,19 +101,6 @@ export const courses: Course[] = [
     bulletIcon: "/assets/courses/bullet/mobilità.png",
     degrees: [
       {
-        img: "/assets/courses/degrees/last.png",
-        href: "https://itslogistica.it/",
-        bulletPoints: [
-          {
-            list: [
-              "International logistics management - Verona, Vicenza e Padova",
-              "Digital transformation specialist - Web developer - Verona",
-              "Automotive Service and Sales management - Verona",
-            ],
-          },
-        ],
-      },
-      {
         img: "/assets/courses/degrees/fip.png",
         href: "https://www.itsmarcopolo.it/",
         bulletPoints: [
@@ -122,6 +111,19 @@ export const courses: Course[] = [
               "Logistics Manager in ambito portuale e aeroportuale - Mestre (VE)",
               "Macchinista e preparatore treni - Venezia",
               "Art moving and set up manager - Venezia",
+            ],
+          },
+        ],
+      },
+      {
+        img: "/assets/courses/degrees/last.png",
+        href: "https://itslogistica.it/",
+        bulletPoints: [
+          {
+            list: [
+              "International logistics management - Verona, Vicenza e Padova",
+              "Digital transformation specialist - Web developer - Verona",
+              "Automotive Service and Sales management - Verona",
             ],
           },
         ],
