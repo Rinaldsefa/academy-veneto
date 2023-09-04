@@ -2,6 +2,7 @@ import { Course } from "@/types/course";
 
 export const courses: Course[] = [
   {
+    order: 4,
     id: "moda",
     title: "moda",
     icon: "/assets/courses/14.png",
@@ -39,6 +40,7 @@ export const courses: Course[] = [
     classes: "bg-itsred",
   },
   {
+    order: 10,
     id: "turismo",
     title: "turismo",
     icon: "/assets/courses/15.png",
@@ -66,6 +68,7 @@ export const courses: Course[] = [
     classes: "bg-itsorange",
   },
   {
+    order: 3,
     id: "agroalimentare",
     title: "agroalimentare",
     icon: "/assets/courses/16.png",
@@ -93,6 +96,7 @@ export const courses: Course[] = [
     classes: "bg-itsred",
   },
   {
+    order: 1,
     id: "mobilita-sostenibile",
     title: "mobilità sostenibile",
     icon: "/assets/courses/17.png",
@@ -132,6 +136,7 @@ export const courses: Course[] = [
     classes: "bg-itsazure",
   },
   {
+    order: 2,
     id: "efficienza-energetica",
     title: "Efficienza energetica",
     label: "tecnologia, innovazione, sostenibilità",
@@ -157,6 +162,7 @@ export const courses: Course[] = [
     classes: "bg-itsgreen",
   },
   {
+    order: 7,
     id: "design-e-arredo",
     title: "design e arredo",
     icon: "/assets/courses/19.png",
@@ -181,6 +187,7 @@ export const courses: Course[] = [
     classes: "bg-itsred",
   },
   {
+    order: 5,
     id: "meccanica-e-meccatronica",
     title: "meccanica e meccatronica",
     icon: "/assets/courses/20.png",
@@ -206,6 +213,7 @@ export const courses: Course[] = [
     classes: "bg-itsred",
   },
   {
+    order: 9,
     id: "servizi-alle-imprese",
     title: "servizi alle imprese",
     icon: "/assets/courses/21.png",
@@ -228,6 +236,7 @@ export const courses: Course[] = [
     classes: "bg-itsred",
   },
   {
+    order: 8,
     id: "information-technologies",
     title: "information technologies",
     icon: "/assets/courses/22.png",
@@ -266,6 +275,7 @@ export const courses: Course[] = [
     classes: "bg-itsgrey",
   },
   {
+    order: 6,
     id: "biotech",
     title: "Nuove tecnologie",
     icon: "/assets/courses/11.png",
@@ -286,4 +296,4 @@ export const courses: Course[] = [
     ],
     classes: "bg-itspurple",
   },
-].reverse();
+].sort((a, b) => a.order - b.order);

@@ -1,21 +1,22 @@
 export interface Course {
-	id: string;
-	icon: string;
-	href: string;
-	title: string;
-	label: string;
-	bulletIcon: string;
-	classes?: string;
-	degrees: Degree[];
+  order: number;
+  id: string;
+  icon: string;
+  href: string;
+  title: string;
+  label: string;
+  bulletIcon: string;
+  classes?: string;
+  degrees: Degree[];
 }
 
 export interface Degree {
-	img: string;
-	href: string;
-	bulletPoints: BulletPointList[];
+  img: string;
+  href: string;
+  bulletPoints: BulletPointList[];
 }
 
 export interface BulletPointList {
-	list: string[];
-	label?: string;
+  list: string[];
+  label?: string;
 }
