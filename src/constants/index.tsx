@@ -138,7 +138,7 @@ export const courses: Course[] = [
   {
     order: 2,
     id: "efficienza-energetica",
-    title: "Efficienza energetica",
+    title: "Energia e ambiente",
     label: "tecnologia, innovazione, sostenibilità",
     icon: "/assets/courses/18.png",
     href: "/corsi/efficienza-energetica",
