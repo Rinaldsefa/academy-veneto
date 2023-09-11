@@ -263,8 +263,8 @@ export const courses: Course[] = [
           {
             label: "ITS Digital Academy Mario Volpato",
             list: [
-              "Cyber Security Specialist - Padova e Treviso",
-              "Digital Marketing and Innovation Specialist - Noventa Padovana (PD)",
+              "Cyber Security Specialist  e Artificial Intelligence & Data Specialist - Padova e Treviso",
+              "A/R e V/R & Game Developer e Digital Marketing and Innovation Specialist - Noventa Padovana (PD)",
               "Web Developer Full Stack -  Vicenza",
               "Crossmedia Communication Specialist - Mestre (VE)",
             ],
