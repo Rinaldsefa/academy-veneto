@@ -10,6 +10,7 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import { useStepsStore } from "@/state/steps";
 import { useRouter } from "next/router";
+import Map from "@/components/map";
 
 export const aileron = localFont({
   src: [
@@ -119,6 +120,8 @@ export default function Home() {
               Scopri di più sui percorsi
             </Link>
           </div>
+
+          <Map />
 
           <Partners />
 
