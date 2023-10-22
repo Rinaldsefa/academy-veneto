@@ -1,4 +1,4 @@
-import { Course } from "@/types/course";
+import { Course, Province } from "@/types/course";
 
 export const courses: Course[] = [
   {
@@ -299,3 +299,275 @@ export const courses: Course[] = [
     classes: "bg-itspurple",
   },
 ].sort((a, b) => a.order - b.order);
+
+export const provinces: Province[] = [
+  {
+    id: "vicenza",
+    label: "Vicenza",
+    courses: [
+      {
+        label: "Meccanica e Meccatronica",
+        href: "/corsi/meccanica-e-meccatronica",
+        list: [
+          "Automazione e Sistemi meccatronici",
+          "Innovazione di processi e prodotti meccanici",
+          "Informatica nell’Industria 4.0",
+        ],
+      },
+      {
+        label: "Sistema Casa",
+        href: "/corsi/design-e-arredo",
+        list: ["Marketing Manager settore arredo"],
+      },
+      {
+        label: "Tecnologie dell'informazione e Comunicazione",
+        href: "/corsi/information-technologies",
+        list: ["Web Developer Full Stack"],
+      },
+    ],
+  },
+  {
+    id: "belluno",
+    label: "Belluno",
+    courses: [
+      {
+        label: "Turismo",
+        href: "/corsi/turismo",
+        list: ["Dolomiti Tourism Marketing & Communication"],
+      },
+      {
+        label: "Moda",
+        href: "/corsi/moda",
+        list: ["Eyewear Product Manager"],
+      },
+      {
+        label: "Meccanica e Meccatronica",
+        href: "/corsi/meccanica-e-meccatronica",
+        list: ["Automazione e Sistemi meccatronici"],
+      },
+    ],
+  },
+  {
+    id: "padova",
+    label: "Padova",
+    courses: [
+      {
+        label: "Turismo",
+        href: "/corsi/turismo",
+        list: ["Spa&Wellness Hospitality Marketing"],
+      },
+      {
+        label: "Mobilità sostenibile",
+        href: "/corsi/mobilita-sostenibile",
+        list: ["International Logistics Manager"],
+      },
+      {
+        label: "Tecnologia, innovazione, sostenibilità",
+        href: "/corsi/efficienza-energetica",
+        list: [
+          "Tecnico Superiore Building Manager",
+          "Energy Manager 4.0",
+          "Green Manager Ambiente ed Energia",
+          "Agribusiness Manager per le produzioni biologiche",
+        ],
+      },
+      {
+        label: "Moda",
+        href: "/corsi/moda",
+        list: [
+          "Fashion Coordinator",
+          "Digital Marketing e Social Communication",
+          "Fashion Coordinator Knit Specialist",
+          "Pattern Maker and Prototyping",
+          "Digital Videomaker for TV, Web and Metaverse",
+          "Fashion Shoes Coordinator",
+          "E-Commerce Fashion Manager",
+          "Fashion Leather Good Coordinator",
+        ],
+      },
+      {
+        label: "Meccanica e Meccatronica",
+        href: "/corsi/meccanica-e-meccatronica",
+        list: [
+          "Automazione e Sistemi meccatronici",
+          "Innovazione di processi e prodotti meccanici",
+        ],
+      },
+      {
+        label: "Teconologie dell'informazione e Comunicazione",
+        href: "/corsi/information-technologies",
+        list: [
+          "Artificial Intelligence",
+          "Cloud Developer",
+          "A/R e V/R & Game Developer",
+          "Crossmedia Communication Specialist",
+        ],
+      },
+    ],
+  },
+  {
+    id: "rovigo",
+    label: "Rovigo",
+    courses: [
+      {
+        label: "Mobilità sostenibile",
+        href: "/corsi/mobilita-sostenibile",
+        list: ["Logistics Manager"],
+      },
+    ],
+  },
+  {
+    id: "treviso",
+    label: "Treviso",
+    courses: [
+      {
+        label: "Turismo",
+        href: "/corsi/turismo",
+        list: ["Food&Wine Marketing & Communication"],
+      },
+      {
+        label: "Mobilità sostenibile",
+        href: "/corsi/mobilita-sostenibile",
+        list: ["Logistics Manager"],
+      },
+      {
+        label: "Agroalimentare",
+        href: "/corsi/agroalimentare",
+        list: [
+          "Agrifood Manager per il marketing territoriale e Unesco",
+          "Agribusiness Manager per la sicurezza e la trasformazione degli alimenti",
+        ],
+      },
+      {
+        label: "Moda",
+        href: "/corsi/moda",
+        list: ["Sport System Specialist"],
+      },
+      {
+        label: "Meccanica e Meccatronica",
+        href: "/corsi/meccanica-e-meccatronica",
+        list: [
+          "Automazione e Sistemi meccatronici",
+          "Innovazione di processi e prodotti meccanici",
+        ],
+      },
+      {
+        label: "Sistema Casa",
+        href: "/corsi/design-e-arredo",
+        list: ["Design Manager Sistema Casa"],
+      },
+      {
+        label: "Tecnologie dell'informazione e Comunicazione",
+        href: "/corsi/information-technologies",
+        list: ["Construction Manager gestione del cantiere"],
+      },
+      {
+        label: "Tecnologie dell'informazione e Comunicazione",
+        href: "/corsi/information-technologies",
+        list: [
+          "Cyber Security Specialist e Artificial Intelligence & Data Specialist",
+        ],
+      },
+    ],
+  },
+  {
+    id: "venezia",
+    label: "Venezia",
+    courses: [
+      {
+        label: "Turismo",
+        href: "/corsi/turismo",
+        list: [
+          "Tourism Innovation & Digital 4.0",
+          "Hospitality Marketing & Communication",
+        ],
+      },
+      {
+        label: "Mobilità sostenibile",
+        href: "/corsi/mobilita-sostenibile",
+        list: [
+          "Macchinista e preparatore treni",
+          "Art moving and set up manager",
+          "Logistics Manager in ambito portuale e aeroportuale",
+        ],
+      },
+      {
+        label: "Meccanica e Meccatronica",
+        href: "/corsi/meccanica-e-meccatronica",
+        list: ["Automazione e Sistemi meccatronici"],
+      },
+    ],
+  },
+  {
+    id: "verona",
+    label: "Verona",
+    courses: [
+      {
+        label: "Turismo",
+        href: "/corsi/turismo",
+        list: [
+          "Food&Wine Marketing & Communication",
+          "Hospitality Marketing & Communication",
+        ],
+      },
+      {
+        label: "Mobilità sostenibile",
+        href: "/corsi/mobilita-sostenibile",
+        list: [
+          "Automotive Service and Sales management",
+          "International Logistics Manager",
+          "Digital transformation specialist - Web developer",
+        ],
+      },
+      {
+        label: "Tecnologia, innovazione, sostenibilità",
+        href: "/corsi/efficienza-energetica",
+        list: ["Tecnico Superiore Building Manager", "Energy Manager 4.0"],
+      },
+      {
+        label: "Agroalimentare",
+        href: "/corsi/agroalimentare",
+        list: [
+          "Agribusiness Manager per le produzioni locali",
+          "Agrifood and Marketing manager",
+        ],
+      },
+      {
+        label: "Servizi alle imprese",
+        href: "/corsi/servizi-alle-imprese",
+        list: ["Esperto nei processi di internazionalizzazione d’impresa"],
+      },
+      {
+        label: "Meccanica e Meccatronica",
+        href: "/corsi/meccanica-e-meccatronica",
+        list: ["Automazione e Sistemi meccatronici"],
+      },
+      {
+        label: "Sistema Casa",
+        href: "/corsi/design-e-arredo",
+        list: ["Design Manager Sistema Casa"],
+      },
+      {
+        label: "Tecnologie dell'informazione e Comunicazione",
+        href: "/corsi/information-technologies",
+        list: [
+          "Digital transformation specialist - System administration",
+          "Web Developer Full Stack",
+          "Digital transformation specialist - Web developer",
+        ],
+      },
+      {
+        label: "Moda",
+        href: "/corsi/moda",
+        list: [
+          "Fashion Product Manager",
+          "Fashion Jewelry Coordinator",
+          "Sportswear Product Manager",
+          "Fashion Sustainability Manager",
+          "Green Leather Manager",
+          "Digital Jewelry Design",
+        ],
+      },
+    ],
+  },
+];

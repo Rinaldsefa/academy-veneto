@@ -1,10 +1,13 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { Province } from "@/types/course";
+import Link from "next/link";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 
 type MapModalProps = {
   isOpen: boolean;
   onClose: () => void;
-  province: string | null;
+  province?: Province;
 };
 
 const MapModal = ({ isOpen, onClose, province }: MapModalProps) => {
@@ -35,30 +38,45 @@ const MapModal = ({ isOpen, onClose, province }: MapModalProps) => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
-                <div>
-                  <div className="mt-3 text-center sm:mt-5">
-                    <Dialog.Title
-                      as="h3"
-                      className="text-base font-bold leading-6 text-gray-900"
-                    >
-                      Scopri i corsi nella provincia di {province}
-                    </Dialog.Title>
-                    <div className="mt-2">
-                      <p className="text-sm text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Consequatur amet labore.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-5 sm:mt-6">
+                <div className="absolute right-0 top-0  pr-2 pt-2 block">
                   <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    onClick={() => onClose()}
+                    className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    onClick={onClose}
                   >
-                    Go back to dashboard
+                    <span className="sr-only">Close</span>
+                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
+                </div>
+                <div>
+                  <div className="mt-3 text-center sm:mt-5 max-">
+                    <Dialog.Title
+                      as="h2"
+                      className="text-base font-bold leading-6 text-gray-900"
+                    >
+                      Scopri i corsi nella provincia di {province?.label}
+                    </Dialog.Title>
+                    <div className="mt-2">
+                      {province?.courses.map((course) => (
+                        <section key={course.label} className="my-4">
+                          <h4 className="text-sm font-bold text-gray-700">
+                            {course.label}
+                          </h4>
+
+                          <ul>
+                            {course.list.map((item) => (
+                              <li
+                                key={item}
+                                className="underline text-itspurple hover:text-indigo-800"
+                              >
+                                <Link href={course.href}> {item}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </section>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </Dialog.Panel>
             </Transition.Child>

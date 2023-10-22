@@ -1,7 +1,5 @@
-import { on } from "events";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { type } from "os";
 import { useState } from "react";
 
 type ProvinceProps = {
@@ -10,7 +8,7 @@ type ProvinceProps = {
   onClick: () => void;
 };
 
-const Province = ({ img, position, onClick }: ProvinceProps) => {
+const ProvinceMap = ({ img, position, onClick }: ProvinceProps) => {
   const [animate, setAnimate] = useState(false);
   const mapAnimation = {
     hidden: { opacity: 0 },
@@ -47,4 +45,4 @@ const Province = ({ img, position, onClick }: ProvinceProps) => {
   );
 };
 
-export default Province;
+export default ProvinceMap;
