@@ -19,7 +19,7 @@ const Map = () => {
   };
 
   return (
-    <section>
+    <section className="flex flex-col justify-center items-center">
       <h4 className="text-center text-xs md:text-lg font-bold my-4">
         Seleziona la tua provincia e scopri i corsi ITS vicino a te:
       </h4>

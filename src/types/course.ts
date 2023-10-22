@@ -29,6 +29,6 @@ export interface Degree {
 }
 
 export interface BulletPointList {
-  list: string[];
+  provinces: { list: string[]; province: string }[];
   label?: string;
 }
