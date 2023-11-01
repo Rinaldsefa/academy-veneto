@@ -74,6 +74,10 @@ const Map = () => {
         />
       </div>
 
+      <h4 className="text-center text-xs md:text-lg font-bold my-4">
+        Sei indeciso su quale sia il percorso più adatto a te?
+      </h4>
+
       <Cta text={"Fai il quiz"} classes="mt-8 bg-sky-500" href="/test" />
     </section>
   );
