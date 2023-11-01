@@ -10,6 +10,18 @@ export interface Course {
   degrees: Degree[];
 }
 
+export interface Province {
+  id: string;
+  label: string;
+  courses: ProvinceCourseList[];
+}
+
+export interface ProvinceCourseList {
+  label: string;
+  href: string;
+  list: string[];
+}
+
 export interface Degree {
   img: string;
   href: string;
@@ -17,6 +29,6 @@ export interface Degree {
 }
 
 export interface BulletPointList {
-  list: string[];
+  provinces: { list: string[]; province: string }[];
   label?: string;
 }
