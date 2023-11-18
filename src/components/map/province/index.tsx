@@ -16,7 +16,7 @@ const ProvinceMap = ({ img, position, onClick }: ProvinceProps) => {
   };
   return (
     <>
-      <div
+      <button
         className={`absolute w-20 h-20  rounded-full ${position} z-20 cursor-pointer`}
         onMouseEnter={() => setAnimate(true)}
         onMouseLeave={() => setAnimate(false)}

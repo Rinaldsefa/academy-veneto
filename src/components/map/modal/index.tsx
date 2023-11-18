@@ -57,16 +57,19 @@ const MapModal = ({ isOpen, onClose, province }: MapModalProps) => {
                       Scopri i corsi nella provincia di {province?.label}
                     </Dialog.Title>
                     <div className="mt-2">
-                      {province?.courses.map((course) => (
-                        <section key={course.label} className="my-4">
+                      {province?.courses.map((course, index) => (
+                        <section
+                          key={`${course.label}${index}`}
+                          className="my-4"
+                        >
                           <h4 className="text-sm font-bold text-gray-700">
                             {course.label}
                           </h4>
 
                           <ul>
-                            {course.list.map((item) => (
+                            {course.list.map((item, id) => (
                               <li
-                                key={item}
+                                key={`${item}${id}`}
                                 className="underline text-itspurple hover:text-indigo-800"
                               >
                                 <Link href={course.href}> {item}</Link>
