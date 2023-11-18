@@ -443,7 +443,7 @@ export const courses: Course[] = [
     ],
     classes: "bg-itsgrey",
   },
-  {
+  /*  {
     order: 6,
     id: "biotech",
     title: "Nuove tecnologie",
@@ -471,7 +471,7 @@ export const courses: Course[] = [
       },
     ],
     classes: "bg-itspurple",
-  },
+  }, */
 ].sort((a, b) => a.order - b.order);
 
 export const provinces: Province[] = [
