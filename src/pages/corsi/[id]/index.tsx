@@ -125,7 +125,7 @@ export const CoursePage = (props: CoursePageProps) => {
                   width={200}
                   height={200}
                   blurDataURL={degree.img}
-                  className="w-36 h-36 md:w-96 md:h-44"
+                  className="w-36 h-36 md:w-44 md:h-44"
                 />
                 {degree.bulletPoints.map((bulletPoint, i) => (
                   <div
