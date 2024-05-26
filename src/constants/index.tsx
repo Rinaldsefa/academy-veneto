@@ -25,7 +25,7 @@ export const courses: Course[] = [
                   "FASHION COORDINATOR KNIT SPECIALIST - Padova",
                   "FASHION COORDINATOR - Padova",
                   "FASHION LEATHER GOOD COORDINATOR - Capriccio di Vigonza (PD)",
-                  "DIGITAL VIDEOMAKER FOR TV, WEB AND METAVERSE - Padova",
+                  "DIGITAL VIDEOMAKER FOR TV, WEB AND CINEMA - Padova",
                   "PATTERN MAKER AND PROTOTYPING - Padova",
                 ],
               },
@@ -240,21 +240,23 @@ export const courses: Course[] = [
               {
                 province: "Padova",
                 list: [
-                  "BUILDING MANAGER, Tecnologia, innovazione, sostenibilità - Padova",
-                  "ENERGY MANAGER 4.0 efficienza, riqualificazione, energia - Padova",
-                  "GREEN MANAGER Ambiente ed energia - Padova",
+                  "BUILDING MANAGER (Tecnico superiore per l'efficienza energetica nell'edilizia sostenibile) - Padova",
+                  "ENERGY MANAGER 4.0 (Tecnico superiore per l'efficienza energetica degli impianti) - Padova",
+                  "GREEN MANAGER (Tecnico superiore per la sostenibilità energetica nell'economia circolare) - Padova",
                 ],
               },
               {
                 province: "Verona",
                 list: [
-                  "BUILDING MANAGER, Tecnologia, innovazione, sostenibilità - Verona",
-                  "ENERGY MANAGER 4.0 efficienza, riqualificazione, energia - Verona",
+                  "BUILDING MANAGER, (Tecnico superiore per l'efficienza energetica nell'edilizia sostenibile) - Verona",
+                  "ENERGY MANAGER 4.0 (Tecnico superiore per l'efficienza energetica degli impianti) - Verona",
                 ],
               },
               {
                 province: "Treviso",
-                list: ["CONSTRUCTION MANAGER gestione del cantiere - Treviso"],
+                list: [
+                  "CONSTRUCTION MANAGER (Tecnico superiore per l'efficienza energetica nell'edilizia sostenibile) - Treviso",
+                ],
               },
             ],
           },
@@ -285,7 +287,9 @@ export const courses: Course[] = [
               },
               {
                 province: "Vicenza",
-                list: ["MARKETING MANAGER settore arredo - Vicenza"],
+                list: [
+                  "MARKETING MANAGER Sistema casa e Ambiente costruito - Vicenza",
+                ],
               },
               {
                 province: "Verona",
@@ -553,7 +557,7 @@ export const provinces: Province[] = [
           "Digital Marketing e Social Communication",
           "Fashion Coordinator Knit Specialist",
           "Pattern Maker and Prototyping",
-          "Digital Videomaker for TV, Web and Metaverse",
+          "Digital Videomaker for TV, Web and Cinema",
           "Fashion Shoes Coordinator",
           "E-Commerce Fashion Manager",
           "Fashion Leather Good Coordinator",
