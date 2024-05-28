@@ -61,13 +61,15 @@ export default function Corsi() {
         <Header />
 
         <main className="flex flex-col flex-1 overflow-y-scroll justify-center items-center p-8">
-          <Courses />
-          <Cta
-            text={"Fai il quiz"}
-            classes="mt-8 bg-sky-500 max-w-xl"
-            href="/test"
-          />
-          <Form />
+          <div className="h-screen relative flex flex-col overflow-scroll items-center ">
+            <Courses />
+            <Cta
+              text={"Fai il quiz"}
+              classes="mt-8 bg-sky-500 max-w-xl"
+              href="/test"
+            />
+            <Form />
+          </div>
         </main>
       </div>
     </>

@@ -57,7 +57,15 @@ export default function Mappa() {
       >
         <Header />
 
-        <main className="flex flex-col flex-1 overflow-y-scroll">
+        <main
+          className="flex flex-col flex-1 overflow-y-scroll"
+          style={{
+            backgroundImage: `url("/assets/home/veneto.png")`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "contain",
+          }}
+        >
           <Map />
         </main>
       </div>
