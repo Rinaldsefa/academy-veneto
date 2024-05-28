@@ -1,6 +1,7 @@
 import Map from "@/components/map";
 import Courses from "@/components/steps/content/courses";
 import Cta from "@/components/ui/cta";
+import Form from "@/components/ui/form";
 import Header from "@/components/ui/header";
 
 import localFont from "next/font/local";
@@ -66,6 +67,7 @@ export default function Corsi() {
             classes="mt-8 bg-sky-500 max-w-xl"
             href="/test"
           />
+          <Form />
         </main>
       </div>
     </>
