@@ -116,7 +116,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <Map />
+          <Map displayList={false} />
 
           <Partners />
 

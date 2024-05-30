@@ -3,6 +3,7 @@ import Header from "@/components/ui/header";
 
 import localFont from "next/font/local";
 import Head from "next/head";
+import { useState } from "react";
 
 export const aileron = localFont({
   src: [
@@ -66,7 +67,7 @@ export default function Mappa() {
             backgroundSize: "contain",
           }}
         >
-          <Map />
+          <Map displayList />
         </main>
       </div>
     </>
