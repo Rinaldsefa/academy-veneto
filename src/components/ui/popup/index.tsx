@@ -12,7 +12,7 @@ import Circle from "@/components/steps/navigation/circle";
 import Image from "next/image";
 
 //10 minutes
-const TIMEOUT = 600000;
+const TIMEOUT = 30000;
 
 export default function PopUp() {
   const [open, setOpen] = useState(false);

@@ -7,6 +7,7 @@ import { courses, provinces } from "@/constants";
 import Cta from "../ui/cta";
 import { map } from "lodash";
 import Link from "next/link";
+import { ArrowDownCircleIcon, ArrowDownIcon } from "@heroicons/react/24/solid";
 
 type MapProps = {
   displayList: boolean;
@@ -91,18 +92,22 @@ const Map: FC<MapProps> = ({ displayList }) => {
             img="/assets/map/verona.png"
           />
         </div>
-
-        <div className="h-[400px] overflow-y-auto w-full  flex-1 pl-10">
-          {displayList &&
-            provinceList.map(({ label, courses }) => (
-              <div key={label} className="relative">
-                <div className="sticky top-0 z-10 border-y border-b-gray-200 border-t-gray-100 bg-gray-50 px-3 py-1.5 text-lg font-semibold leading-6 text-primary">
+        {displayList && (
+          <div className="h-[400px] overflow-y-auto w-full  flex-1 md:pl-10 relative">
+            <ArrowDownCircleIcon className="h-8 w-8 absolute text-primary top-1 right-4 z-40" />
+            {provinceList.map(({ label, courses }) => (
+              <div key={label} className="relative shadow-2xl">
+                <div className="shadow-2xl sticky top-0 z-10 border-y border-b-gray-200 border-t-gray-100 bg-gray-50 px-3 py-1.5 text-lg font-semibold leading-6 text-primary flex justify-between">
                   <h3>{label}</h3>
                 </div>
+
                 <ul className="px-3 py-1.5">
                   {courses.map(({ label, list, href }) => (
                     <li key={label} className="divide-y divide-gray-100 py-1">
-                      <Link href={href} className="text-gray-900 font-semibold">
+                      <Link
+                        href={href}
+                        className="text-primary font-semibold underline"
+                      >
                         {label}
                       </Link>
                       <ul>
@@ -115,7 +120,8 @@ const Map: FC<MapProps> = ({ displayList }) => {
                 </ul>
               </div>
             ))}
-        </div>
+          </div>
+        )}
       </div>
 
       <h4 className="text-center text-xs md:text-lg font-bold my-4">
