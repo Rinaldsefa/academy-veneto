@@ -24,8 +24,7 @@ export const courses: Course[] = [
                   "DIGITAL MARKETING E SOCIAL COMMUNICATION - Padova",
                   "FASHION COORDINATOR KNIT SPECIALIST - Padova",
                   "FASHION COORDINATOR - Padova",
-                  "FASHION LEATHER GOOD COORDINATOR - Capriccio di Vigonza (PD)",
-                  "DIGITAL VIDEOMAKER FOR TV, WEB AND CINEMA - Padova",
+                  "VIDEOMAKER FOR TV, WEB AND CINEMA - Padova",
                   "PATTERN MAKER AND PROTOTYPING - Padova",
                   "STORE MANAGER - Padova",
                   "FASHION DESIGNER - Padova",
@@ -135,6 +134,14 @@ export const courses: Course[] = [
             label: "ITS Academy Agroalimentare Veneto",
             provinces: [
               {
+                province: "Padova",
+                list: [
+                  "Agribusiness Manager per le produzioni biologiche",
+                  "Agribusiness manager per la transizione ecologica",
+                  "Agribusiness manager per le produzioni biologiche",
+                ],
+              },
+              {
                 province: "Treviso",
                 list: [
                   "Agribusiness Manager per il marketing territoriale e Unesco - Conegliano (TV)",
@@ -143,10 +150,7 @@ export const courses: Course[] = [
               },
               {
                 province: "Verona",
-                list: [
-                  "Agrifood & Marketing Manager Verona",
-                  "Agribusiness Manager per le produzioni biologiche - Padova e Buttapietra (VR)",
-                ],
+                list: ["Agrifood & Supply Chain Manager Verona"],
               },
               {
                 province: "Vicenza",
@@ -187,12 +191,19 @@ export const courses: Course[] = [
               {
                 province: "Venezia",
                 list: [
-                  "Mobility & Human resources manager - Mirano (VE)",
                   "Logistics Manager in ambito portuale e aeroportuale - Mestre (VE)",
                   "Macchinista e preparatore treni - Venezia",
                   "Art moving and set up manager - Venezia",
                   "Manager dell'economia circolare e logistica del rifiuto - Venezia",
                   "Ufficiale di Coperta e di Macchina - Venezia",
+                ],
+              },
+              {
+                province: "Verona",
+                list: [
+                  "International logistics management",
+                  "International logistics management  (LIDL)",
+                  "Esperto dei veicoli endotermici, ibridi ed elettrici",
                 ],
               },
             ],
@@ -217,7 +228,6 @@ export const courses: Course[] = [
                 province: "Verona",
                 list: [
                   "International logistics management - Verona",
-                  "Digital transformation specialist - Web developer - Verona",
                   "Automotive Service and Sales management - Verona",
                 ],
               },
@@ -290,11 +300,11 @@ export const courses: Course[] = [
             provinces: [
               {
                 province: "Padova",
-                list: ["DESIGN MANAGER - Padova"],
+                list: ["DESIGN MANAGER Sistema Casa - Padova"],
               },
               {
                 province: "Treviso",
-                list: ["DESIGN MANAGER Sistema casa - Treviso"],
+                list: ["DESIGN MANAGER Sistema Casa - Treviso"],
               },
               {
                 province: "Vicenza",
@@ -332,9 +342,9 @@ export const courses: Course[] = [
               {
                 province: "Vicenza",
                 list: [
-                  "Automazione e Sistemi meccatronici - Bassano (VI), Schio (VI), Vicenza Ovest",
-                  "Innovazione di processi e prodotti meccanici - Schio (VI)",
-                  "Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
+                  "Automazione e Sistemi meccatronici - Vicenza, Bassano (VI), Schio (VI), Vicenza Ovest",
+                  "Innovazione di processi e prodotti meccanici - Vicenza",
+                  "Informatica nell’Industria 4.0 - Vicenza",
                   "Design delle tecnologie dei materiali - Bassano del Grappa (VI)",
                 ],
               },
@@ -351,7 +361,12 @@ export const courses: Course[] = [
               },
               {
                 province: "Padova",
-                list: ["Automazione e Sistemi meccatronici - Padova"],
+                list: [
+                  "Automazione e Sistemi meccatronici - Padova",
+                  "Tecnico Superiore System Cyber Security - Padova",
+                  "TECNICO SUPERIORE PER L’INNOVAZIONE DI PROCESSI E PRODOTTI MECCANICI 24/26 - Padova",
+                  "TECNICO SUPERIORE PER L’AUTOMAZIONE E I SISTEMI MECCATRONICI 24/26 - Este PD",
+                ],
               },
               {
                 province: "Verona",
@@ -360,6 +375,10 @@ export const courses: Course[] = [
               {
                 province: "Rovigo",
                 list: ["Innovazione di processi e prodotti meccanici - Rovigo"],
+              },
+              {
+                province: "Venezia",
+                list: ["Tecnico Superiore Data manager"],
               },
             ],
           },
@@ -407,6 +426,25 @@ export const courses: Course[] = [
           },
         ],
       },
+      {
+        img: "/assets/courses/degrees/its-red.png",
+        href: "https://itsred.it/",
+        bulletPoints: [
+          {
+            label: "ITS Red Academy",
+            provinces: [
+              {
+                province: "Treviso",
+                list: ["Marketing Manager - Treviso"],
+              },
+              {
+                province: "Padova",
+                list: ["Public Administration Manager - Padova"],
+              },
+            ],
+          },
+        ],
+      },
     ],
     classes: "bg-itsred",
   },
@@ -426,7 +464,7 @@ export const courses: Course[] = [
           {
             provinces: [
               {
-                province: "Padova",
+                province: "Verona",
                 list: [
                   "Digital transformation specialist - Web developer - Verona",
                   "Digital transformation specialist - System administration - Villafranca di Verona",
@@ -619,6 +657,9 @@ export const provinces: Province[] = [
         list: [
           "Automazione e Sistemi meccatronici",
           "Innovazione di processi e prodotti meccanici",
+          "Tecnico Superiore System Cyber Security",
+          "TECNICO SUPERIORE PER L’INNOVAZIONE DI PROCESSI E PRODOTTI MECCANICI 24/26 - Padova",
+          "TECNICO SUPERIORE PER L’AUTOMAZIONE E I SISTEMI MECCATRONICI 24/26 - Este PD",
         ],
       },
       {
@@ -635,6 +676,15 @@ export const provinces: Province[] = [
         label: "Servizi alle imprese",
         href: "/corsi/servizi-alle-imprese",
         list: ["Public Administration Manager"],
+      },
+      {
+        label: "Agroalimentare",
+        href: "/corsi/agroalimentare",
+        list: [
+          "Tecnico superiore per la gestione e l’innovazione nelle produzioni primarie e nel  sistema agroindustriale ",
+          "Agribusiness manager per la transizione ecologica",
+          "Agribusiness manager per le produzioni biologiche",
+        ],
       },
     ],
   },
@@ -666,7 +716,10 @@ export const provinces: Province[] = [
       {
         label: "Mobilità sostenibile",
         href: "/corsi/mobilita-sostenibile",
-        list: ["Logistics Manager"],
+        list: [
+          "Logistics Manager",
+          "Esperto dei veicoli endotermici, ibridi ed elettrici",
+        ],
       },
       {
         label: "Agroalimentare",
@@ -740,7 +793,10 @@ export const provinces: Province[] = [
       {
         label: "Meccanica e Meccatronica",
         href: "/corsi/meccanica-e-meccatronica",
-        list: ["Automazione e Sistemi meccatronici"],
+        list: [
+          "Automazione e Sistemi meccatronici",
+          "Tecnico Superiore Data manager",
+        ],
       },
     ],
   },
@@ -786,7 +842,12 @@ export const provinces: Province[] = [
       {
         label: "Meccanica e Meccatronica",
         href: "/corsi/meccanica-e-meccatronica",
-        list: ["Automazione e Sistemi meccatronici"],
+        list: [
+          "Automazione e Sistemi meccatronici",
+          "International logistics management ",
+          "International logistics management (LIDL)",
+          "Esperto dei veicoli endotermici, ibridi ed elettrici",
+        ],
       },
       {
         label: "Sistema Casa",
