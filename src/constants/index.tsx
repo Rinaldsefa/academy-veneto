@@ -136,8 +136,8 @@ export const courses: Course[] = [
               {
                 province: "Padova",
                 list: [
-                  "Agribusiness Manager per le produzioni biologiche",
-                  "Agribusiness manager per la transizione ecologica",
+                  "Agribusiness Manager per le produzioni biologiche - Padova",
+                  "Agribusiness manager per la transizione ecologica - Padova",
                 ],
               },
               {
@@ -150,7 +150,7 @@ export const courses: Course[] = [
               {
                 province: "Verona",
                 list: [
-                  "Agrifood & Supply Chain Manager Verona",
+                  "Agrifood & Supply Chain Manager - Verona",
                   "Agribusiness manager per le produzioni biologiche - Buttapietra (VR)",
                 ],
               },
@@ -338,7 +338,7 @@ export const courses: Course[] = [
               {
                 province: "Vicenza",
                 list: [
-                  "Automazione e Sistemi meccatronici - Vicenza, Bassano (VI), Schio (VI), Vicenza Ovest, Vicenza",
+                  "Automazione e Sistemi meccatronici - Vicenza, Bassano (VI), Schio (VI), Vicenza Ovest",
                   "Innovazione di processi e prodotti meccanici - Vicenza",
                   "Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
                   "Design delle tecnologie dei materiali - Bassano del Grappa (VI)",
