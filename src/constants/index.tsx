@@ -138,7 +138,6 @@ export const courses: Course[] = [
                 list: [
                   "Agribusiness Manager per le produzioni biologiche",
                   "Agribusiness manager per la transizione ecologica",
-                  "Agribusiness manager per le produzioni biologiche",
                 ],
               },
               {
@@ -150,7 +149,10 @@ export const courses: Course[] = [
               },
               {
                 province: "Verona",
-                list: ["Agrifood & Supply Chain Manager Verona"],
+                list: [
+                  "Agrifood & Supply Chain Manager Verona",
+                  "Agribusiness manager per le produzioni biologiche - Buttapietra (VR)",
+                ],
               },
               {
                 province: "Vicenza",
@@ -195,15 +197,7 @@ export const courses: Course[] = [
                   "Macchinista e preparatore treni - Venezia",
                   "Art moving and set up manager - Venezia",
                   "Manager dell'economia circolare e logistica del rifiuto - Venezia",
-                  "Ufficiale di Coperta e di Macchina - Venezia",
-                ],
-              },
-              {
-                province: "Verona",
-                list: [
-                  "International logistics management",
-                  "International logistics management  (LIDL)",
-                  "Esperto dei veicoli endotermici, ibridi ed elettrici",
+                  "Ufficiale di Macchina e coperta - Venezia",
                 ],
               },
             ],
@@ -228,6 +222,8 @@ export const courses: Course[] = [
                 province: "Verona",
                 list: [
                   "International logistics management - Verona",
+                  "International logistics management  (LIDL)",
+                  "Esperto dei veicoli endotermici, ibridi ed elettrici",
                   "Automotive Service and Sales management - Verona",
                 ],
               },
@@ -342,9 +338,9 @@ export const courses: Course[] = [
               {
                 province: "Vicenza",
                 list: [
-                  "Automazione e Sistemi meccatronici - Vicenza, Bassano (VI), Schio (VI), Vicenza Ovest",
+                  "Automazione e Sistemi meccatronici - Vicenza, Bassano (VI), Schio (VI), Vicenza Ovest, Vicenza",
                   "Innovazione di processi e prodotti meccanici - Vicenza",
-                  "Informatica nell’Industria 4.0 - Vicenza",
+                  "Informatica nell’Industria 4.0 - Vicenza, Thiene (VI)",
                   "Design delle tecnologie dei materiali - Bassano del Grappa (VI)",
                 ],
               },
@@ -355,17 +351,15 @@ export const courses: Course[] = [
               {
                 province: "Treviso",
                 list: [
-                  "Automazione e Sistemi meccatronici - Conegliano (TV), Castelfranco Montebelluna (TV)",
+                  "Automazione e Sistemi meccatronici - Conegliano (TV), Castelfranco Montebelluna (TV), Sinistra di Piave (TV), Treviso",
                   "Innovazione di processi e prodotti meccanici - Treviso",
                 ],
               },
               {
                 province: "Padova",
                 list: [
-                  "Automazione e Sistemi meccatronici - Padova",
-                  "Tecnico Superiore System Cyber Security - Padova",
-                  "TECNICO SUPERIORE PER L’INNOVAZIONE DI PROCESSI E PRODOTTI MECCANICI 24/26 - Padova",
-                  "TECNICO SUPERIORE PER L’AUTOMAZIONE E I SISTEMI MECCATRONICI 24/26 - Este PD",
+                  "Automazione e Sistemi meccatronici - Padova, Este (PD)",
+                  "Innovazione di processi e prodotti meccanici - Padova",
                 ],
               },
               {
@@ -378,7 +372,9 @@ export const courses: Course[] = [
               },
               {
                 province: "Venezia",
-                list: ["Tecnico Superiore Data manager"],
+                list: [
+                  "Automazione e sistemi meccatronici - Mestre (VE), Portogruaro (VE)",
+                ],
               },
             ],
           },
@@ -413,14 +409,6 @@ export const courses: Course[] = [
                 list: [
                   "Esperto nei processi di internazionalizzazione d’impresa - Verona",
                 ],
-              },
-              {
-                province: "Treviso",
-                list: ["Marketing Manager - Treviso"],
-              },
-              {
-                province: "Padova",
-                list: ["Public Administration Manager - Padova"],
               },
             ],
           },
@@ -486,7 +474,8 @@ export const courses: Course[] = [
                 list: [
                   "Artificial Intelligence - Padova",
                   "Cloud Developer - Padova",
-                  "A/R e V/R & Game Developer e Digital Marketing and Innovation Specialist - Noventa Padovana (PD)",
+                  "A/R e V/R & Game Developer -  Padova (PD)",
+                  "Digital Marketing and Innovation Specialist - Noventa Padovana",
                   "Crossmedia Communication Specialist - Cittadella (PD) e Venezia",
                 ],
               },
@@ -498,7 +487,10 @@ export const courses: Course[] = [
               },
               {
                 province: "Venezia",
-                list: ["Crossmedia Communication Specialist - Venezia"],
+                list: [
+                  "Crossmedia Communication Specialist - Venezia",
+                  "Artificial Intelligence & Data Specialist - Venezia",
+                ],
               },
               {
                 province: "Verona",
@@ -787,7 +779,7 @@ export const provinces: Province[] = [
           "Art moving and set up manager",
           "Logistics Manager in ambito portuale e aeroportuale",
           "Manager dell'economia circolare e logistica del rifiuto",
-          "Ufficiale di Coperta e di Macchina",
+          "Ufficiale di Macchina e coperta",
         ],
       },
       {
