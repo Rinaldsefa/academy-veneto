@@ -23,6 +23,45 @@ export default function App({ Component, pageProps }: AppProps) {
           
         `}
       </Script>
+      <Script id="cookie-consent">
+        {`
+         var _iub = _iub || [];
+         _iub.csConfiguration = {"floatingPreferencesButtonDisplay":"bottom-right","perPurposeConsent":true,"siteId":3081551,"whitelabel":false,"cookiePolicyId":34668176,"lang":"it", "banner":{ "acceptButtonColor":"#22C55E","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","backgroundOverlay":true,"closeButtonRejects":true,"customizeButtonColor":"#0EA5E9","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"logo":null,"linksColor":"#000000","position":"float-bottom-right","textColor":"#000000" },
+               "callback": {
+                 onPreferenceExpressedOrNotNeeded: function (preference) {
+                     dataLayer.push({
+                         iubenda_ccpa_opted_out: _iub.cs.api.isCcpaOptedOut()
+                     });
+                     if (!preference) {
+                         dataLayer.push({
+                             event: "iubenda_preference_not_needed"
+                         });
+                     } else {
+                         if (preference.consent === true) {
+                             dataLayer.push({
+                                 event: "iubenda_consent_given"
+                             });
+                         } else if (preference.consent === false) {
+                             dataLayer.push({
+                                 event: "iubenda_consent_rejected"
+                             });
+                         } else if (preference.purposes) {
+                             for (var purposeId in preference.purposes) {
+                                 if (preference.purposes[purposeId]) {
+                                     dataLayer.push({
+                                         event: "iubenda_consent_given_purpose_" + purposeId
+                                     });
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         };
+        `}
+      </Script>
+      <Script src="//cs.iubenda.com/sync/3081551.js" />
+      <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" async />
 
       <Component {...pageProps} />
 
