@@ -10,12 +10,20 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 import { set } from "lodash";
 import Circle from "@/components/steps/navigation/circle";
 import Image from "next/image";
+import { Database } from "supabase/types";
+import { supabase } from "supabase/client";
+import { useForm } from "react-hook-form";
 
 //10 minutes
 const TIMEOUT = 30000;
 
 export default function PopUp() {
   const [open, setOpen] = useState(false);
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm<Database["public"]["Tables"]["leads"]["Row"]>();
 
   //open the dialog after 10 minutes
 
@@ -28,6 +36,19 @@ export default function PopUp() {
       clearTimeout(timeout);
     };
   }, []);
+
+  async function insertData(
+    data: Database["public"]["Tables"]["leads"]["Row"]
+  ) {
+    try {
+      const client = supabase();
+
+      await client.from("leads").insert({ ...data, source: "popup" });
+      alert("Grazie per averci contattato, ti risponderemo al più presto!");
+    } catch (error) {
+      alert(error);
+    }
+  }
 
   return (
     <Transition show={open}>
@@ -80,31 +101,47 @@ export default function PopUp() {
                   </div>
                 </div>
                 <div className="my-5 sm:my-6">
-                  <div className="my-4">
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium leading-6 text-gray-900"
-                    >
-                      Email
-                    </label>
-                    <div className="mt-2">
-                      <input
-                        required
-                        type="email"
-                        name="email"
-                        id="email"
-                        className="block w-full rounded-2xl border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                        placeholder="you@example.com"
-                      />
+                  <form onSubmit={handleSubmit(insertData)}>
+                    <div className="my-4">
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium leading-6 text-gray-900"
+                      >
+                        Email
+                      </label>
+                      <div className="mt-2">
+                        <input
+                          {...register("email", {
+                            required: "Inserisci un'email valida",
+                            pattern: {
+                              value:
+                                /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                              message: "Inserisci un'email valida",
+                            },
+                          })}
+                          type="email"
+                          name="email"
+                          id="email"
+                          className="block w-full rounded-2xl border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                          placeholder="you@example.com"
+                        />
+                      </div>
+                      {errors.email && (
+                        <p
+                          className="mt-2 text-sm text-red-600"
+                          id="email-error"
+                        >
+                          {errors.email.message}
+                        </p>
+                      )}
                     </div>
-                  </div>
-                  <button
-                    type="button"
-                    className="inline-flex w-full justify-center rounded-2xl bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    onClick={() => setOpen(false)}
-                  >
-                    Invia
-                  </button>
+                    <button
+                      type="submit"
+                      className="inline-flex w-full justify-center rounded-2xl bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >
+                      Invia
+                    </button>
+                  </form>
                 </div>
               </DialogPanel>
             </TransitionChild>
