@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Script id="cookie-consent">
         {`
          var _iub = _iub || [];
-         _iub.csConfiguration = {"floatingPreferencesButtonDisplay":"bottom-right","perPurposeConsent":true,"siteId":3081551,"whitelabel":false,"cookiePolicyId":34668176,"lang":"it", "banner":{ "acceptButtonColor":"#22C55E","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","backgroundOverlay":true,"closeButtonRejects":true,"customizeButtonColor":"#0EA5E9","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"logo":null,"linksColor":"#000000","position":"float-bottom-right","textColor":"#000000" },
+         _iub.csConfiguration = {"floatingPreferencesButtonDisplay":"bottom-left","perPurposeConsent":true,"siteId":3081551,"whitelabel":false,"cookiePolicyId":34668176,"lang":"it", "banner":{ "acceptButtonColor":"#22C55E","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","backgroundOverlay":true,"closeButtonRejects":true,"customizeButtonColor":"#0EA5E9","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"logo":null,"linksColor":"#000000","position":"float-bottom-right","textColor":"#000000" },
                "callback": {
                  onPreferenceExpressedOrNotNeeded: function (preference) {
                      dataLayer.push({
