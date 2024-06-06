@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
     <>
       <>
         <Head>
-          <title>ITS Academy veneto - Privacy Policy</title>
+          <title>ITS Academy Veneto - Privacy Policy</title>
           <meta
             name="description"
             content="Scopri tutti i corsi professionali, specializzati dopo il Diplma e trova subito il lavoro dei tuoi sogni"

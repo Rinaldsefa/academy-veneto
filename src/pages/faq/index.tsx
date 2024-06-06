@@ -49,7 +49,7 @@ export default function Example() {
     <>
       <Head>
         <title>
-          ITS Academy veneto - Alta formazione Post Diploma - Domande frequenti
+          ITS Academy Veneto - Alta formazione Post Diploma - Domande frequenti
         </title>
         <meta
           name="description"

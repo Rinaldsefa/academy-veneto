@@ -44,7 +44,7 @@ export default function Mappa() {
   return (
     <>
       <Head>
-        <title>ITS Academy veneto - Alta formazione Post Diploma</title>
+        <title>ITS Academy Veneto - Alta formazione Post Diploma</title>
         <meta
           name="description"
           content="Scopri tutti i corsi professionali, specializzati dopo il Diplma e trova subito il lavoro dei tuoi sogni"
