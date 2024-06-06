@@ -9,7 +9,7 @@ const Header = () => {
       <nav className="flex w-full flex-row-reverse justify-between items-center">
         <div className="flex md:flex-col">
           <ul className="hidden md:flex text-gray-500 uppercase font-semibold text-xs">
-            <li className=" px-2 ">
+            <li className="px-2">
               <Link href="/">Chi siamo</Link>
             </li>
 
@@ -17,15 +17,15 @@ const Header = () => {
               <Link href="/i-nostri-corsi">I corsi</Link>
             </li>
 
-            <li className=" px-2 ">
+            <li className="px-2">
               <Link href="/mappa">Mappa</Link>
             </li>
 
-            <li className=" px-2 ">
+            <li className="px-2">
               <Link href="/faq">FAQ</Link>
             </li>
 
-            <li>
+            <li className="px-2">
               <Link
                 href="https://www.iubenda.com/privacy-policy/25968168"
                 target="_blank"
