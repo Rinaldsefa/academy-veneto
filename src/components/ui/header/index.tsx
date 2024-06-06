@@ -24,15 +24,6 @@ const Header = () => {
             <li className="px-2">
               <Link href="/faq">FAQ</Link>
             </li>
-
-            <li className="px-2">
-              <Link
-                href="https://www.iubenda.com/privacy-policy/25968168"
-                target="_blank"
-              >
-                Privacy
-              </Link>
-            </li>
           </ul>
 
           <Socials />

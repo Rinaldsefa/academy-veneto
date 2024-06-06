@@ -97,7 +97,7 @@ const Map: FC<MapProps> = ({ displayList }) => {
             <ArrowDownCircleIcon className="h-8 w-8 absolute text-primary top-1 right-4 z-40" />
             {provinceList.map(({ label, courses }) => (
               <div key={label} className="relative shadow-2xl">
-                <div className="shadow-2xl sticky top-0 z-10 border-y border-b-gray-200 border-t-gray-100 bg-gray-50 px-3 py-1.5 text-lg font-semibold leading-6 text-primary flex justify-between">
+                <div className="shadow-2xl sticky top-0 z-10 border-y border-b-gray-200 border-t-gray-100 bg-gray-50 px-3 py-1.5 text-lg font-semibold leading-6 text-black flex justify-between">
                   <h3>{label}</h3>
                 </div>
 
