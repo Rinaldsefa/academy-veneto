@@ -109,7 +109,7 @@ export default function Home() {
                   steps.find((step) => step.id === "welcome")?.id || current.id
                 );
               }}
-              href="/i-nostri-corsi"
+              href="/corsi"
               className="text-lg text-green-700 underline"
             >
               Scopri di più sui percorsi
