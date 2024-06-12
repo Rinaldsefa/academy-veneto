@@ -1,6 +1,7 @@
 import Map from "@/components/map";
 import Courses from "@/components/steps/content/courses";
 import Cta from "@/components/ui/cta";
+import Form from "@/components/ui/form";
 import Header from "@/components/ui/header";
 
 import localFont from "next/font/local";
@@ -45,7 +46,7 @@ export default function Corsi() {
   return (
     <>
       <Head>
-        <title>ITS Academy veneto - Alta formazione Post Diploma</title>
+        <title>ITS Academy Veneto - Alta formazione Post Diploma</title>
         <meta
           name="description"
           content="Scopri tutti i corsi professionali, specializzati dopo il Diplma e trova subito il lavoro dei tuoi sogni"
@@ -60,12 +61,15 @@ export default function Corsi() {
         <Header />
 
         <main className="flex flex-col flex-1 overflow-y-scroll justify-center items-center p-8">
-          <Courses />
-          <Cta
-            text={"Fai il quiz"}
-            classes="mt-8 bg-sky-500 max-w-xl"
-            href="/test"
-          />
+          <div className="h-screen relative flex flex-col overflow-scroll items-center ">
+            <Courses />
+            <Cta
+              text={"Fai il quiz"}
+              classes="mt-8 bg-sky-500 max-w-xl"
+              href="/test"
+            />
+            <Form />
+          </div>
         </main>
       </div>
     </>

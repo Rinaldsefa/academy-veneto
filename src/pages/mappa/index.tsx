@@ -3,6 +3,7 @@ import Header from "@/components/ui/header";
 
 import localFont from "next/font/local";
 import Head from "next/head";
+import { useState } from "react";
 
 export const aileron = localFont({
   src: [
@@ -43,7 +44,7 @@ export default function Mappa() {
   return (
     <>
       <Head>
-        <title>ITS Academy veneto - Alta formazione Post Diploma</title>
+        <title>ITS Academy Veneto - Alta formazione Post Diploma</title>
         <meta
           name="description"
           content="Scopri tutti i corsi professionali, specializzati dopo il Diplma e trova subito il lavoro dei tuoi sogni"
@@ -57,8 +58,16 @@ export default function Mappa() {
       >
         <Header />
 
-        <main className="flex flex-col flex-1 overflow-y-scroll">
-          <Map />
+        <main
+          className="flex flex-col flex-1 overflow-y-scroll"
+          style={{
+            backgroundImage: `url("/assets/home/veneto.png")`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "contain",
+          }}
+        >
+          <Map displayList />
         </main>
       </div>
     </>

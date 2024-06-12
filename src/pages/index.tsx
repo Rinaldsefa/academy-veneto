@@ -99,14 +99,9 @@ export default function Home() {
 
           <div className="flex flex-col justify-center items-center gap-4 mt-4">
             <Cta
-              onClick={() => {
-                setCurrent(
-                  steps.find((step) => step.id === "courses")?.id || current.id
-                );
-                router.push("/corsi");
-              }}
+              href="/i-nostri-corsi"
               text="Vai ai corsi"
-              classes="bg-green-500"
+              classes="bg-green-700"
             />
             <Link
               onClick={() => {
@@ -114,14 +109,14 @@ export default function Home() {
                   steps.find((step) => step.id === "welcome")?.id || current.id
                 );
               }}
-              href="/corsi"
+              href="/i-nostri-corsi"
               className="text-lg text-green-700 underline"
             >
               Scopri di più sui percorsi
             </Link>
           </div>
 
-          <Map />
+          <Map displayList={false} />
 
           <Partners />
 
