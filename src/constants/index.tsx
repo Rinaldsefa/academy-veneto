@@ -35,11 +35,9 @@ export const courses: Course[] = [
                 province: "Vicenza",
                 list: [
                   "GREEN LEATHER MANAGER - Arzignano (VI)",
-
                   "FASHION JEWELLERY COORDINATOR - Vicenza",
                   "FASHION SUSTAINABILITY MANAGER - Valdagno (VI)",
                   "SPORTSWEAR PRODUCT MANAGER - Bassano del Grappa (VI)",
-
                   "DIGITAL JEWELLERY DESIGN - Vicenza",
                 ],
               },
@@ -567,10 +565,27 @@ export const provinces: Province[] = [
         href: "/corsi/information-technologies",
         list: ["Web Developer Full Stack"],
       },
+
       {
         label: "Servizi alle imprese",
         href: "/corsi/servizi-alle-imprese",
         list: ["Esperto nei processi di internazionalizzazione d’impresa"],
+      },
+      {
+        label: "Moda",
+        href: "/corsi/moda",
+        list: [
+          "GREEN LEATHER MANAGER - Arzignano (VI)",
+          "FASHION JEWELLERY COORDINATOR - Vicenza",
+          "FASHION SUSTAINABILITY MANAGER - Valdagno (VI)",
+          "SPORTSWEAR PRODUCT MANAGER - Bassano del Grappa (VI)",
+          "DIGITAL JEWELLERY DESIGN - Vicenza",
+        ],
+      },
+      {
+        label: "Turismo",
+        href: "/corsi/turismo",
+        list: ["Tourism Destination Marketing & Communication"],
       },
     ],
   },
@@ -630,17 +645,16 @@ export const provinces: Province[] = [
         label: "Moda",
         href: "/corsi/moda",
         list: [
-          "Fashion Coordinator",
-          "Digital Marketing e Social Communication",
-          "Fashion Coordinator Knit Specialist",
-          "Pattern Maker and Prototyping",
-          "Digital Videomaker for TV, Web and Cinema",
-          "Fashion Shoes Coordinator",
-          "E-Commerce Fashion Manager",
-          "Fashion Leather Good Coordinator",
-          "Store Manager",
-          "Fashion Designer",
-          "Omnichannel Experience Manager",
+          "E-COMMERCE FASHION MANAGER - Padova",
+          "FASHION SHOES COORDINATOR - Capriccio di Vigonza (PD)",
+          "DIGITAL MARKETING E SOCIAL COMMUNICATION - Padova",
+          "FASHION COORDINATOR KNIT SPECIALIST - Padova",
+          "FASHION COORDINATOR - Padova",
+          "VIDEOMAKER FOR TV, WEB AND CINEMA - Padova",
+          "PATTERN MAKER AND PROTOTYPING - Padova",
+          "STORE MANAGER - Padova",
+          "FASHION DESIGNER - Padova",
+          "OMNICHANNEL EXPERIENCE MANAGER - Padova",
         ],
       },
       {
@@ -649,19 +663,19 @@ export const provinces: Province[] = [
         list: [
           "Automazione e Sistemi meccatronici",
           "Innovazione di processi e prodotti meccanici",
-          "Tecnico Superiore System Cyber Security",
-          "TECNICO SUPERIORE PER L’INNOVAZIONE DI PROCESSI E PRODOTTI MECCANICI 24/26 - Padova",
-          "TECNICO SUPERIORE PER L’AUTOMAZIONE E I SISTEMI MECCATRONICI 24/26 - Este PD",
         ],
       },
       {
-        label: "Teconologie dell'informazione e Comunicazione",
+        label: "Tecnologie dell'informazione e Comunicazione",
         href: "/corsi/information-technologies",
         list: [
           "Artificial Intelligence",
           "Cloud Developer",
           "A/R e V/R & Game Developer",
           "Crossmedia Communication Specialist",
+          "Tecnico Superiore System Cyber Security",
+          "TECNICO SUPERIORE PER L’INNOVAZIONE DI PROCESSI E PRODOTTI MECCANICI 24/26 - Padova",
+          "TECNICO SUPERIORE PER L’AUTOMAZIONE E I SISTEMI MECCATRONICI 24/26 - Este PD",
         ],
       },
       {
@@ -673,7 +687,6 @@ export const provinces: Province[] = [
         label: "Agroalimentare",
         href: "/corsi/agroalimentare",
         list: [
-          "Tecnico superiore per la gestione e l’innovazione nelle produzioni primarie e nel  sistema agroindustriale ",
           "Agribusiness manager per la transizione ecologica",
           "Agribusiness manager per le produzioni biologiche",
         ],
@@ -788,6 +801,14 @@ export const provinces: Province[] = [
         list: [
           "Automazione e Sistemi meccatronici",
           "Tecnico Superiore Data manager",
+        ],
+      },
+      {
+        label: "Tecnologie dell'informazione e Comunicazione",
+        href: "/corsi/information-technologies",
+        list: [
+          "Crossmedia communication specialist",
+          "Artificial Intelligence & Data Specialist",
         ],
       },
     ],
