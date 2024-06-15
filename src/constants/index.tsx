@@ -636,8 +636,6 @@ export const provinces: Province[] = [
           "Tecnico Superiore Building Manager",
           "Energy Manager 4.0",
           "Green Manager Ambiente ed Energia",
-          "Agribusiness Manager per le produzioni biologiche",
-          "Agribusiness manager per la transizione ecologica",
           "Energy Specialist",
         ],
       },
@@ -674,8 +672,6 @@ export const provinces: Province[] = [
           "A/R e V/R & Game Developer",
           "Crossmedia Communication Specialist",
           "Tecnico Superiore System Cyber Security",
-          "TECNICO SUPERIORE PER L’INNOVAZIONE DI PROCESSI E PRODOTTI MECCANICI 24/26 - Padova",
-          "TECNICO SUPERIORE PER L’AUTOMAZIONE E I SISTEMI MECCATRONICI 24/26 - Este PD",
         ],
       },
       {
@@ -716,7 +712,7 @@ export const provinces: Province[] = [
       {
         label: "Turismo",
         href: "/corsi/turismo",
-        list: ["Food&Wine Marketing & Communication"],
+        list: ["Food & Wine Tourism"],
       },
       {
         label: "Mobilità sostenibile",
@@ -753,9 +749,9 @@ export const provinces: Province[] = [
         list: ["Design Manager Sistema Casa"],
       },
       {
-        label: "Tecnologie dell'informazione e Comunicazione",
-        href: "/corsi/information-technologies",
-        list: ["Construction Manager gestione del cantiere"],
+        label: "Tecnologia, innovazione, sostenibilità",
+        href: "/corsi/efficienza-energetica",
+        list: ["Construction Manager"],
       },
       {
         label: "Tecnologie dell'informazione e Comunicazione",
@@ -798,10 +794,7 @@ export const provinces: Province[] = [
       {
         label: "Meccanica e Meccatronica",
         href: "/corsi/meccanica-e-meccatronica",
-        list: [
-          "Automazione e Sistemi meccatronici",
-          "Tecnico Superiore Data manager",
-        ],
+        list: ["Automazione e Sistemi meccatronici"],
       },
       {
         label: "Tecnologie dell'informazione e Comunicazione",
@@ -831,20 +824,21 @@ export const provinces: Province[] = [
         list: [
           "Automotive Service and Sales management",
           "International Logistics Manager",
-          "Digital transformation specialist - Web developer",
+          "International logistics management (LIDL)",
+          "Esperto dei veicoli endotermici, ibridi ed elettrici",
         ],
       },
       {
         label: "Tecnologia, innovazione, sostenibilità",
         href: "/corsi/efficienza-energetica",
-        list: ["Tecnico Superiore Building Manager", "Energy Manager 4.0"],
+        list: ["Building Manager", "Energy Manager 4.0"],
       },
       {
         label: "Agroalimentare",
         href: "/corsi/agroalimentare",
         list: [
-          "Agribusiness Manager per le produzioni locali",
-          "Agrifood and Marketing manager",
+          "Agribusiness manager per le produzioni biologiche",
+          "Agrifood & Supply Chain Manager",
         ],
       },
       {
@@ -855,12 +849,7 @@ export const provinces: Province[] = [
       {
         label: "Meccanica e Meccatronica",
         href: "/corsi/meccanica-e-meccatronica",
-        list: [
-          "Automazione e Sistemi meccatronici",
-          "International logistics management ",
-          "International logistics management (LIDL)",
-          "Esperto dei veicoli endotermici, ibridi ed elettrici",
-        ],
+        list: ["Automazione e Sistemi meccatronici"],
       },
       {
         label: "Sistema Casa",
@@ -881,14 +870,7 @@ export const provinces: Province[] = [
       {
         label: "Moda",
         href: "/corsi/moda",
-        list: [
-          "Fashion Product Manager",
-          "Fashion Jewelry Coordinator",
-          "Sportswear Product Manager",
-          "Fashion Sustainability Manager",
-          "Green Leather Manager",
-          "Digital Jewelry Design",
-        ],
+        list: ["Fashion Product Manager"],
       },
     ],
   },
@@ -901,9 +883,195 @@ export const faqs = [
       "Gli ITS (Istituti Tecnologici Superiori) sono scuole post-diploma che offrono una formazione altamente specializzata in ambito tecnologico. Fanno parte della Formazione Terziaria Professionalizzante, ovvero quella formazione che ti prepara direttamente per il mondo del lavoro. Sono riconosciuti dal Miur.",
   },
   {
-    question: "Chi può iscriversi agli ITS?",
-    answer:
-      "Puoi iscriverti agli ITS se hai un diploma di scuola superiore di cinque anni o un diploma quadriennale di istruzione e formazione professionale, completato con un corso annuale IFTS.",
+    question: "Quali sono i settori tecnologici coperti dai corsi ITS?",
+    answer: (
+      <span>
+        Le 8 scuole propongono percorsi per 5 delle 6 aree tecnologiche:
+        <ul>
+          <li>
+            <a
+              href="https://www.itsacademyveneto.it/corsi/efficienza-energetica"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              - Efficienza energetica
+            </a>
+          </li>
+          <li>
+            - Nuove tecnologie per il Made in Italy (articolata in cinque
+            ambiti:
+            <a
+              href="https://www.itsacademyveneto.it/corsi/agroalimentare"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              Sistema agroalimentare
+            </a>
+            ,
+            <a
+              href="https://www.itsacademyveneto.it/corsi/design-e-arredo"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              Sistema casa
+            </a>
+            ,
+            <a
+              href="https://www.itsacademyveneto.it/corsi/meccanica-e-meccatronica"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              Sistema meccanica
+            </a>
+            ,
+            <a
+              href="https://www.itsacademyveneto.it/corsi/moda"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              Sistema moda
+            </a>
+            ,
+            <a
+              href="https://www.itsacademyveneto.it/corsi/servizi-alle-imprese"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              Servizi alle imprese
+            </a>
+            )
+          </li>
+          <li>
+            <a
+              href="https://www.itsacademyveneto.it/corsi/turismo"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              - Tecnologie innovative per i beni e le attività culturali/Turismo
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.itsacademyveneto.it/corsi/information-technologies"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              - Tecnologie dell informazione e della comunicazione
+            </a>
+          </li>
+        </ul>
+      </span>
+    ),
+  },
+  {
+    question: "Quali sono gli ITS presenti in Veneto?",
+    answer: (
+      <>
+        <p>
+          In Veneto, ci sono 8 Istituti Tecnici Superiori (ITS) che offrono
+          percorsi formativi post-diploma in vari ambiti di specializzazione.
+          Ecco un elenco degli ITS presenti in Veneto e i loro ambiti di
+          specializzazione:
+        </p>
+        <ul className="list-disc">
+          <li>
+            <a
+              href="https://www.itslogistica.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Academy Last - Logistica e Trasporti
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://itsred.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Red Academy - Efficienza Energetica, Edilizia sostenibile
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.itsturismo.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Academy Turismo Veneto - Turismo e ospitalità
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.itsmeccatronico.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              - ITS Academy Meccatronico Veneto - Meccatronica, Automazione
+              Industriale
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://itsagroalimentareveneto.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Academy Agroalimentare Veneto - Agroalimentare
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://itsdigitalacademy.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Digital Academy Mario Volpato - ICT e Tecnologie dell
+              Informazione
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.itscosmo.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Academy Cosmo - Sistema Moda
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.itsmarcopolo.it/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline text-primary"
+            >
+              ITS Academy Marco Polo - Mobilità Sostenibile, Logistica e
+              Trasporti
+            </a>
+          </li>
+        </ul>
+        <p>
+          Li trovi tutti sul nostro sito, con un collegamento diretto al sito
+          specifico della scuola per approfondire.
+        </p>
+      </>
+    ),
   },
   {
     question: "Perché scegliere un ITS?",
@@ -911,9 +1079,24 @@ export const faqs = [
       "Frequentare un ITS aumenta le tue possibilità di trovare lavoro! Circa il 92% degli studenti trova un'occupazione dopo aver completato il percorso. Gli ITS collaborano con le aziende per creare corsi che rispondano alle esigenze del mercato del lavoro, unendo teoria e tanta pratica in laboratorio e in azienda. Inoltre, molti docenti sono professionisti del settore.",
   },
   {
+    question: "Quali sono le prospettive di carriera per i diplomati ITS?",
+    answer:
+      "I diplomati ITS in Veneto possono aspettarsi di ottenere posizioni tecniche o tecnico-manageriali all'interno di varie aziende e settori. È importante ricordare che, inserendoti in una nuova realtà lavorativa, inizierai sempre da posizioni junior, con l'opportunità di crescere e avanzare nella tua carriera.",
+  },
+  {
+    question: "Che tipo di aziende collaborano con gli ITS?",
+    answer:
+      "Sono aziende del territorio Veneto, tra le migliori in Italia. Ogni scuola ha il suo network di partner specifici con cui collabora per la definizione dei percorsi pedagogici, per la proposta dei tirocini e molto altro ancora.",
+  },
+  {
     question: "Quanto dura un corso ITS?",
     answer:
       "I corsi ITS durano due anni, con un totale di 1800/2000 ore di formazione. Almeno il 30% di queste ore è dedicato a tirocini, anche all'estero.",
+  },
+  {
+    question: "Chi può iscriversi agli ITS?",
+    answer:
+      "Puoi iscriverti agli ITS se hai un diploma di scuola superiore di cinque anni o un diploma quadriennale di istruzione e formazione professionale, completato con un corso annuale IFTS.",
   },
   {
     question: "Come ci si iscrive agli ITS?",
@@ -921,9 +1104,9 @@ export const faqs = [
       "Ogni ITS ha una pagina di iscrizione online. Dopo aver compilato il modulo, sarai contattato per il test di ammissione. Se superi il test, dovrai pagare una quota annuale per finalizzare l'iscrizione.    ",
   },
   {
-    question: "Perché c'è un test di ammissione?",
+    question: "C'è un test di ammissione?",
     answer:
-      "I corsi ITS sono a numero chiuso, quindi devi superare un test che verifica le tue competenze matematiche, logiche, culturali, tecniche, informatiche e linguistiche (inglese). C'è anche un colloquio attitudinale.",
+      "I corsi ITS sono a numero chiuso, un massimo di 25 persone a corso, quindi per accedere devi superare un test attitudinale e un colloquio.",
   },
   {
     question: "C’è un limite di età per iscriversi?",
@@ -937,7 +1120,7 @@ export const faqs = [
   {
     question: "Bisogna essere disoccupati per partecipare?",
     answer:
-      "Devi essere libero da altri impegni durante tutto il giorno e per l'intera settimana, poiché c'è un obbligo di frequenza dell'80%.",
+      "Si tratta di una scelta personale: in ogni ITS vige l’ obbligo di frequenza dell'80%, le lezioni sono organizzate su tutta la settimana in orari che vanno dalle 8 alle 18. Tuttavia i calendari delle lezioni  e i periodi di stage sono organizzati in modo diverso per ogni istituto. È quindi  sempre bene confrontarsi con l’ufficio della scuola di interesse e fare delle valutazioni.",
   },
   {
     question: "Sto già lavorando, posso iscrivermi a un ITS?",
@@ -970,40 +1153,6 @@ export const faqs = [
       "Controlla il sito dell'istituto che ti interessa per le date precise delle prove di ammissione e delle iscrizioni.",
   },
   {
-    question: "Quali sono gli ITS presenti in Veneto?",
-    answer: `In Veneto, ci sono 8 Istituti Tecnici Superiori (ITS) che offrono percorsi formativi post-diploma in vari ambiti di specializzazione. Ecco un elenco degli ITS presenti in Veneto e i loro ambiti di specializzazione:
-      - ITS Academy Last: Logistica e Trasporti
-      - ITS Red Academy: Efficienza Energetica, Edilizia Sostenibile
-      - ITS Turismo Veneto: Turismo e Ospitalità
-      - ITS Meccatronico Veneto: Meccatronica, Automazione Industriale
-      - ITS Nuove Tecnologie per il Made in Italy - Agroalimentare: Agroalimentare
-      - ITS Digital Academy Mario Volpato:ICT e Tecnologie dell'Informazione
-      - ITS Academy Cosmo: Sistema Moda
-      - ITS Academy Marco Polo: Mobilità Sostenibile, Logistica e Trasporti
-      Li trovi tutti sul nostro sito, con un collegamento diretto al sito specifico della scuola per approfondire.
-      `,
-  },
-  {
-    question: "Che tipo di aziende collaborano con gli ITS?",
-    answer:
-      "Sono aziende del territorio Veneto, tra le migliori in Italia. Ogni scuola ha il suo network di partner specifici con cui collabora per la definizione dei percorsi pedagogici, per la proposta dei tirocini e molto altro ancora.",
-  },
-  {
-    question: "Quali sono i settori tecnologici coperti dai corsi ITS?",
-    answer: `Le 8 scuole propongono percorsi per 5 delle 6 aree tecnologiche:
-    - Efficienza energetica
-    - Mobilità sostenibile
-    - Nuove tecnologie per il Made in Italy (articolata in cinque ambiti: Sistema agroalimentare, Sistema casa, Sistema meccanica, Sistema moda, Servizi alle imprese)
-    - Tecnologie innovative per i beni e le attività culturali/Turismo
-    - Tecnologie dell'informazione e della comunicazione
-    `,
-  },
-  {
-    question: "Quali sono le prospettive di carriera per i diplomati ITS?",
-    answer:
-      "I diplomati ITS in Veneto possono aspettarsi di ottenere posizioni tecniche o tecnico-manageriali all'interno di varie aziende e settori. È importante ricordare che, inserendoti in una nuova realtà lavorativa, inizierai sempre da posizioni junior, con l'opportunità di crescere e avanzare nella tua carriera.",
-  },
-  {
     question: "Sono disponibili alloggi per gli studenti fuori sede?",
     answer:
       "Gli ITS offrono spesso supporto agli studenti fuori sede per trovare alloggi. Tuttavia, la disponibilità di alloggi specifici per gli studenti varia da un istituto all'altro. Alcuni ITS collaborano con strutture locali, come residenze universitarie, appartamenti condivisi o agenzie immobiliari, per aiutare gli studenti a trovare una sistemazione adeguata.",
@@ -1017,37 +1166,148 @@ export const faqs = [
   {
     question:
       "Quali sono le opportunità di studio all'estero durante il percorso ITS?",
-    answer: `Gli ITS ti offrono un sacco di opportunità super interessanti! Ecco cosa puoi aspettarti:
-    - Programmi Erasmus+:  Gli ITS partecipano al famoso programma Erasmus+, che ti permette di studiare o fare un tirocinio in un altro paese europeo. Immagina di migliorare le tue competenze linguistiche e professionali mentre vivi un'esperienza indimenticabile!
-    - Tirocini Internazionali: Molti ITS collaborano con aziende e istituzioni all'estero per offrirti tirocini in contesti internazionali. Questo significa che puoi arricchire il tuo curriculum con esperienze lavorative globali e prepararti al meglio per il tuo futuro professionale.
-    - Progetti e Scambi Internazionali:  Alcuni ITS organizzano progetti e scambi con scuole e aziende di altri paesi. Partecipa a visite di studio, workshop e altre attività formative che ti permetteranno di conoscere nuove culture e metodi di lavoro.
-    -  Partenariati con Aziende all’estero:  Gli ITS collaborano con aziende per offrirti stage e opportunità di formazione all'estero. Queste collaborazioni ti aiutano a sviluppare le competenze specifiche che i datori di lavoro cercano nel mercato globale.
-    - Supporto per la Mobilità Internazionale: Gli ITS non ti lasciano solo! Ti offrono supporto nella ricerca di opportunità, nella preparazione dei documenti e nella logistica. Così, potrai concentrarti solo sull'esperienza che stai per vivere.
-    `,
+    answer: (
+      <>
+        <p>
+          Gli ITS ti offrono un sacco di opportunità super interessanti! Ecco
+          cosa puoi aspettarti:
+        </p>
+        <ul className="list-disc">
+          <li>
+            Programmi Erasmus+: Gli ITS partecipano al famoso programma
+            Erasmus+, che ti permette di studiare o fare un tirocinio in un
+            altro paese europeo. Immagina di migliorare le tue competenze
+            linguistiche e professionali mentre vivi un&apos;esperienza
+            indimenticabile!
+          </li>
+          <li>
+            Tirocini Internazionali: Molti ITS collaborano con aziende e
+            istituzioni all&apos;estero per offrirti tirocini in contesti
+            internazionali. Questo significa che puoi arricchire il tuo
+            curriculum con esperienze lavorative globali e prepararti al meglio
+            per il tuo futuro professionale.
+          </li>
+          <li>
+            Progetti e Scambi Internazionali: Alcuni ITS organizzano progetti e
+            scambi con scuole e aziende di altri paesi. Partecipa a visite di
+            studio, workshop e altre attività formative che ti permetteranno di
+            conoscere nuove culture e metodi di lavoro.
+          </li>
+          <li>
+            Partenariati con Aziende all’estero: Gli ITS collaborano con aziende
+            per offrirti stage e opportunità di formazione all&apos;estero.
+            Queste collaborazioni ti aiutano a sviluppare le competenze
+            specifiche che i datori di lavoro cercano nel mercato globale.
+          </li>
+          <li>
+            Supporto per la Mobilità Internazionale: Gli ITS non ti lasciano
+            solo! Ti offrono supporto nella ricerca di opportunità, nella
+            preparazione dei documenti e nella logistica. Così, potrai
+            concentrarti solo sull&apos;esperienza che stai per vivere.
+          </li>
+        </ul>
+      </>
+    ),
   },
   {
     question: "Come posso ottenere una borsa di studio per frequentare un ITS?",
-    answer: `Esistono diverse formule di borse di studio che possono essere erogate direttamente dagli ITS oppure tramite collaborazioni con enti pubblici e privati. Ecco alcune possibilità:
-    - Borse di Studio Regionali: La Regione Veneto spesso mette a disposizione borse di studio per gli studenti iscritti agli ITS, al fine di sostenere le spese di formazione, alloggio e trasporto.
-    - Borse di Studio del MIUR:  Il Ministero dell'Istruzione, dell'Università e della Ricerca (MIUR) offre borse di studio per gli studenti degli ITS, finanziate attraverso fondi statali e regionali.
-    - Borse di Studio degli ITS: Alcuni ITS hanno proprie borse di studio finanziate direttamente dall'istituto o attraverso partnership con aziende locali e associazioni di categoria. Queste borse possono coprire parte delle tasse di iscrizione, materiali didattici o altre spese correlate.
-    - Borse di Studio per il Merito:  Esistono borse di studio basate sul merito accademico, che premiano gli studenti con i migliori risultati scolastici. Queste borse possono essere offerte dagli ITS o da enti esterni.
-    - Borse di Studio per la Mobilità Internazionale:  Gli studenti che partecipano a programmi di mobilità internazionale, come Erasmus+, possono accedere a borse di studio specifiche per coprire le spese di viaggio e soggiorno all'estero.
-    La disponibilità delle borse di studio varia di anno in anno e a istituto a istituto, si consiglia sempre di rivolgersi all’ufficio amministrativo dell’istituto di interesse.
-    `,
+    answer: (
+      <>
+        <p>
+          Esistono diverse formule di borse di studio che possono essere erogate
+          direttamente dagli ITS oppure tramite collaborazioni con enti pubblici
+          e privati. Ecco alcune possibilità:
+        </p>
+        <ul className="list-disc">
+          <li>
+            Borse di Studio Regionali: La Regione Veneto spesso mette a
+            disposizione borse di studio per gli studenti iscritti agli ITS, al
+            fine di sostenere le spese di formazione, alloggio e trasporto.
+          </li>
+          <li>
+            Borse di Studio del MIUR: Il Ministero dell&apos;Istruzione,
+            dell&apos;Università e della Ricerca (MIUR) offre borse di studio
+            per gli studenti degli ITS, finanziate attraverso fondi statali e
+            regionali.
+          </li>
+          <li>
+            Borse di Studio degli ITS: Alcuni ITS hanno proprie borse di studio
+            finanziate direttamente dall&apos;istituto o attraverso partnership
+            con aziende locali e associazioni di categoria. Queste borse possono
+            coprire parte delle tasse di iscrizione, materiali didattici o altre
+            spese correlate.
+          </li>
+          <li>
+            Borse di Studio per il Merito: Esistono borse di studio basate sul
+            merito accademico, che premiano gli studenti con i migliori
+            risultati scolastici. Queste borse possono essere offerte dagli ITS
+            o da enti esterni.
+          </li>
+          <li>
+            Borse di Studio per la Mobilità Internazionale: Gli studenti che
+            partecipano a programmi di mobilità internazionale, come Erasmus+,
+            possono accedere a borse di studio specifiche per coprire le spese
+            di viaggio e soggiorno all&apos;estero.
+          </li>
+        </ul>
+        <p>
+          La disponibilità delle borse di studio varia di anno in anno e a
+          istituto a istituto, si consiglia sempre di rivolgersi
+          allall&apos;ufficio amministrativo dell’istituto di interesse.
+        </p>
+      </>
+    ),
   },
   {
     question:
       "Esistono dei ponti con l’università? Si possono tradurre gli anni di ITS in anni universitari?",
-    answer: `La durata tipica di un percorso ITS è di due anni, e i corsi sono progettati per rispondere direttamente alle esigenze del mercato del lavoro, spesso in collaborazione con le imprese locali.
-    -Ponti con l’Università:
-    Esistono alcune possibilità di integrazione tra i percorsi ITS e l'università, ma la situazione può variare a seconda delle regioni e delle specifiche istituzioni coinvolte. In generale:
-    - Accordi Locali:  Alcuni ITS hanno stipulato accordi con università locali per riconoscere parte del percorso di studi completato presso l’ITS. Questi accordi possono consentire ai diplomati ITS di accedere a corsi di laurea universitari con il riconoscimento di alcuni crediti formativi universitari (CFU), riducendo così il tempo necessario per conseguire una laurea.
-    - Convalida dei Crediti:  In assenza di accordi formali, i diplomati ITS possono comunque fare richiesta di convalida dei crediti presso le università. La decisione di riconoscere o meno i crediti spetta alla singola università e dipende dall'affinità tra il percorso ITS seguito e il corso di laurea scelto.
-    - Traduzione degli Anni di ITS in Anni Universitari: La traduzione degli anni di studio ITS in anni universitari non è automatica e dipende principalmente dai seguenti fattori:
-    - Affinità del Programma: Maggiore è la corrispondenza tra il programma di studi ITS e il corso di laurea universitario, maggiori sono le probabilità che i crediti vengano riconosciuti.
-    - Accordi Preesistenti:  Gli ITS che hanno accordi con università specifiche possono facilitare il processo di riconoscimento dei crediti.
-    - Valutazione Individuale: Le università valutano caso per caso le richieste di riconoscimento crediti, esaminando i contenuti e le competenze acquisite durante il percorso ITS.
-    `,
+    answer: (
+      <>
+        <p>
+          Esistono alcune possibilità di integrazione tra i percorsi ITS e
+          lall&apos;università, ma la situazione può variare a seconda delle
+          regioni e delle specifiche istituzioni coinvolte. In generale:
+        </p>
+        <ul className="list-disc">
+          <li>
+            Accordi Locali: Alcuni ITS hanno stipulato accordi con università
+            locali per riconoscere parte del percorso di studi completato presso
+            l’ITS. Questi accordi possono consentire ai diplomati ITS di
+            accedere a corsi di laurea universitari con il riconoscimento di
+            alcuni crediti formativi universitari (CFU), riducendo così il tempo
+            necessario per conseguire una laurea.
+          </li>
+          <li>
+            Convalida dei Crediti: In assenza di accordi formali, i diplomati
+            ITS possono comunque fare richiesta di convalida dei crediti presso
+            le università. La decisione di riconoscere o meno i crediti spetta
+            alla singola università e dipende dallaffinità tra il percorso ITS
+            seguito e il corso di laurea scelto.
+          </li>
+          <li>
+            Traduzione degli Anni di ITS in Anni Universitari: La traduzione
+            degli anni di studio ITS in anni universitari non è automatica e
+            dipende principalmente dai seguenti fattori:
+            <ul className="list-disc">
+              <li>
+                Affinità del Programma: Maggiore è la corrispondenza tra il
+                programma di studi ITS e il corso di laurea universitario,
+                maggiori sono le probabilità che i crediti vengano riconosciuti.
+              </li>
+              <li>
+                Accordi Preesistenti: Gli ITS che hanno accordi con università
+                specifiche possono facilitare il processo di riconoscimento dei
+                crediti.
+              </li>
+              <li>
+                Valutazione Individuale: Le università valutano caso per caso le
+                richieste di riconoscimento crediti, esaminando i contenuti e le
+                competenze acquisite durante il percorso ITS.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </>
+    ),
   },
 ];
