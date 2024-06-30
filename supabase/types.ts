@@ -17,6 +17,7 @@ export type Database = {
           name: string | null
           note: string | null
           phone: string | null
+          privacy: boolean | null
           source: string | null
         }
         Insert: {
@@ -26,6 +27,7 @@ export type Database = {
           name?: string | null
           note?: string | null
           phone?: string | null
+          privacy?: boolean | null
           source?: string | null
         }
         Update: {
@@ -35,6 +37,7 @@ export type Database = {
           name?: string | null
           note?: string | null
           phone?: string | null
+          privacy?: boolean | null
           source?: string | null
         }
         Relationships: []

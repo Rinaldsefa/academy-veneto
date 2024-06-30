@@ -24,6 +24,22 @@ const Header = () => {
             <li className="px-2">
               <Link href="/faq">FAQ</Link>
             </li>
+            <li className="px-2">
+              <Link
+                href="https://www.iubenda.com/privacy-policy/34668176/full-legal"
+                target="_blank"
+              >
+                Privacy
+              </Link>
+            </li>
+            <li className="px-2">
+              <Link
+                href="https://www.iubenda.com/privacy-policy/34668176/cookie-policy"
+                target="_blank"
+              >
+                Cookie
+              </Link>
+            </li>
           </ul>
 
           <Socials />
@@ -55,7 +71,7 @@ const Header = () => {
           <Link href="/i-nostri-corsi">I corsi</Link>
         </li>
 
-        <li className=" ">
+        <li className="">
           <Link href="/mappa">Mappa</Link>
         </li>
 
@@ -65,10 +81,18 @@ const Header = () => {
 
         <li>
           <Link
-            href="https://www.iubenda.com/privacy-policy/25968168"
+            href="https://www.iubenda.com/privacy-policy/34668176/full-legal"
             target="_blank"
           >
             Privacy
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.iubenda.com/privacy-policy/34668176/cookie-policy"
+            target="_blank"
+          >
+            Cookie
           </Link>
         </li>
       </ul>

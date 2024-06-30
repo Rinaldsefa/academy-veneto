@@ -13,6 +13,7 @@ import Image from "next/image";
 import { Database } from "supabase/types";
 import { supabase } from "supabase/client";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 
 //10 minutes
 const TIMEOUT = 30000;
@@ -49,6 +50,8 @@ export default function PopUp() {
       alert(error);
     }
   }
+
+  console.log(errors);
 
   return (
     <Transition show={open}>
@@ -134,6 +137,40 @@ export default function PopUp() {
                           {errors.email.message}
                         </p>
                       )}
+                    </div>
+                    <div className="relative flex items-start">
+                      <div className="flex h-6 items-center">
+                        <input
+                          id="privacy"
+                          aria-describedby="privacy-description"
+                          type="checkbox"
+                          {...register("privacy", {
+                            required:
+                              "Devi accettare l'informativa sulla privacy",
+                          })}
+                          className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                        />
+                      </div>
+                      <div className="ml-3 text-sm leading-5">
+                        <p id="privacy-description" className="text-gray-500">
+                          Confermo di aver preso visione della{" "}
+                          <Link
+                            href="https://www.iubenda.com/privacy-policy/34668176/full-legal"
+                            target="_blank"
+                            className="text-primary underline"
+                          >
+                            informativa sulla privacy
+                          </Link>
+                        </p>
+                        {errors.privacy && (
+                          <p
+                            className="mt-2 text-sm text-red-600"
+                            id="email-error"
+                          >
+                            {errors.privacy.message}
+                          </p>
+                        )}
+                      </div>
                     </div>
                     <button
                       type="submit"
