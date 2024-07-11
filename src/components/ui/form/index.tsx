@@ -1,4 +1,5 @@
 import { EnvelopeIcon, PhoneIcon, UserIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { supabase } from "supabase/client";
 import { Database } from "supabase/types";
@@ -141,6 +142,24 @@ export default function Form() {
               defaultValue={""}
             />
           </div>
+        </div>
+
+        <div className="ml-3 text-sm leading-5">
+          <p id="privacy-description" className="text-gray-500">
+            Confermo di aver preso visione della{" "}
+            <Link
+              href="https://www.iubenda.com/privacy-policy/34668176/full-legal"
+              target="_blank"
+              className="text-primary underline"
+            >
+              informativa sulla privacy
+            </Link>
+          </p>
+          {errors.privacy && (
+            <p className="mt-2 text-sm text-red-600" id="email-error">
+              {errors.privacy.message}
+            </p>
+          )}
         </div>
 
         <div>

@@ -587,6 +587,13 @@ export const provinces: Province[] = [
         href: "/corsi/turismo",
         list: ["Tourism Destination Marketing & Communication"],
       },
+      {
+        label: "Agroalimentare",
+        href: "/corsi/agroalimentare",
+        list: [
+          "Agribusiness Manager per le produzioni locali - Bassano del Grappa (VI)",
+        ],
+      },
     ],
   },
   {
