@@ -1168,7 +1168,7 @@ export const faqs = [
     question:
       "Quali sono le esperienze degli studenti che hanno frequentato gli ITS?",
     answer:
-      "Le trovi sui nostri profili social! Oltre a tante altre informazioni sulle scuole e i percorsi.",
+      "Le trovi sui nostri profili social! Oltre a tante altre informazioni sulle Academy e i percorsi.",
   },
   {
     question:
