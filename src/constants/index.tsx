@@ -887,13 +887,13 @@ export const faqs = [
   {
     question: "Che cosa sono gli ITS?",
     answer:
-      "Gli ITS (Istituti Tecnologici Superiori) sono scuole post-diploma che offrono una formazione altamente specializzata in ambito tecnologico. Fanno parte della Formazione Terziaria Professionalizzante, ovvero quella formazione che ti prepara direttamente per il mondo del lavoro. Sono riconosciuti dal Miur.",
+      "Gli ITS (Istituti Tecnologici Superiori) sono Academy post-diploma che offrono una formazione altamente specializzata in ambito tecnologico. Fanno parte della Formazione Terziaria Professionalizzante, ovvero quella formazione che ti prepara direttamente per il mondo del lavoro. Sono riconosciuti dal Miur.",
   },
   {
     question: "Quali sono i settori tecnologici coperti dai corsi ITS?",
     answer: (
       <span>
-        Le 8 scuole propongono percorsi per 5 delle 6 aree tecnologiche:
+        Le 8 Academy propongono percorsi per 5 delle 6 aree tecnologiche:
         <ul>
           <li>
             <a
@@ -983,7 +983,7 @@ export const faqs = [
     answer: (
       <>
         <p>
-          In Veneto, ci sono 8 Istituti Tecnici Superiori (ITS) che offrono
+          In Veneto, ci sono 8 Istituti Tecnologici Superiori (ITS) che offrono
           percorsi formativi post-diploma in vari ambiti di specializzazione.
           Ecco un elenco degli ITS presenti in Veneto e i loro ambiti di
           specializzazione:
@@ -1075,7 +1075,7 @@ export const faqs = [
         </ul>
         <p>
           Li trovi tutti sul nostro sito, con un collegamento diretto al sito
-          specifico della scuola per approfondire.
+          specifico di ogni Academy per approfondire.
         </p>
       </>
     ),
@@ -1093,7 +1093,7 @@ export const faqs = [
   {
     question: "Che tipo di aziende collaborano con gli ITS?",
     answer:
-      "Sono aziende del territorio Veneto, tra le migliori in Italia. Ogni scuola ha il suo network di partner specifici con cui collabora per la definizione dei percorsi pedagogici, per la proposta dei tirocini e molto altro ancora.",
+      "Sono aziende del territorio Veneto, tra le migliori in Italia. Ogni Academy ha il suo network di partner specifici con cui collabora per la definizione dei percorsi pedagogici, per la proposta dei tirocini e molto altro ancora.",
   },
   {
     question: "Quanto dura un corso ITS?",
@@ -1127,7 +1127,7 @@ export const faqs = [
   {
     question: "Bisogna essere disoccupati per partecipare?",
     answer:
-      "Si tratta di una scelta personale: in ogni ITS vige l’ obbligo di frequenza dell'80%, le lezioni sono organizzate su tutta la settimana in orari che vanno dalle 8 alle 18. Tuttavia i calendari delle lezioni  e i periodi di stage sono organizzati in modo diverso per ogni istituto. È quindi  sempre bene confrontarsi con l’ufficio della scuola di interesse e fare delle valutazioni.",
+      "Si tratta di una scelta personale: in ogni ITS vige l’ obbligo di frequenza dell'80%, le lezioni sono organizzate su tutta la settimana in orari che vanno dalle 8 alle 18. Tuttavia i calendari delle lezioni  e i periodi di stage sono organizzati in modo diverso per ogni istituto. È quindi  sempre bene confrontarsi con l’ufficio dell'Academy di interesse e fare delle valutazioni.",
   },
   {
     question: "Sto già lavorando, posso iscrivermi a un ITS?",
