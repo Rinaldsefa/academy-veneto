@@ -36,6 +36,14 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
         {isLastStep ? (
           <>
             <Cta text={"Fai il quiz"} classes="mt-8 bg-sky-500" href="/test" />
+            <h5 className="text-center ">
+              <span className="block text-xl font-semibold text-gray-900">
+                Vuoi saperne di più o sei indeciso su quale corso scegliere?
+              </span>
+              <span className="block text-md text-gray-500">
+                Lasciaci i tuoi dati, ti contatteremo noi al più presto!
+              </span>
+            </h5>
             <Form />
           </>
         ) : (

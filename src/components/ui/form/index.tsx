@@ -24,14 +24,6 @@ export default function Form() {
   }
   return (
     <div className="w-full max-w-6xl my-8 flex flex-col gap-2">
-      <h5 className="text-center ">
-        <span className="block text-xl font-semibold text-gray-900">
-          Vuoi saperne di più o sei indeciso su quale corso scegliere?
-        </span>
-        <span className="block text-md text-gray-500">
-          Lasciaci i tuoi dati, ti contatteremo noi al più presto!
-        </span>
-      </h5>
       <form onSubmit={handleSubmit(insertData)}>
         <div>
           <label
