@@ -56,29 +56,29 @@ export default function JobOrienta() {
               stand di Regione Veneto
             </p>
           </section>
-          <section className="flex flex-wrap justify-center items-center my-8">
+          <section className="flex flex-wrap justify-center items-center">
             <Image
               src="/assets/orienta/2.png"
               alt="ITS logo"
-              width={800}
+              width={600}
               height={680}
             />
             <Image
               src="/assets/orienta/3.png"
               alt="ITS logo"
-              width={800}
+              width={600}
               height={680}
             />
             <Image
               src="/assets/orienta/4.png"
               alt="ITS logo"
-              width={800}
+              width={600}
               height={680}
             />
             <Image
               src="/assets/orienta/5.png"
               alt="ITS logo"
-              width={800}
+              width={600}
               height={680}
             />
           </section>

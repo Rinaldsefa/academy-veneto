@@ -1,4 +1,6 @@
-export type Json =
+Need to install the following packages:
+supabase@1.223.10
+Ok to proceed? (y) export type Json =
   | string
   | number
   | boolean
@@ -11,6 +13,7 @@ export type Database = {
     Tables: {
       leads: {
         Row: {
+          course: string | null
           created_at: string
           email: string
           id: number
@@ -21,6 +24,7 @@ export type Database = {
           source: string | null
         }
         Insert: {
+          course?: string | null
           created_at?: string
           email: string
           id?: number
@@ -31,6 +35,7 @@ export type Database = {
           source?: string | null
         }
         Update: {
+          course?: string | null
           created_at?: string
           email?: string
           id?: number
@@ -138,4 +143,19 @@ export type Enums<
   ? Database[PublicEnumNameOrOptions["schema"]]["Enums"][EnumName]
   : PublicEnumNameOrOptions extends keyof PublicSchema["Enums"]
     ? PublicSchema["Enums"][PublicEnumNameOrOptions]
+    : never
+
+export type CompositeTypes<
+  PublicCompositeTypeNameOrOptions extends
+    | keyof PublicSchema["CompositeTypes"]
+    | { schema: keyof Database },
+  CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
+    schema: keyof Database
+  }
+    ? keyof Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+    : never = never,
+> = PublicCompositeTypeNameOrOptions extends { schema: keyof Database }
+  ? Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
+  : PublicCompositeTypeNameOrOptions extends keyof PublicSchema["CompositeTypes"]
+    ? PublicSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
     : never

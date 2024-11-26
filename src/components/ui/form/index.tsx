@@ -42,7 +42,7 @@ export default function Form() {
   ) {
     try {
       const client = supabase();
-      await client.from("leads").insert(data);
+      await client.from("leads").insert({ ...data, course: selected.name });
       alert("Grazie per averci contattato, ti risponderemo al più presto!");
     } catch (error) {
       alert(error);
