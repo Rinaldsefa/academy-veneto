@@ -26,36 +26,71 @@ export default function JobOrienta() {
           className={`bg-white flex flex-col items-center justify-around  p-8 ${aileron.className}`}
         >
           <section className="flex flex-col gap-3 justify-center items-center ">
-            <h1 className=" text-3xl text-center font-bold text-primary">
-              Scopri le opportunità che ti aspettano, vieni a trovarci!
+            <h1 className=" text-2xl text-center font-semibold ">
+              Shaping futures in Veneto
             </h1>
 
-            <h2 className=" text-2xl text-center font-semibold ">
-              Saremo al Job Orienta:
+            <h2 className=" text-3xl text-center font-bold ">
+              AlTA FORMAZIONE POST DIPLOMA
             </h2>
             <h2 className="text-xl text-center font-semibold underline decoration-primary text-primary">
-              Padiglione 10 Stand 173
+              vieni a trovarci allo stand Padiglione 10 - stand 173{" "}
             </h2>
             <p className="text-center text-lg font-medium">
-              Non perdere questa occasione, il tuo futuro inizia qui! Se vuoi
-              richiedere informazioni, compila il form qui sotto:
+              Presso lo stand di ITS ACADEMY VENETO, Partecipa al quiz di
+              orientamento sugli ITS: premi fantastici per i vincitori e
+              un’occasione unica per avvicinarsi al mondo del lavoro, ogni
+              giorno alle 10, 11, 12, 15 e 16!
             </p>
+            <p className="text-center text-lg font-medium">
+              Sezione Grandi Eventi: Auditorium Sala Verdi 29 novembre
+              10:30-13:00 - IT’S The Future. Il futuro degli ITS: Scopri le
+              opportunità offerte dagli ITS per il tuo futuro professionale.
+            </p>
+            <p className="text-center text-lg font-medium text-primary">
+              Non perdere l’occasione di partecipare a questi eventi imperdibili
+              per il tuo futuro!
+            </p>
+            <p className="text-center text-lg font-medium">
+              Partecipa ai nostri laboratori esperienziali ogni giorno presso lo
+              stand di Regione Veneto
+            </p>
+          </section>
+          <section className="flex flex-wrap justify-center items-center my-8">
+            <Image
+              src="/assets/orienta/2.png"
+              alt="ITS logo"
+              width={800}
+              height={680}
+            />
+            <Image
+              src="/assets/orienta/3.png"
+              alt="ITS logo"
+              width={800}
+              height={680}
+            />
+            <Image
+              src="/assets/orienta/4.png"
+              alt="ITS logo"
+              width={800}
+              height={680}
+            />
+            <Image
+              src="/assets/orienta/5.png"
+              alt="ITS logo"
+              width={800}
+              height={680}
+            />
           </section>
           <section>
             <Form />
           </section>
-          <section className="flex flex-col  lg:flex-row justify-center items-center">
+          <section className="flex flex-col lg:flex-row justify-center items-center">
             <Image
-              src="/assets/common/logo.png"
+              src="/assets/orienta/cover.png"
               alt="ITS logo"
-              width={200}
-              height={280}
-            />
-            <Image
-              src="/assets/common/futura.png"
-              alt="Futura logo"
-              width={280}
-              height={280}
+              width={400}
+              height={480}
             />
           </section>
           <Link
