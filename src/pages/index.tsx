@@ -69,7 +69,7 @@ export default function Home() {
       <div className="flex items-center gap-x-6 text-center bg-primary px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
         <p className="text-sm/6 text-white text-center">
           <Link href="/job-orienta">
-            <strong className="font-semibold">Its academy Veneto </strong>
+            <strong className="font-semibold">ITS academy Veneto </strong>
             al job orienta
             <span aria-hidden="true">&rarr;</span>
             <strong className="font-bold"> {"  "}Scopri di più</strong>
