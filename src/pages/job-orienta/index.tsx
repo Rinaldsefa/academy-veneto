@@ -83,6 +83,10 @@ export default function JobOrienta() {
             />
           </section>
           <section>
+            <h5 className="text-center font-semibold text-primary text-xl ">
+              Se sei interessato, lasciaci i tuoi dati: verrai ricontattato il
+              prima possibile!
+            </h5>
             <Form />
           </section>
           <section className="flex flex-col lg:flex-row justify-center items-center">
